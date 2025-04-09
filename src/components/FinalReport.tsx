@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react';
 import { Career, getCommonSkills, getTransferableSkills } from '@/data/careers';
 import { CareerCluster } from '@/data/careerClusters';
@@ -6,6 +7,7 @@ import { Card } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
 import { Lightbulb, Download, RotateCcw, ArrowLeft, Briefcase, TrendingUp, GraduationCap } from 'lucide-react';
+import { useToast } from '@/components/ui/use-toast';
 
 interface FinalReportProps {
   selectedCareers: Career[];
@@ -21,6 +23,7 @@ const FinalReport = ({
   onReset
 }: FinalReportProps) => {
   const reportRef = useRef<HTMLDivElement>(null);
+  const { toast } = useToast();
   
   const commonSkills = getCommonSkills(selectedCareers);
   const transferableSkills = getTransferableSkills(selectedCareers);
@@ -51,10 +54,59 @@ const FinalReport = ({
   );
 
   const downloadReport = () => {
-    // This is a placeholder for the actual download functionality
-    // In a real app, we would generate a DOC/DOCX file using a library like docx
-    // For now, we'll just simulate a download with an alert
-    alert('In a full implementation, this would generate and download a DOC/DOCX file with your career report.');
+    if (!selectedCareers.length) return;
+    
+    // Create document content
+    let content = `
+# Your Career Path Report
+
+## Selected Career Paths
+${selectedCareers.map(career => `
+### ${career.title}
+${career.description}
+
+**Key Skills:** ${career.skills.join(', ')}
+
+**Career Roadmap:**
+${career.roadmap.map((step, i) => `${i+1}. ${step}`).join('\n')}
+`).join('\n')}
+
+## Transferable Skills Analysis
+
+### STEM Skills
+${transferableStemSkills.length ? transferableStemSkills.join(', ') : 'No common STEM skills found in your selections.'}
+
+### Tech Skills
+${transferableTechSkills.length ? transferableTechSkills.join(', ') : 'No common tech skills found in your selections.'}
+
+### Entrepreneurial Skills
+${transferableEntrepreneurSkills.length ? transferableEntrepreneurSkills.join(', ') : 'No common entrepreneurial skills found in your selections.'}
+
+${otherTransferableSkills.length ? `### Other Valuable Skills\n${otherTransferableSkills.join(', ')}` : ''}
+
+${commonSkills.length ? `## Skills Common Across All Selected Careers\n${commonSkills.join(', ')}` : ''}
+
+## Success in Today's World
+Future-ready careers require a mix of STEM knowledge, technology skills, and entrepreneurial thinking - regardless of your chosen field. The skills above are key to high income potential and long-term career success.
+`;
+
+    // Convert to a Blob
+    const blob = new Blob([content], { type: 'text/plain' });
+    
+    // Create download link
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'career-path-report.txt';
+    
+    // Trigger download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    toast({
+      title: "Report Downloaded",
+      description: "Your career path report has been downloaded as a text file.",
+    });
   };
   
   return (

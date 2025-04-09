@@ -22,11 +22,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Coding", "Problem-solving", "Logical thinking", "Creativity", "Attention to detail"],
     roadmap: [
-      "Learn basic coding with free online courses",
-      "Practice by building your own small projects",
-      "Take computer science courses in college",
-      "Build a portfolio of projects to show employers",
-      "Apply for internships to gain experience"
+      "Start with free coding platforms like freeCodeCamp, Codecademy, or Khan Academy",
+      "Build personal projects and contribute to open-source on GitHub",
+      "Create a portfolio website showcasing your projects",
+      "Practice coding challenges on platforms like LeetCode or HackerRank",
+      "Build real applications that solve actual problems to demonstrate skills"
     ]
   },
   {
@@ -38,11 +38,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Security awareness", "Problem-solving", "Attention to detail", "Critical thinking", "Communication"],
     roadmap: [
-      "Learn basic computer networking concepts",
-      "Study cybersecurity fundamentals online",
-      "Practice ethical hacking in safe environments",
-      "Get certified in security (like CompTIA Security+)",
-      "Take internships in IT departments"
+      "Learn networking fundamentals through free courses on YouTube and Coursera",
+      "Practice ethical hacking on platforms like TryHackMe and HackTheBox",
+      "Earn free or affordable certifications like Google Cybersecurity Certificate",
+      "Build a home lab to practice security techniques virtually",
+      "Join cybersecurity communities and participate in CTF competitions"
     ]
   },
   {
@@ -54,11 +54,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Statistics", "Programming", "Problem-solving", "Communication", "Critical thinking"],
     roadmap: [
-      "Build strong math and statistics foundation",
-      "Learn programming languages like Python or R",
-      "Practice analyzing real datasets",
-      "Take courses in machine learning",
-      "Create data projects to showcase your skills"
+      "Master statistics fundamentals through Khan Academy and StatQuest videos",
+      "Learn Python or R through free online courses like DataCamp",
+      "Practice on real datasets from Kaggle competitions",
+      "Build a portfolio of data analysis projects on GitHub",
+      "Create visualizations and models to demonstrate your skills to employers"
     ]
   },
   {
@@ -70,11 +70,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Programming", "Math", "Problem-solving", "Critical thinking", "Research"],
     roadmap: [
-      "Build strong foundation in math and statistics",
-      "Learn programming with Python or similar languages",
-      "Study machine learning fundamentals",
-      "Take specialized AI courses",
-      "Work on AI projects to build portfolio"
+      "Build math foundations on Khan Academy (linear algebra, calculus, statistics)",
+      "Learn Python through free resources like Python.org or Codecademy",
+      "Study AI fundamentals through free courses like fast.ai or Coursera",
+      "Practice implementing AI models on your own through tutorials",
+      "Create AI projects that solve real problems to demonstrate skills"
     ]
   },
   {
@@ -86,11 +86,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["System design", "Problem-solving", "Programming", "Security awareness", "Communication"],
     roadmap: [
-      "Learn basics of networking and operating systems",
-      "Study cloud platforms like AWS, Azure, or Google Cloud",
-      "Get cloud certifications",
-      "Gain experience with virtualization technologies",
-      "Practice building cloud solutions"
+      "Learn Linux basics through free tutorials and virtual machines",
+      "Use free tiers of AWS, Azure, or Google Cloud to practice",
+      "Take free cloud fundamentals courses from the major providers",
+      "Build projects deploying applications to the cloud",
+      "Earn cloud certifications like AWS Certified Solutions Architect"
     ]
   },
   
@@ -121,10 +121,10 @@ export const careers: Career[] = [
     skills: ["Patient care", "Communication", "Attention to detail", "Compassion", "Teamwork"],
     roadmap: [
       "Take biology and health classes in school",
-      "Get a nursing diploma or bachelor's degree",
+      "Complete an accredited nursing program (diploma or degree)",
       "Pass nursing certification exams",
-      "Gain experience through internships",
-      "Consider specializing in a particular area of healthcare"
+      "Gain experience through clinical practice",
+      "Consider specializing in high-demand areas like critical care"
     ]
   },
   {
@@ -137,10 +137,10 @@ export const careers: Career[] = [
     skills: ["Laboratory techniques", "Attention to detail", "Problem-solving", "Technology skills", "Analytical thinking"],
     roadmap: [
       "Focus on biology and chemistry in school",
-      "Get a bachelor's degree in medical technology or related field",
+      "Get certification through accredited medical technology programs",
       "Complete clinical training program",
       "Obtain certification in medical technology",
-      "Consider specializing in a specific type of testing"
+      "Gain experience in specialized testing areas"
     ]
   },
   {
@@ -152,11 +152,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Anatomy knowledge", "Patient care", "Communication", "Problem-solving", "Physical stamina"],
     roadmap: [
-      "Study biology and physical education in school",
-      "Get a bachelor's degree in physiotherapy",
-      "Complete clinical internships",
+      "Study anatomy and physiology fundamentals through online courses",
+      "Complete an accredited physiotherapy program",
+      "Gain practical experience through clinical rotations",
       "Obtain licensing as required",
-      "Consider specializing in sports, pediatrics, or geriatrics"
+      "Develop specializations in sports, pediatrics, or geriatrics"
     ]
   },
   {
@@ -168,11 +168,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Medical knowledge", "Technology skills", "Data analysis", "Attention to detail", "Communication"],
     roadmap: [
-      "Build foundation in both health sciences and computer skills",
-      "Get a degree in health informatics or related field",
-      "Learn medical coding and record systems",
-      "Gain experience with healthcare databases",
-      "Stay updated on healthcare privacy regulations"
+      "Learn healthcare terminology through free online resources",
+      "Take online courses in database management and information systems",
+      "Study healthcare data privacy regulations through free resources",
+      "Get hands-on experience with electronic health record systems (demos)",
+      "Build projects demonstrating data analysis and visualization skills"
     ]
   },
   
@@ -186,11 +186,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Leadership", "Decision-making", "Communication", "Problem-solving", "Financial understanding"],
     roadmap: [
-      "Learn business basics through courses or reading",
-      "Gain experience by starting small ventures or joining clubs",
-      "Get a business degree or take business courses",
-      "Start in entry-level positions to learn the business",
-      "Develop leadership skills through practice and training"
+      "Learn business fundamentals through free courses on Coursera or edX",
+      "Start and run small business ventures or side projects",
+      "Take leadership roles in community or volunteer organizations",
+      "Build a portfolio of successful projects you've managed",
+      "Network with business professionals and find mentors"
     ]
   },
   {
@@ -202,11 +202,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Creativity", "Risk-taking", "Persistence", "Communication", "Financial management"],
     roadmap: [
-      "Identify problems you want to solve",
-      "Learn business basics through courses or mentors",
-      "Start small with minimal investment",
-      "Build a network of supporters and advisors",
-      "Learn from failures and keep improving your business"
+      "Identify problems you can solve with products or services",
+      "Learn business basics through free online courses",
+      "Start small with minimal investment and test your ideas",
+      "Participate in startup competitions and entrepreneurship forums",
+      "Scale your business gradually based on market feedback"
     ]
   },
   {
@@ -218,11 +218,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Creativity", "Communication", "Understanding people", "Digital skills", "Data analysis"],
     roadmap: [
-      "Develop creative writing and design skills",
-      "Learn digital tools like social media and content creation",
-      "Study marketing principles through courses",
-      "Build a portfolio of marketing projects",
-      "Gain experience through internships or freelance work"
+      "Learn marketing principles through YouTube channels and Google's free courses",
+      "Practice content creation on social media platforms",
+      "Take free digital marketing courses (Google, HubSpot, Facebook)",
+      "Create marketing campaigns for local businesses or nonprofits",
+      "Build a portfolio showing successful marketing strategies you've created"
     ]
   },
   {
@@ -234,11 +234,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Organization", "Leadership", "Communication", "Problem-solving", "Time management"],
     roadmap: [
-      "Develop strong organizational and people skills",
-      "Learn project management methodologies",
-      "Get certified in project management",
-      "Start managing small projects",
-      "Build experience across different types of projects"
+      "Learn project management basics through free courses on Coursera or YouTube",
+      "Practice using project management tools like Trello, Asana, or Jira",
+      "Lead small projects in your community or volunteer organizations",
+      "Document your project successes and methods in a portfolio",
+      "Consider affordable certifications like CAPM or Scrum Master"
     ]
   },
   {
@@ -250,11 +250,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Analytical thinking", "Problem-solving", "Communication", "Data analysis", "Business understanding"],
     roadmap: [
-      "Build foundation in business fundamentals",
-      "Learn data analysis tools and techniques",
-      "Study business processes and improvement methodologies",
-      "Develop technical and communication skills",
-      "Gain experience analyzing real business problems"
+      "Learn data analysis through free Excel and SQL tutorials online",
+      "Study business processes through free online courses",
+      "Practice analyzing real business cases and suggesting improvements",
+      "Build dashboards and reports using free tools like Google Data Studio",
+      "Create a portfolio of business problems you've analyzed and solved"
     ]
   },
   
@@ -268,9 +268,9 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Math", "Physics", "Problem-solving", "Attention to detail", "Computer-aided design"],
     roadmap: [
-      "Build strong foundation in math and physics",
-      "Get a bachelor's degree in civil engineering",
-      "Complete internships to gain practical experience",
+      "Build strong foundation in math and physics through online courses",
+      "Complete an accredited civil engineering program",
+      "Gain hands-on experience through internships",
       "Obtain professional engineering license",
       "Specialize in areas like structural, transportation, or environmental engineering"
     ]
@@ -284,11 +284,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Physics", "Math", "3D design", "Problem-solving", "Critical thinking"],
     roadmap: [
-      "Develop strong math and physics skills",
-      "Build and take apart things to understand mechanics",
-      "Get a degree in mechanical engineering",
-      "Gain hands-on experience through projects and internships",
-      "Learn advanced design software and manufacturing techniques"
+      "Master physics and mathematics fundamentals through Khan Academy",
+      "Learn CAD software through free tutorials (Fusion 360, FreeCAD)",
+      "Build mechanical projects and document your process",
+      "Join maker communities and collaborate on engineering projects",
+      "Create a portfolio showcasing your design work and problem-solving"
     ]
   },
   {
@@ -300,11 +300,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Creativity", "Drawing", "Understanding users", "Problem-solving", "Computer design skills"],
     roadmap: [
-      "Develop drawing and visual communication skills",
-      "Learn design software and tools",
-      "Study how people interact with products",
-      "Create a portfolio of design projects",
-      "Practice designing solutions for real problems"
+      "Learn design thinking through free online courses",
+      "Master design software through YouTube tutorials (Figma, Sketch)",
+      "Study user interface and user experience principles online",
+      "Build a portfolio by redesigning existing products",
+      "Get feedback from other designers through online communities"
     ]
   },
   {
@@ -317,10 +317,10 @@ export const careers: Career[] = [
     skills: ["Physics", "Math", "Computer-aided design", "Problem-solving", "Attention to detail"],
     roadmap: [
       "Build strong foundation in physics and mathematics",
-      "Get a degree in aerospace engineering",
+      "Complete engineering degree with aerospace focus",
       "Learn specialized design software",
       "Gain experience through internships or research projects",
-      "Consider specializing in aeronautics or astronautics"
+      "Stay updated on aerospace innovations and technologies"
     ]
   },
   {
@@ -332,11 +332,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Programming", "Mechanical design", "Electronics", "Problem-solving", "Critical thinking"],
     roadmap: [
-      "Study math, physics, and computer science in school",
-      "Learn basic electronics and robotics through kits and projects",
-      "Get a degree in robotics, mechanical engineering, or related field",
-      "Build robots and automated systems for your portfolio",
-      "Stay updated on advances in artificial intelligence"
+      "Learn programming through free resources (Python, Arduino)",
+      "Build simple robots using affordable kits like Arduino or Raspberry Pi",
+      "Take free online courses in robotics and electronics",
+      "Join robotics communities and participate in competitions",
+      "Create a portfolio of robots you've built and programmed"
     ]
   },
   
@@ -351,10 +351,10 @@ export const careers: Career[] = [
     skills: ["Communication", "Patience", "Creativity", "Organization", "Adaptability"],
     roadmap: [
       "Develop expertise in subjects you want to teach",
-      "Get a bachelor's degree in education or your subject",
-      "Complete teacher training program",
-      "Obtain teaching certification",
-      "Gain experience through student teaching and internships"
+      "Get a teaching degree or certification",
+      "Complete supervised teaching practice",
+      "Obtain teaching license as required",
+      "Develop specialized teaching approaches for different learning styles"
     ]
   },
   {
@@ -366,11 +366,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Listening", "Communication", "Empathy", "Problem-solving", "Organization"],
     roadmap: [
-      "Develop strong communication and people skills",
-      "Get a bachelor's degree in psychology or education",
-      "Complete a master's degree in counseling",
-      "Obtain counseling certification or license",
-      "Gain experience working with diverse student populations"
+      "Study psychology and education principles through online courses",
+      "Complete counseling degree or certification",
+      "Gain experience working with diverse student populations",
+      "Develop specialization in areas like career counseling or academic support",
+      "Stay updated on education trends and opportunities"
     ]
   },
   {
@@ -382,11 +382,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Creativity", "Communication", "Technical skills", "Organization", "Understanding how people learn"],
     roadmap: [
-      "Study education and learning psychology",
-      "Learn digital tools for creating educational content",
-      "Get a degree in instructional design or education",
-      "Build a portfolio of learning materials you've created",
-      "Stay current with educational technology trends"
+      "Learn instructional design principles through free online resources",
+      "Practice creating educational content using free tools",
+      "Build a portfolio of learning materials you've designed",
+      "Join instructional design communities for feedback",
+      "Create and publish your own courses on platforms like YouTube or Udemy"
     ]
   },
   {
@@ -398,11 +398,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Technology skills", "Teaching", "Communication", "Problem-solving", "Creativity"],
     roadmap: [
-      "Build foundation in both education and technology",
-      "Get a degree in educational technology or related field",
-      "Learn about various educational software and tools",
-      "Gain classroom experience",
-      "Stay updated on emerging educational technologies"
+      "Learn about educational technologies through free online courses",
+      "Gain experience with various learning platforms and tools",
+      "Create tutorials and resources for using edtech effectively",
+      "Build a portfolio demonstrating innovative uses of technology in education",
+      "Stay updated on new educational technologies and their applications"
     ]
   },
   {
@@ -414,11 +414,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Patience", "Empathy", "Adaptability", "Communication", "Problem-solving"],
     roadmap: [
-      "Develop understanding of different learning needs",
-      "Get a degree in special education",
-      "Complete specialized training for various disabilities",
-      "Obtain special education teaching certification",
-      "Gain experience working with diverse learning needs"
+      "Learn about different learning needs and disabilities",
+      "Complete special education teaching certification",
+      "Gain experience working with diverse learning needs",
+      "Develop specialized approaches for various disabilities",
+      "Stay updated on best practices in special education"
     ]
   },
   
@@ -432,11 +432,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Creativity", "Visual design", "Computer design skills", "Communication", "Attention to detail"],
     roadmap: [
-      "Develop drawing and visual arts skills",
-      "Learn design software like Adobe Creative Suite",
-      "Build a portfolio of design projects",
-      "Get formal education in graphic design",
-      "Gain experience through freelance work or internships"
+      "Learn design principles through free YouTube tutorials and courses",
+      "Master design software through free tutorials (Adobe, Canva, GIMP)",
+      "Create a portfolio of design projects on Behance or Dribbble",
+      "Offer free work to nonprofits to build experience",
+      "Start freelancing on platforms like Fiverr or Upwork"
     ]
   },
   {
@@ -448,11 +448,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["User research", "Design thinking", "Prototyping", "Communication", "Problem-solving"],
     roadmap: [
-      "Learn design fundamentals and user psychology",
-      "Study UX/UI design principles and methodologies",
-      "Build practical skills with design tools and software",
-      "Create a portfolio of user experience projects",
-      "Practice user testing and iterative design"
+      "Study UX principles through free courses on YouTube and Coursera",
+      "Learn prototyping tools through tutorials (Figma, Adobe XD)",
+      "Analyze existing products and redesign their user experience",
+      "Build a UX portfolio showing your design process",
+      "Join UX communities for feedback and networking"
     ]
   },
   {
@@ -464,11 +464,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Creativity", "Communication", "Digital skills", "Storytelling", "Social media knowledge"],
     roadmap: [
-      "Develop writing, video, audio or visual skills",
-      "Learn content creation tools and platforms",
-      "Start creating your own content regularly",
-      "Build an audience on social media platforms",
-      "Learn about monetization strategies"
+      "Learn content creation skills through YouTube tutorials",
+      "Practice creating content regularly on free platforms",
+      "Study successful content creators in your niche",
+      "Build an audience by consistently publishing quality content",
+      "Develop multiple revenue streams (sponsorships, ads, merchandise)"
     ]
   },
   {
@@ -480,11 +480,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Drawing", "Creativity", "Computer animation skills", "Storytelling", "Attention to detail"],
     roadmap: [
-      "Develop strong drawing and artistic skills",
-      "Learn animation principles and techniques",
-      "Master animation software tools",
-      "Create an animation portfolio/demo reel",
-      "Study motion, timing, and character design"
+      "Learn animation principles through free online courses",
+      "Practice drawing and movement studies regularly",
+      "Master animation software through tutorials (Blender, Krita)",
+      "Create short animation projects for your portfolio",
+      "Share your work on platforms like YouTube and animation forums"
     ]
   },
   {
@@ -496,11 +496,11 @@ export const careers: Career[] = [
     isFutureReady: true,
     skills: ["Leadership", "Budget management", "Communication", "Creative vision", "Problem-solving"],
     roadmap: [
-      "Learn about filmmaking and the production process",
-      "Get experience in various film production roles",
-      "Study film production or business",
-      "Build a network in the film industry",
-      "Start with small productions and work your way up"
+      "Learn about filmmaking through free YouTube courses",
+      "Practice by producing small video projects with friends",
+      "Build a network of creative collaborators",
+      "Study film production case studies and interviews online",
+      "Produce progressively larger projects as you gain experience"
     ]
   },
   

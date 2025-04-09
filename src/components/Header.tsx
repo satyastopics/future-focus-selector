@@ -20,13 +20,20 @@ const Header = () => {
         
         <div className="mt-4 p-3 bg-career-light-purple bg-opacity-20 rounded-lg border border-career-light-purple flex items-start">
           <Lightbulb className="h-5 w-5 text-career-purple mr-2 mt-0.5 flex-shrink-0" />
-          <p className="text-sm text-gray-700">
-            Future-ready careers require a mix of <span className="font-medium">STEM knowledge</span>, 
-            <span className="font-medium"> technology skills</span>, and 
-            <span className="font-medium"> entrepreneurial thinking</span>. 
-            Select clusters that match your interests to discover careers with high income potential 
-            and the skills needed for success.
-          </p>
+          <div>
+            <p className="text-sm text-gray-700 mb-2">
+              Future-ready careers require a mix of <span className="font-medium">STEM knowledge</span>, 
+              <span className="font-medium"> technology skills</span>, and 
+              <span className="font-medium"> entrepreneurial thinking</span>. 
+              Select clusters that match your interests to discover careers with high income potential 
+              and the skills needed for success.
+            </p>
+            <p className="text-sm text-gray-700">
+              <span className="font-medium">Many high-income careers</span> can be achieved through 
+              <span className="font-medium"> self-learning</span> using free online resources, tutorials, 
+              and hands-on projects - without needing expensive degrees.
+            </p>
+          </div>
         </div>
       </div>
     </header>
