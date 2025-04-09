@@ -1,12 +1,84 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useState } from 'react';
+import { careerClusters } from '@/data/careerClusters';
+import { careers, getCareersByClusterIds } from '@/data/careers';
+import Header from '@/components/Header';
+import StepIndicator from '@/components/StepIndicator';
+import ClusterSelection from '@/components/ClusterSelection';
+import CareerSelection from '@/components/CareerSelection';
+import FinalReport from '@/components/FinalReport';
 
 const Index = () => {
+  const [step, setStep] = useState(0);
+  const [selectedClusterIds, setSelectedClusterIds] = useState<string[]>([]);
+  const [selectedCareerIds, setSelectedCareerIds] = useState<string[]>([]);
+  
+  const filteredCareers = getCareersByClusterIds(selectedClusterIds);
+  const selectedCareers = careers.filter(career => selectedCareerIds.includes(career.id));
+  
+  const handleToggleCluster = (clusterId: string) => {
+    setSelectedClusterIds(prev => 
+      prev.includes(clusterId)
+        ? prev.filter(id => id !== clusterId)
+        : [...prev, clusterId]
+    );
+  };
+  
+  const handleToggleCareer = (careerId: string) => {
+    setSelectedCareerIds(prev => 
+      prev.includes(careerId)
+        ? prev.filter(id => id !== careerId)
+        : [...prev, careerId]
+    );
+  };
+  
+  const handleReset = () => {
+    setStep(0);
+    setSelectedClusterIds([]);
+    setSelectedCareerIds([]);
+  };
+  
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      <Header />
+      
+      <main className="flex-grow py-8">
+        <StepIndicator currentStep={step} totalSteps={3} />
+        
+        {step === 0 && (
+          <ClusterSelection
+            clusters={careerClusters}
+            selectedClusters={selectedClusterIds}
+            onToggleCluster={handleToggleCluster}
+            onNext={() => setStep(1)}
+          />
+        )}
+        
+        {step === 1 && (
+          <CareerSelection
+            careers={filteredCareers}
+            selectedCareers={selectedCareerIds}
+            onToggleCareer={handleToggleCareer}
+            onBack={() => setStep(0)}
+            onNext={() => setStep(2)}
+          />
+        )}
+        
+        {step === 2 && (
+          <FinalReport
+            selectedCareers={selectedCareers}
+            clusters={careerClusters}
+            onBack={() => setStep(1)}
+            onReset={handleReset}
+          />
+        )}
+      </main>
+      
+      <footer className="bg-white py-4 border-t">
+        <div className="container mx-auto px-4 text-center text-gray-500 text-sm">
+          Career Explorer &copy; {new Date().getFullYear()} | Helping students find their path
+        </div>
+      </footer>
     </div>
   );
 };
