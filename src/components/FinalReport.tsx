@@ -1,10 +1,11 @@
-
 import React, { useRef } from 'react';
 import { Career, getCommonSkills, getTransferableSkills } from '@/data/careers';
 import { CareerCluster } from '@/data/careerClusters';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Badge } from '@/components/ui/badge';
+import { Lightbulb, Download, RotateCcw, ArrowLeft, Briefcase, TrendingUp, GraduationCap } from 'lucide-react';
 
 interface FinalReportProps {
   selectedCareers: Career[];
@@ -23,6 +24,31 @@ const FinalReport = ({
   
   const commonSkills = getCommonSkills(selectedCareers);
   const transferableSkills = getTransferableSkills(selectedCareers);
+  
+  // Group skills into categories
+  const stemSkills = ['Math', 'Science', 'Statistics', 'Physics', 'Biology', 'Chemistry', 'Research', 'Analysis', 'Laboratory techniques', 'Analytical thinking', 'Critical thinking', 'Problem-solving', 'Logical thinking'];
+  const techSkills = ['Coding', 'Programming', 'Computer-aided design', 'Digital literacy', 'Digital skills', 'Technology skills', '3D design', 'Data analysis', 'Computer design skills'];
+  const entrepreneurSkills = ['Leadership', 'Decision-making', 'Financial management', 'Risk-taking', 'Creativity', 'Communication', 'Strategic thinking', 'Business management', 'Financial understanding'];
+
+  // Filter transferable skills into categories
+  const transferableStemSkills = transferableSkills.filter(skill => 
+    stemSkills.some(stemSkill => skill.toLowerCase().includes(stemSkill.toLowerCase()))
+  );
+  
+  const transferableTechSkills = transferableSkills.filter(skill => 
+    techSkills.some(techSkill => skill.toLowerCase().includes(techSkill.toLowerCase()))
+  );
+  
+  const transferableEntrepreneurSkills = transferableSkills.filter(skill => 
+    entrepreneurSkills.some(entrepreneurSkill => skill.toLowerCase().includes(entrepreneurSkill.toLowerCase()))
+  );
+  
+  // Other transferable skills not in the above categories
+  const otherTransferableSkills = transferableSkills.filter(skill => 
+    !transferableStemSkills.includes(skill) && 
+    !transferableTechSkills.includes(skill) && 
+    !transferableEntrepreneurSkills.includes(skill)
+  );
 
   const downloadReport = () => {
     // This is a placeholder for the actual download functionality
@@ -41,30 +67,96 @@ const FinalReport = ({
       </div>
       
       <div ref={reportRef} className="bg-white rounded-lg shadow-lg p-6 mb-8">
-        <h3 className="text-xl font-bold text-career-purple mb-4">Selected Careers</h3>
-        
-        <div className="mb-6">
-          <h4 className="font-semibold mb-2">Key Skills for Your Path</h4>
-          {transferableSkills.length > 0 ? (
-            <div className="flex flex-wrap gap-2 mb-4">
-              {transferableSkills.map((skill) => (
-                <span key={skill} className="bg-career-light-purple text-career-dark-purple px-3 py-1 rounded-full text-sm">
-                  {skill}
-                </span>
-              ))}
-            </div>
-          ) : (
-            <p className="text-gray-500 italic">No common skills found across selected careers.</p>
-          )}
-          
-          {commonSkills.length > 0 && (
-            <div className="mt-2">
-              <p className="text-sm text-gray-600">
-                <span className="font-medium">Common skills across all selections:</span> {commonSkills.join(', ')}
+        <div className="mb-6 p-4 bg-career-light-purple bg-opacity-20 rounded-lg border border-career-light-purple">
+          <div className="flex items-start">
+            <Lightbulb className="h-5 w-5 text-career-purple mr-2 mt-0.5 flex-shrink-0" />
+            <div>
+              <h4 className="font-semibold mb-1">Success in Today's World Requires:</h4>
+              <p className="text-sm mb-3">
+                Future-ready careers require a mix of STEM knowledge, technology skills, and entrepreneurial thinking - regardless of your chosen field. The skills below are key to high income potential and long-term career success.
               </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+                <div className="bg-white rounded p-3 shadow-sm">
+                  <div className="flex items-center mb-2">
+                    <GraduationCap className="h-4 w-4 text-blue-600 mr-2" />
+                    <h5 className="font-medium text-blue-700">STEM Skills</h5>
+                  </div>
+                  {transferableStemSkills.length > 0 ? (
+                    <div className="flex flex-wrap gap-1">
+                      {transferableStemSkills.map((skill) => (
+                        <Badge key={skill} variant="outline" className="bg-blue-50 text-blue-700 border-blue-200 text-xs">
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-xs text-gray-500">No common STEM skills found in your selections.</p>
+                  )}
+                </div>
+                
+                <div className="bg-white rounded p-3 shadow-sm">
+                  <div className="flex items-center mb-2">
+                    <Briefcase className="h-4 w-4 text-green-600 mr-2" />
+                    <h5 className="font-medium text-green-700">Tech Skills</h5>
+                  </div>
+                  {transferableTechSkills.length > 0 ? (
+                    <div className="flex flex-wrap gap-1">
+                      {transferableTechSkills.map((skill) => (
+                        <Badge key={skill} variant="outline" className="bg-green-50 text-green-700 border-green-200 text-xs">
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-xs text-gray-500">No common tech skills found in your selections.</p>
+                  )}
+                </div>
+                
+                <div className="bg-white rounded p-3 shadow-sm">
+                  <div className="flex items-center mb-2">
+                    <TrendingUp className="h-4 w-4 text-purple-600 mr-2" />
+                    <h5 className="font-medium text-purple-700">Entrepreneurial Skills</h5>
+                  </div>
+                  {transferableEntrepreneurSkills.length > 0 ? (
+                    <div className="flex flex-wrap gap-1">
+                      {transferableEntrepreneurSkills.map((skill) => (
+                        <Badge key={skill} variant="outline" className="bg-purple-50 text-purple-700 border-purple-200 text-xs">
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-xs text-gray-500">No common entrepreneurial skills found in your selections.</p>
+                  )}
+                </div>
+              </div>
+              
+              {otherTransferableSkills.length > 0 && (
+                <div className="mt-4">
+                  <h5 className="font-medium text-sm mb-1">Other Valuable Skills</h5>
+                  <div className="flex flex-wrap gap-1">
+                    {otherTransferableSkills.map((skill) => (
+                      <Badge key={skill} variant="outline" className="bg-gray-50 text-gray-700 border-gray-200 text-xs">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              )}
+              
+              {commonSkills.length > 0 && (
+                <div className="mt-4 pt-3 border-t border-career-light-purple">
+                  <p className="text-sm text-gray-700">
+                    <span className="font-medium">Skills common across all your selected careers:</span> {commonSkills.join(', ')}
+                  </p>
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
+        
+        <h3 className="text-xl font-bold text-career-purple mb-4">Selected Careers</h3>
         
         <Accordion type="single" collapsible className="w-full">
           {selectedCareers.map((career) => {
@@ -102,11 +194,25 @@ const FinalReport = ({
                     <div className="mb-3">
                       <h5 className="font-medium mb-1">Key Skills</h5>
                       <div className="flex flex-wrap gap-1">
-                        {career.skills.map((skill) => (
-                          <span key={skill} className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
-                            {skill}
-                          </span>
-                        ))}
+                        {career.skills.map((skill) => {
+                          let badgeClasses = "text-xs px-2 py-1 rounded";
+                          
+                          if (stemSkills.some(s => skill.includes(s))) {
+                            badgeClasses += " bg-blue-100 text-blue-800";
+                          } else if (techSkills.some(s => skill.includes(s))) {
+                            badgeClasses += " bg-green-100 text-green-800";
+                          } else if (entrepreneurSkills.some(s => skill.includes(s))) {
+                            badgeClasses += " bg-purple-100 text-purple-800";
+                          } else {
+                            badgeClasses += " bg-gray-100 text-gray-800";
+                          }
+                          
+                          return (
+                            <span key={skill} className={badgeClasses}>
+                              {skill}
+                            </span>
+                          );
+                        })}
                       </div>
                     </div>
                     
@@ -130,21 +236,25 @@ const FinalReport = ({
         <Button 
           onClick={onBack}
           variant="outline"
+          className="flex items-center gap-2"
         >
+          <ArrowLeft className="h-4 w-4" />
           Back to Career Selection
         </Button>
         <div className="flex gap-3">
           <Button
             onClick={downloadReport}
-            className="bg-career-purple hover:bg-career-dark-purple"
+            className="bg-career-purple hover:bg-career-dark-purple flex items-center gap-2"
           >
+            <Download className="h-4 w-4" />
             Download Report
           </Button>
           <Button
             onClick={onReset}
             variant="ghost"
-            className="text-gray-500 hover:text-gray-700"
+            className="text-gray-500 hover:text-gray-700 flex items-center gap-2"
           >
+            <RotateCcw className="h-4 w-4" />
             Start Over
           </Button>
         </div>

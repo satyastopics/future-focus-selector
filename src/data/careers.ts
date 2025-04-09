@@ -61,6 +61,38 @@ export const careers: Career[] = [
       "Create data projects to showcase your skills"
     ]
   },
+  {
+    id: "ai-specialist",
+    title: "AI Specialist",
+    description: "Create smart computer systems that can learn and make decisions. You teach computers to recognize patterns and solve problems like humans.",
+    clusterId: "technology",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Programming", "Math", "Problem-solving", "Critical thinking", "Research"],
+    roadmap: [
+      "Build strong foundation in math and statistics",
+      "Learn programming with Python or similar languages",
+      "Study machine learning fundamentals",
+      "Take specialized AI courses",
+      "Work on AI projects to build portfolio"
+    ]
+  },
+  {
+    id: "cloud-architect",
+    title: "Cloud Architect",
+    description: "Design how computer systems work together over the internet. You help businesses store their information and run their programs online.",
+    clusterId: "technology",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["System design", "Problem-solving", "Programming", "Security awareness", "Communication"],
+    roadmap: [
+      "Learn basics of networking and operating systems",
+      "Study cloud platforms like AWS, Azure, or Google Cloud",
+      "Get cloud certifications",
+      "Gain experience with virtualization technologies",
+      "Practice building cloud solutions"
+    ]
+  },
   
   // Healthcare & Medicine
   {
@@ -109,6 +141,38 @@ export const careers: Career[] = [
       "Complete clinical training program",
       "Obtain certification in medical technology",
       "Consider specializing in a specific type of testing"
+    ]
+  },
+  {
+    id: "physiotherapist",
+    title: "Physiotherapist",
+    description: "Help people recover from injuries or surgeries through exercise and movement. You work with patients to improve their strength and mobility.",
+    clusterId: "healthcare",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Anatomy knowledge", "Patient care", "Communication", "Problem-solving", "Physical stamina"],
+    roadmap: [
+      "Study biology and physical education in school",
+      "Get a bachelor's degree in physiotherapy",
+      "Complete clinical internships",
+      "Obtain licensing as required",
+      "Consider specializing in sports, pediatrics, or geriatrics"
+    ]
+  },
+  {
+    id: "health-informatics-specialist",
+    title: "Health Informatics Specialist",
+    description: "Manage health information systems and medical records. You combine healthcare knowledge with information technology to improve patient care.",
+    clusterId: "healthcare",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Medical knowledge", "Technology skills", "Data analysis", "Attention to detail", "Communication"],
+    roadmap: [
+      "Build foundation in both health sciences and computer skills",
+      "Get a degree in health informatics or related field",
+      "Learn medical coding and record systems",
+      "Gain experience with healthcare databases",
+      "Stay updated on healthcare privacy regulations"
     ]
   },
   
@@ -161,6 +225,38 @@ export const careers: Career[] = [
       "Gain experience through internships or freelance work"
     ]
   },
+  {
+    id: "project-manager",
+    title: "Project Manager",
+    description: "Lead and organize projects from start to finish. You plan activities, manage teams, and make sure projects finish on time and within budget.",
+    clusterId: "business",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Organization", "Leadership", "Communication", "Problem-solving", "Time management"],
+    roadmap: [
+      "Develop strong organizational and people skills",
+      "Learn project management methodologies",
+      "Get certified in project management",
+      "Start managing small projects",
+      "Build experience across different types of projects"
+    ]
+  },
+  {
+    id: "business-analyst",
+    title: "Business Analyst",
+    description: "Study how businesses work and help them improve. You identify problems, suggest solutions, and help companies become more efficient.",
+    clusterId: "business",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Analytical thinking", "Problem-solving", "Communication", "Data analysis", "Business understanding"],
+    roadmap: [
+      "Build foundation in business fundamentals",
+      "Learn data analysis tools and techniques",
+      "Study business processes and improvement methodologies",
+      "Develop technical and communication skills",
+      "Gain experience analyzing real business problems"
+    ]
+  },
   
   // Engineering & Design
   {
@@ -209,6 +305,38 @@ export const careers: Career[] = [
       "Study how people interact with products",
       "Create a portfolio of design projects",
       "Practice designing solutions for real problems"
+    ]
+  },
+  {
+    id: "aerospace-engineer",
+    title: "Aerospace Engineer",
+    description: "Design aircraft, spacecraft, satellites, and missiles. You help create vehicles that fly through air and space safely.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Physics", "Math", "Computer-aided design", "Problem-solving", "Attention to detail"],
+    roadmap: [
+      "Build strong foundation in physics and mathematics",
+      "Get a degree in aerospace engineering",
+      "Learn specialized design software",
+      "Gain experience through internships or research projects",
+      "Consider specializing in aeronautics or astronautics"
+    ]
+  },
+  {
+    id: "robotics-engineer",
+    title: "Robotics Engineer",
+    description: "Design and build robots that can perform tasks automatically. You combine mechanical engineering, electronics, and programming.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Programming", "Mechanical design", "Electronics", "Problem-solving", "Critical thinking"],
+    roadmap: [
+      "Study math, physics, and computer science in school",
+      "Learn basic electronics and robotics through kits and projects",
+      "Get a degree in robotics, mechanical engineering, or related field",
+      "Build robots and automated systems for your portfolio",
+      "Stay updated on advances in artificial intelligence"
     ]
   },
   
@@ -261,8 +389,38 @@ export const careers: Career[] = [
       "Stay current with educational technology trends"
     ]
   },
-  
-  // And many more careers for the other clusters...
+  {
+    id: "education-technology-specialist",
+    title: "Education Technology Specialist",
+    description: "Use technology to improve how students learn. You help schools choose and use computer programs, apps, and devices in the classroom.",
+    clusterId: "education",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Technology skills", "Teaching", "Communication", "Problem-solving", "Creativity"],
+    roadmap: [
+      "Build foundation in both education and technology",
+      "Get a degree in educational technology or related field",
+      "Learn about various educational software and tools",
+      "Gain classroom experience",
+      "Stay updated on emerging educational technologies"
+    ]
+  },
+  {
+    id: "special-education-teacher",
+    title: "Special Education Teacher",
+    description: "Teach students with special needs or disabilities. You create personalized learning plans and help these students develop important skills.",
+    clusterId: "education",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Patience", "Empathy", "Adaptability", "Communication", "Problem-solving"],
+    roadmap: [
+      "Develop understanding of different learning needs",
+      "Get a degree in special education",
+      "Complete specialized training for various disabilities",
+      "Obtain special education teaching certification",
+      "Gain experience working with diverse learning needs"
+    ]
+  },
   
   // Arts & Media
   {
@@ -279,6 +437,70 @@ export const careers: Career[] = [
       "Build a portfolio of design projects",
       "Get formal education in graphic design",
       "Gain experience through freelance work or internships"
+    ]
+  },
+  {
+    id: "ux-designer",
+    title: "UX Designer",
+    description: "Design how websites and apps look and work for users. You make digital products easy and enjoyable to use.",
+    clusterId: "artsMedia",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["User research", "Design thinking", "Prototyping", "Communication", "Problem-solving"],
+    roadmap: [
+      "Learn design fundamentals and user psychology",
+      "Study UX/UI design principles and methodologies",
+      "Build practical skills with design tools and software",
+      "Create a portfolio of user experience projects",
+      "Practice user testing and iterative design"
+    ]
+  },
+  {
+    id: "digital-content-creator",
+    title: "Digital Content Creator",
+    description: "Make videos, podcasts, blogs, or social media content. You tell stories and share information in creative ways online.",
+    clusterId: "artsMedia",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Creativity", "Communication", "Digital skills", "Storytelling", "Social media knowledge"],
+    roadmap: [
+      "Develop writing, video, audio or visual skills",
+      "Learn content creation tools and platforms",
+      "Start creating your own content regularly",
+      "Build an audience on social media platforms",
+      "Learn about monetization strategies"
+    ]
+  },
+  {
+    id: "animation-artist",
+    title: "Animation Artist",
+    description: "Create moving pictures for movies, games, or websites. You bring drawings and characters to life through movement.",
+    clusterId: "artsMedia",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Drawing", "Creativity", "Computer animation skills", "Storytelling", "Attention to detail"],
+    roadmap: [
+      "Develop strong drawing and artistic skills",
+      "Learn animation principles and techniques",
+      "Master animation software tools",
+      "Create an animation portfolio/demo reel",
+      "Study motion, timing, and character design"
+    ]
+  },
+  {
+    id: "film-producer",
+    title: "Film Producer",
+    description: "Oversee the making of movies, TV shows, or videos. You manage budgets, hire staff, and make sure everything runs smoothly.",
+    clusterId: "artsMedia",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Leadership", "Budget management", "Communication", "Creative vision", "Problem-solving"],
+    roadmap: [
+      "Learn about filmmaking and the production process",
+      "Get experience in various film production roles",
+      "Study film production or business",
+      "Build a network in the film industry",
+      "Start with small productions and work your way up"
     ]
   },
   
@@ -299,6 +521,70 @@ export const careers: Career[] = [
       "Stay current with environmental regulations and technologies"
     ]
   },
+  {
+    id: "research-scientist",
+    title: "Research Scientist",
+    description: "Conduct experiments to discover new things about the world. You work in labs and use scientific methods to find answers.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Analytical thinking", "Research methods", "Data analysis", "Critical thinking", "Attention to detail"],
+    roadmap: [
+      "Develop strong foundation in science subjects",
+      "Get a bachelor's degree in your field of interest",
+      "Pursue a master's or PhD for specialized research",
+      "Gain laboratory and research experience",
+      "Learn to write research papers and grant proposals"
+    ]
+  },
+  {
+    id: "marine-biologist",
+    title: "Marine Biologist",
+    description: "Study plants and animals that live in the ocean. You might work on boats, in labs, or underwater to learn about sea life.",
+    clusterId: "scienceResearch",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Biology knowledge", "Research skills", "Swimming", "Observation", "Data collection"],
+    roadmap: [
+      "Build strong foundation in biology and other sciences",
+      "Get a degree in marine biology or related field",
+      "Learn diving and water safety skills",
+      "Gain field experience through research projects",
+      "Participate in marine conservation efforts"
+    ]
+  },
+  {
+    id: "astrophysicist",
+    title: "Astrophysicist",
+    description: "Study stars, planets, and space. You use math and physics to understand how the universe works.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Physics", "Math", "Data analysis", "Critical thinking", "Computer modeling"],
+    roadmap: [
+      "Excel in physics and advanced mathematics",
+      "Get a bachelor's degree in physics or astronomy",
+      "Pursue a PhD in astrophysics",
+      "Learn programming and data analysis",
+      "Participate in research projects and observations"
+    ]
+  },
+  {
+    id: "genetics-researcher",
+    title: "Genetics Researcher",
+    description: "Study genes to understand how traits are passed down and how they affect health. You might work on curing genetic diseases.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Biology knowledge", "Laboratory techniques", "Data analysis", "Critical thinking", "Attention to detail"],
+    roadmap: [
+      "Build strong foundation in biology and chemistry",
+      "Get a bachelor's degree in genetics or related field",
+      "Pursue advanced degrees for research positions",
+      "Learn specialized genetic analysis techniques",
+      "Stay updated on advancements in genetic technology"
+    ]
+  },
   
   // Agriculture & Food
   {
@@ -315,6 +601,38 @@ export const careers: Career[] = [
       "Study agricultural business and management",
       "Stay updated on new farming technologies",
       "Build connections with suppliers and buyers"
+    ]
+  },
+  {
+    id: "food-scientist",
+    title: "Food Scientist",
+    description: "Study the science of food to create new products, improve taste, and ensure safety. You might develop new foods or test quality.",
+    clusterId: "agriculture",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Chemistry", "Biology", "Laboratory techniques", "Attention to detail", "Creative thinking"],
+    roadmap: [
+      "Build strong foundation in chemistry and biology",
+      "Get a degree in food science or related field",
+      "Learn about food safety regulations",
+      "Gain laboratory experience with food testing",
+      "Develop knowledge of food processing techniques"
+    ]
+  },
+  {
+    id: "agricultural-engineer",
+    title: "Agricultural Engineer",
+    description: "Design farm equipment and systems to improve agriculture. You help farmers produce more food with less waste and effort.",
+    clusterId: "agriculture",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Engineering knowledge", "Problem-solving", "Design skills", "Understanding of agriculture", "Technical skills"],
+    roadmap: [
+      "Build foundation in math, physics, and biology",
+      "Get a degree in agricultural engineering",
+      "Learn about farming practices and challenges",
+      "Gain experience with agricultural machinery",
+      "Stay updated on sustainable farming technologies"
     ]
   },
   
@@ -335,8 +653,38 @@ export const careers: Career[] = [
       "Pass the bar exam to practice law"
     ]
   },
-  
-  // Add more careers for the remaining clusters...
+  {
+    id: "police-officer",
+    title: "Police Officer",
+    description: "Keep people safe, enforce laws, and respond to emergencies. You patrol areas, investigate crimes, and help people in trouble.",
+    clusterId: "lawPublicSafety",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Physical fitness", "Communication", "Critical thinking", "Decision-making", "Courage"],
+    roadmap: [
+      "Develop strong character and physical fitness",
+      "Study criminal justice or related subjects",
+      "Meet age and citizenship requirements",
+      "Complete police academy training",
+      "Pass physical and written exams"
+    ]
+  },
+  {
+    id: "forensic-scientist",
+    title: "Forensic Scientist",
+    description: "Use science to solve crimes. You collect and analyze evidence like fingerprints or DNA to help police catch criminals.",
+    clusterId: "lawPublicSafety",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Attention to detail", "Laboratory techniques", "Critical thinking", "Scientific knowledge", "Communication"],
+    roadmap: [
+      "Build strong foundation in biology, chemistry, and physics",
+      "Get a degree in forensic science or related field",
+      "Learn specialized forensic techniques",
+      "Gain laboratory experience",
+      "Develop understanding of criminal justice system"
+    ]
+  },
   
   // Finance & Banking
   {
@@ -353,6 +701,38 @@ export const careers: Career[] = [
       "Learn financial analysis tools and software",
       "Gain experience through internships",
       "Consider professional certifications like CFA"
+    ]
+  },
+  {
+    id: "accountant",
+    title: "Accountant",
+    description: "Keep track of money for businesses or people. You record financial transactions, prepare tax returns, and ensure financial accuracy.",
+    clusterId: "finance",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Math", "Attention to detail", "Organization", "Financial knowledge", "Problem-solving"],
+    roadmap: [
+      "Develop strong math and analytical skills",
+      "Get a degree in accounting or finance",
+      "Learn accounting software and systems",
+      "Gain experience through internships",
+      "Obtain CPA certification for advancement"
+    ]
+  },
+  {
+    id: "investment-banker",
+    title: "Investment Banker",
+    description: "Help companies and governments raise money and make financial deals. You provide advice on mergers, acquisitions, and investments.",
+    clusterId: "finance",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Financial analysis", "Communication", "Negotiation", "Math", "Critical thinking"],
+    roadmap: [
+      "Build strong foundation in math and economics",
+      "Get a degree in finance, economics, or business",
+      "Gain financial industry experience through internships",
+      "Consider an MBA for advancement",
+      "Develop strong network in the financial industry"
     ]
   },
   
@@ -373,6 +753,38 @@ export const careers: Career[] = [
       "Obtain counseling license"
     ]
   },
+  {
+    id: "social-worker",
+    title: "Social Worker",
+    description: "Help people overcome challenges in their lives. You connect them with resources and support services to improve their situations.",
+    clusterId: "humanServices",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Empathy", "Communication", "Problem-solving", "Resilience", "Organization"],
+    roadmap: [
+      "Develop compassion and strong communication skills",
+      "Get a bachelor's degree in social work or related field",
+      "Complete master's degree for clinical work",
+      "Fulfill supervised fieldwork requirements",
+      "Obtain social work license"
+    ]
+  },
+  {
+    id: "mental-health-therapist",
+    title: "Mental Health Therapist",
+    description: "Help people with mental health conditions like anxiety or depression. You provide therapy to improve their emotional wellbeing.",
+    clusterId: "humanServices",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Empathy", "Active listening", "Communication", "Emotional intelligence", "Critical thinking"],
+    roadmap: [
+      "Build foundation in psychology and human behavior",
+      "Get a bachelor's degree in psychology or related field",
+      "Complete master's or doctoral degree in therapy",
+      "Fulfill supervised clinical hours",
+      "Obtain therapy license"
+    ]
+  },
   
   // Government & Public Administration
   {
@@ -389,6 +801,38 @@ export const careers: Career[] = [
       "Gain experience through government internships",
       "Develop project management and leadership skills",
       "Build network of government contacts"
+    ]
+  },
+  {
+    id: "urban-planner",
+    title: "Urban Planner",
+    description: "Design cities and communities. You decide where buildings, parks, and roads should go to make places better for people to live.",
+    clusterId: "governmentPublicAdmin",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Spatial thinking", "Design", "Communication", "Problem-solving", "Understanding regulations"],
+    roadmap: [
+      "Develop interest in both design and public policy",
+      "Get a degree in urban planning or related field",
+      "Learn about zoning laws and building codes",
+      "Gain experience through planning internships",
+      "Obtain professional certification"
+    ]
+  },
+  {
+    id: "policy-analyst",
+    title: "Policy Analyst",
+    description: "Study social problems and help create government rules to solve them. You research issues and recommend policies.",
+    clusterId: "governmentPublicAdmin",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Research", "Analysis", "Writing", "Critical thinking", "Communication"],
+    roadmap: [
+      "Build foundation in social sciences and research",
+      "Get a degree in public policy, economics, or related field",
+      "Develop strong research and writing skills",
+      "Gain experience through policy-focused internships",
+      "Stay informed about current social and political issues"
     ]
   }
 ];
