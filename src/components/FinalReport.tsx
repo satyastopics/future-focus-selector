@@ -6,7 +6,11 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
-import { Lightbulb, Download, RotateCcw, ArrowLeft, Briefcase, TrendingUp, GraduationCap } from 'lucide-react';
+import { 
+  Lightbulb, Download, RotateCcw, ArrowLeft, Briefcase, 
+  TrendingUp, GraduationCap, ChevronDown, BookOpen, Youtube, 
+  Link, FileText, Computer, Star, CircleArrowRight
+} from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 
 interface FinalReportProps {
@@ -69,6 +73,13 @@ ${career.description}
 
 **Career Roadmap:**
 ${career.roadmap.map((step, i) => `${i+1}. ${step}`).join('\n')}
+
+**Self-Learning Resources:**
+- Online Courses: Platforms like Coursera, edX, Khan Academy, and YouTube offer free courses on almost any subject
+- Practice Projects: Build a portfolio by creating real-world projects that demonstrate your skills
+- Communities: Join online communities (Reddit, Discord, specialized forums) related to your field
+- Free Tools: Use open-source software and free tiers of professional tools to practice
+- AI Assistance: Use AI tools like ChatGPT to help explain concepts, debug problems, or generate learning plans
 `).join('\n')}
 
 ## Transferable Skills Analysis
@@ -88,6 +99,14 @@ ${commonSkills.length ? `## Skills Common Across All Selected Careers\n${commonS
 
 ## Success in Today's World
 Future-ready careers require a mix of STEM knowledge, technology skills, and entrepreneurial thinking - regardless of your chosen field. The skills above are key to high income potential and long-term career success.
+
+## Self-Learning Tips
+1. Create a structured learning plan with clear goals
+2. Break down big topics into smaller, manageable chunks
+3. Balance theory with hands-on practice
+4. Join communities to learn from others and stay motivated
+5. Document your learning journey and build a portfolio
+6. Use AI tools to accelerate your learning and solve problems
 `;
 
     // Convert to a Blob
@@ -109,6 +128,23 @@ Future-ready careers require a mix of STEM knowledge, technology skills, and ent
     });
   };
   
+  // Helper function to render resource icon
+  const renderResourceIcon = (resourceType: string) => {
+    switch (resourceType.toLowerCase()) {
+      case 'youtube':
+        return <Youtube className="h-3 w-3 text-red-500" />;
+      case 'article':
+        return <FileText className="h-3 w-3 text-blue-500" />;
+      case 'course':
+        return <BookOpen className="h-3 w-3 text-green-500" />;
+      case 'tool':
+        return <Computer className="h-3 w-3 text-purple-500" />;
+      case 'website':
+      default:
+        return <Link className="h-3 w-3 text-gray-500" />;
+    }
+  };
+  
   return (
     <div className="container mx-auto px-4 py-6 animate-fade-in">
       <div className="mb-8 text-center">
@@ -116,6 +152,12 @@ Future-ready careers require a mix of STEM knowledge, technology skills, and ent
         <p className="text-gray-600 max-w-2xl mx-auto">
           Based on your selections, here's a personalized report to help guide your career journey.
         </p>
+        <div className="mt-2 bg-amber-50 border border-amber-200 rounded-md p-3 max-w-2xl mx-auto">
+          <div className="flex items-center text-amber-700">
+            <Star className="h-4 w-4 mr-2 flex-shrink-0" />
+            <p className="text-sm font-medium">Click on each career below to see detailed roadmaps and skills</p>
+          </div>
+        </div>
       </div>
       
       <div ref={reportRef} className="bg-white rounded-lg shadow-lg p-6 mb-8">
@@ -208,7 +250,12 @@ Future-ready careers require a mix of STEM knowledge, technology skills, and ent
           </div>
         </div>
         
-        <h3 className="text-xl font-bold text-career-purple mb-4">Selected Careers</h3>
+        <h3 className="text-xl font-bold text-career-purple mb-4 flex items-center">
+          Selected Careers
+          <span className="ml-2 bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full flex items-center">
+            <ChevronDown className="h-3 w-3 mr-1" /> Click to expand
+          </span>
+        </h3>
         
         <Accordion type="single" collapsible className="w-full">
           {selectedCareers.map((career) => {
@@ -216,10 +263,10 @@ Future-ready careers require a mix of STEM knowledge, technology skills, and ent
             
             return (
               <AccordionItem key={career.id} value={career.id}>
-                <AccordionTrigger className="text-left">
-                  <div>
+                <AccordionTrigger className="text-left hover:bg-gray-50 px-3 py-3 rounded-md transition-colors">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full pr-6">
                     <span className="font-semibold">{career.title}</span>
-                    <div className="flex gap-2 mt-1">
+                    <div className="flex gap-2 mt-1 sm:mt-0">
                       {career.isHighIncome && (
                         <span className="bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded">
                           High Income
@@ -234,7 +281,7 @@ Future-ready careers require a mix of STEM knowledge, technology skills, and ent
                   </div>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <div className="pl-4 border-l-2 border-career-light-purple">
+                  <div className="pl-4 border-l-2 border-career-light-purple pt-2">
                     <p className="text-gray-600 mb-3">{career.description}</p>
                     
                     {careerCluster && (
@@ -268,13 +315,103 @@ Future-ready careers require a mix of STEM knowledge, technology skills, and ent
                       </div>
                     </div>
                     
-                    <div>
-                      <h5 className="font-medium mb-1">Career Roadmap</h5>
-                      <ol className="list-decimal pl-5 space-y-1 text-sm">
-                        {career.roadmap.map((step, index) => (
-                          <li key={index}>{step}</li>
-                        ))}
-                      </ol>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                      <div className="bg-white rounded-md border border-gray-200 p-4">
+                        <h5 className="font-medium mb-3 text-career-purple flex items-center">
+                          <GraduationCap className="h-4 w-4 mr-2" />
+                          Traditional Career Path
+                        </h5>
+                        <ol className="list-none space-y-2 text-sm">
+                          {career.roadmap.map((step, index) => (
+                            <li key={index} className="flex">
+                              <span className="bg-career-light-purple text-career-purple rounded-full h-5 w-5 flex items-center justify-center text-xs mr-2 flex-shrink-0 mt-0.5">
+                                {index + 1}
+                              </span>
+                              <span>{step}</span>
+                            </li>
+                          ))}
+                        </ol>
+                      </div>
+                      
+                      <div className="bg-white rounded-md border border-green-200 p-4">
+                        <h5 className="font-medium mb-2 text-green-700 flex items-center">
+                          <TrendingUp className="h-4 w-4 mr-2" />
+                          Self-Learning Path
+                        </h5>
+                        
+                        <div className="space-y-3 text-sm">
+                          <div>
+                            <p className="font-medium text-xs mb-1.5 text-gray-700">Free Learning Resources:</p>
+                            <ul className="space-y-1.5">
+                              <li className="flex items-start">
+                                <span className="mr-2 mt-0.5">{renderResourceIcon('youtube')}</span>
+                                <span>YouTube tutorials for visual learning of core concepts</span>
+                              </li>
+                              <li className="flex items-start">
+                                <span className="mr-2 mt-0.5">{renderResourceIcon('course')}</span>
+                                <span>Free courses on platforms like Coursera, edX, and Khan Academy</span>
+                              </li>
+                              <li className="flex items-start">
+                                <span className="mr-2 mt-0.5">{renderResourceIcon('article')}</span>
+                                <span>Blogs and articles from industry professionals</span>
+                              </li>
+                              <li className="flex items-start">
+                                <span className="mr-2 mt-0.5">{renderResourceIcon('tool')}</span>
+                                <span>Practice with free tools and open-source software</span>
+                              </li>
+                            </ul>
+                          </div>
+                          
+                          <div>
+                            <p className="font-medium text-xs mb-1.5 text-gray-700">Building Experience:</p>
+                            <ul className="space-y-1.5">
+                              <li className="flex items-start">
+                                <CircleArrowRight className="h-3 w-3 text-green-600 mr-2 mt-0.5" />
+                                <span>Create a portfolio showcasing your projects and skills</span>
+                              </li>
+                              <li className="flex items-start">
+                                <CircleArrowRight className="h-3 w-3 text-green-600 mr-2 mt-0.5" />
+                                <span>Contribute to relevant communities and forums</span>
+                              </li>
+                              <li className="flex items-start">
+                                <CircleArrowRight className="h-3 w-3 text-green-600 mr-2 mt-0.5" />
+                                <span>Use AI tools to accelerate learning and problem-solving</span>
+                              </li>
+                              <li className="flex items-start">
+                                <CircleArrowRight className="h-3 w-3 text-green-600 mr-2 mt-0.5" />
+                                <span>Volunteer or freelance to gain real-world experience</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-50 p-3 rounded-md border border-blue-200 mb-2">
+                      <h5 className="font-medium text-blue-700 text-sm mb-1.5 flex items-center">
+                        <Star className="h-3.5 w-3.5 text-yellow-500 mr-1.5" />
+                        Success Tips for {career.title}
+                      </h5>
+                      <ul className="text-sm space-y-1 text-gray-700">
+                        <li className="flex items-start">
+                          <span className="mr-1.5 text-blue-500">•</span>
+                          <span>Focus on building a portfolio that demonstrates practical skills</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="mr-1.5 text-blue-500">•</span>
+                          <span>Learn continuously to stay updated with industry trends</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="mr-1.5 text-blue-500">•</span>
+                          <span>Network with professionals in the field through online communities</span>
+                        </li>
+                        {career.isHighIncome && (
+                          <li className="flex items-start">
+                            <span className="mr-1.5 text-blue-500">•</span>
+                            <span>Develop entrepreneurial skills alongside technical expertise</span>
+                          </li>
+                        )}
+                      </ul>
                     </div>
                   </div>
                 </AccordionContent>

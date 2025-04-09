@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GraduationCap, Lightbulb } from 'lucide-react';
+import { GraduationCap, Lightbulb, BookOpen } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -28,11 +28,19 @@ const Header = () => {
               Select clusters that match your interests to discover careers with high income potential 
               and the skills needed for success.
             </p>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-700 mb-2">
               <span className="font-medium">Many high-income careers</span> can be achieved through 
               <span className="font-medium"> self-learning</span> using free online resources, tutorials, 
               and hands-on projects - without needing expensive degrees.
             </p>
+            <div className="flex items-center mt-3 bg-white p-2 rounded-md border border-gray-200">
+              <BookOpen className="h-4 w-4 text-career-purple mr-2" />
+              <p className="text-xs text-gray-600">
+                <span className="font-semibold">How to use:</span> First, select career clusters that interest you. 
+                Then choose specific careers from those clusters. Finally, review your personalized report and 
+                <span className="font-semibold"> click on each career</span> to see detailed roadmaps and skills.
+              </p>
+            </div>
           </div>
         </div>
       </div>

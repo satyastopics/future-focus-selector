@@ -7,11 +7,13 @@ import StepIndicator from '@/components/StepIndicator';
 import ClusterSelection from '@/components/ClusterSelection';
 import CareerSelection from '@/components/CareerSelection';
 import FinalReport from '@/components/FinalReport';
+import { useToast } from '@/components/ui/use-toast';
 
 const Index = () => {
   const [step, setStep] = useState(0);
   const [selectedClusterIds, setSelectedClusterIds] = useState<string[]>([]);
   const [selectedCareerIds, setSelectedCareerIds] = useState<string[]>([]);
+  const { toast } = useToast();
   
   const filteredCareers = getCareersByClusterIds(selectedClusterIds);
   const selectedCareers = careers.filter(career => selectedCareerIds.includes(career.id));
@@ -36,6 +38,32 @@ const Index = () => {
     setStep(0);
     setSelectedClusterIds([]);
     setSelectedCareerIds([]);
+    toast({
+      title: "Reset Complete",
+      description: "You can now start a fresh career exploration.",
+    });
+  };
+  
+  const handleNext = () => {
+    if (step === 0 && selectedClusterIds.length === 0) {
+      toast({
+        title: "Please select at least one cluster",
+        description: "You need to select at least one career cluster to continue.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
+    if (step === 1 && selectedCareerIds.length === 0) {
+      toast({
+        title: "Please select at least one career",
+        description: "You need to select at least one career to continue.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
+    setStep(prev => prev + 1);
   };
   
   return (
@@ -50,7 +78,7 @@ const Index = () => {
             clusters={careerClusters}
             selectedClusters={selectedClusterIds}
             onToggleCluster={handleToggleCluster}
-            onNext={() => setStep(1)}
+            onNext={handleNext}
           />
         )}
         
@@ -60,7 +88,7 @@ const Index = () => {
             selectedCareers={selectedCareerIds}
             onToggleCareer={handleToggleCareer}
             onBack={() => setStep(0)}
-            onNext={() => setStep(2)}
+            onNext={handleNext}
           />
         )}
         
