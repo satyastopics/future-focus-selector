@@ -26,42 +26,33 @@ const Header = () => {
           </div>
           
           <div className="mt-4 md:mt-0 flex flex-wrap items-center gap-3">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link to="/">
-                    <Button variant="outline" size={isMobile ? "sm" : "default"} className="flex items-center gap-1">
-                      <BookOpen className="h-4 w-4" />
-                      <span>Explorer</span>
-                    </Button>
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Select careers based on your interests</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+            <Link to="/">
+              <Button 
+                variant="outline" 
+                size={isMobile ? "sm" : "default"} 
+                className="flex items-center gap-1 transition-all duration-200 hover:bg-gray-100"
+              >
+                <BookOpen className="h-4 w-4" />
+                <span>Career Explorer</span>
+              </Button>
+            </Link>
             
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link to="/library">
-                    <Button 
-                      variant="default" 
-                      size={isMobile ? "sm" : "default"}
-                      className="flex items-center gap-1 bg-career-purple hover:bg-career-dark-purple relative overflow-hidden group"
-                    >
-                      <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                      <Library className="h-4 w-4" />
-                      <span>Career Library</span>
-                    </Button>
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Browse all careers by category</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+            <Link to="/library">
+              <Button 
+                variant="default" 
+                size={isMobile ? "sm" : "default"}
+                className="flex items-center gap-1 bg-career-purple hover:bg-career-dark-purple relative overflow-hidden group transition-all duration-300"
+              >
+                <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <Library className="h-4 w-4" />
+                <span>Browse All Careers</span>
+                {isMobile ? null : (
+                  <span className="ml-1 animate-pulse bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded">
+                    New
+                  </span>
+                )}
+              </Button>
+            </Link>
           </div>
         </div>
         
@@ -69,29 +60,30 @@ const Header = () => {
           <Lightbulb className="h-5 w-5 text-career-purple mr-2 mt-0.5 flex-shrink-0" />
           <div>
             <p className="text-sm text-gray-700 mb-2">
-              Future-ready careers require a mix of <span className="font-medium">STEM knowledge</span>, 
-              <span className="font-medium"> technology skills</span>, and 
-              <span className="font-medium"> entrepreneurial thinking</span>. 
-              Select clusters that match your interests to discover careers with high income potential 
-              and the skills needed for success.
+              Find your ideal career path with our explorer tool. All careers in our database are 
+              <span className="font-medium"> high-income and future-ready</span> with detailed growth paths.
             </p>
-            <p className="text-sm text-gray-700 mb-2">
-              <span className="font-medium">Many high-income careers</span> can be achieved through 
-              <span className="font-medium"> self-learning</span> using free online resources, tutorials, 
-              and hands-on projects - without needing expensive degrees.
-            </p>
-            <div className="flex items-center mt-3 bg-white p-2 rounded-md border border-gray-200">
-              <Info className="h-4 w-4 text-career-purple mr-2 flex-shrink-0" />
-              <div>
-                <p className="text-xs text-gray-600">
-                  <span className="font-semibold">How to use:</span> First, select career clusters that interest you. 
-                  Then choose specific careers from those clusters. Finally, review your personalized report and 
-                  <span className="font-semibold"> click on each career</span> to see detailed roadmaps and skills.
-                </p>
-                <p className="text-xs text-gray-600 mt-1">
-                  <span className="font-semibold">Alternative approach:</span> Use the <span className="font-semibold">Career Library</span> to 
-                  browse all careers by category. Click on any career to see detailed information.
-                </p>
+            
+            <div className="bg-white p-3 rounded-md border border-gray-200 mt-2">
+              <h3 className="font-medium text-career-purple text-sm mb-2 flex items-center">
+                <Info className="h-4 w-4 mr-1.5" />
+                Two Ways to Explore:
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="flex items-start">
+                  <span className="bg-career-purple text-white rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2 flex-shrink-0 mt-0.5">1</span>
+                  <div>
+                    <p className="text-xs font-medium text-gray-800">Career Explorer (current page)</p>
+                    <p className="text-xs text-gray-600">Select clusters and careers for a personalized report</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-career-purple text-white rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2 flex-shrink-0 mt-0.5">2</span>
+                  <div>
+                    <p className="text-xs font-medium text-gray-800">Career Library</p>
+                    <p className="text-xs text-gray-600">Browse all careers directly by category</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

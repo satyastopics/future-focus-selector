@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { careerClusters } from '@/data/careerClusters';
 import { careers } from '@/data/careers';
 import Header from '@/components/Header';
-import { ChevronDown, ChevronUp, ArrowLeft, Search, Info } from 'lucide-react';
+import { ChevronDown, ChevronUp, ArrowLeft, Search, Info, BookOpen, Briefcase } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Input } from '@/components/ui/input';
@@ -75,7 +75,7 @@ const Library = () => {
               <Button
                 variant="outline"
                 size={isMobile ? "sm" : "default"}
-                className="flex items-center gap-1"
+                className="flex items-center gap-1 transition-all duration-200 hover:bg-gray-100"
               >
                 <ArrowLeft className="h-4 w-4" />
                 <span className={isMobile ? "hidden" : "inline"}>Back to Explorer</span>
@@ -86,7 +86,7 @@ const Library = () => {
         </div>
         
         <div className="bg-white rounded-lg shadow-md p-4 mb-6">
-          <div className="flex flex-col md:flex-row gap-4 items-center">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="w-full md:w-1/2 relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
               <Input 
@@ -96,10 +96,12 @@ const Library = () => {
                 className="pl-10"
               />
             </div>
-            <div className="w-full md:w-1/2 flex items-center gap-2">
-              <p className="text-sm text-gray-600 whitespace-nowrap">Quick tip:</p>
-              <div className="bg-career-light-purple bg-opacity-20 text-career-purple text-xs font-medium px-2 py-1 rounded-full animate-pulse">
-                Click any career to see details
+            <div className="w-full md:w-1/2 flex items-center">
+              <div className="w-full bg-amber-50 p-3 rounded-md border border-amber-200">
+                <div className="flex items-center text-amber-700 text-sm">
+                  <Info className="h-4 w-4 mr-2 flex-shrink-0" />
+                  <p>Click on any career to see detailed roadmaps and learning paths</p>
+                </div>
               </div>
             </div>
           </div>
@@ -112,31 +114,19 @@ const Library = () => {
               return (
                 <div 
                   key={cluster.id}
-                  className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow cursor-pointer border border-transparent hover:border-career-light-purple"
+                  className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-all duration-300 cursor-pointer border border-transparent hover:border-career-light-purple"
                   onClick={() => handleClusterSelect(cluster.id)}
                 >
                   <div className="flex items-center mb-2">
                     <span className="text-4xl mr-3">{cluster.icon}</span>
                     <h2 className="text-xl font-semibold text-career-purple">{cluster.title}</h2>
                   </div>
-                  <p className="text-gray-600 text-sm">{cluster.description}</p>
-                  <div className="mt-3 flex flex-wrap gap-1">
-                    {careersInCluster.length > 0 ? (
-                      <>
-                        <Badge variant="outline" className="bg-career-light-purple bg-opacity-10">
-                          {careersInCluster.length} careers
-                        </Badge>
-                        {careersInCluster.filter(c => c.isHighIncome).length > 0 && (
-                          <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
-                            {careersInCluster.filter(c => c.isHighIncome).length} high income
-                          </Badge>
-                        )}
-                      </>
-                    ) : (
-                      <Badge variant="outline" className="bg-gray-100">
-                        No careers yet
-                      </Badge>
-                    )}
+                  <p className="text-gray-600 text-sm mb-3">{cluster.description}</p>
+                  <div className="mt-3 flex items-center">
+                    <Briefcase className="h-4 w-4 text-career-purple mr-2" />
+                    <span className="text-sm font-medium text-career-purple">
+                      {careersInCluster.length} career{careersInCluster.length !== 1 && 's'}
+                    </span>
                   </div>
                 </div>
               );
@@ -202,36 +192,6 @@ const Library = () => {
                       <div className="flex-1">
                         <div className="flex flex-col md:flex-row md:items-center gap-2">
                           <h3 className="font-semibold text-lg">{career.title}</h3>
-                          <div className="flex items-center space-x-2">
-                            {career.isHighIncome && (
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">
-                                      High Income
-                                    </span>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>This career typically offers above-average income potential</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            )}
-                            {career.isFutureReady && (
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
-                                      Future Ready
-                                    </span>
-                                  </TooltipTrigger>
-                                  <TooltipContent>
-                                    <p>This career has strong growth potential in the future job market</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            )}
-                          </div>
                         </div>
                         {expandedCareerId !== career.id && (
                           <p className="text-gray-600 text-sm mt-1 line-clamp-2">{career.description}</p>
@@ -274,7 +234,7 @@ const Library = () => {
                           <div className="flex items-center gap-2 mb-2">
                             <h4 className="font-medium text-career-purple">Learning Roadmap:</h4>
                             <Badge variant="outline" className="bg-yellow-50 text-yellow-700 border-yellow-200">
-                              Self-Learning Focus
+                              Growth Path
                             </Badge>
                           </div>
                           <div className="space-y-3 pl-0 md:pl-4">
@@ -286,6 +246,33 @@ const Library = () => {
                                 <p className="text-gray-700">{step}</p>
                               </div>
                             ))}
+                          </div>
+                        </div>
+                        
+                        <div className="mt-4 pt-4 border-t border-gray-100">
+                          <div className="flex items-center mb-2">
+                            <BookOpen className="h-4 w-4 text-green-600 mr-2" />
+                            <h4 className="font-medium text-green-700">Self-Learning Path</h4>
+                          </div>
+                          <div className="bg-green-50 p-3 rounded-md border border-green-100">
+                            <ul className="space-y-2 text-sm text-gray-700">
+                              <li className="flex items-start">
+                                <span className="mr-2 text-green-500">•</span>
+                                <span>Free online courses on platforms like Coursera, edX, and Khan Academy</span>
+                              </li>
+                              <li className="flex items-start">
+                                <span className="mr-2 text-green-500">•</span>
+                                <span>YouTube tutorials for visual learning of core concepts</span>
+                              </li>
+                              <li className="flex items-start">
+                                <span className="mr-2 text-green-500">•</span>
+                                <span>Build a portfolio showcasing your projects and skills</span>
+                              </li>
+                              <li className="flex items-start">
+                                <span className="mr-2 text-green-500">•</span>
+                                <span>Join online communities to network with professionals</span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
