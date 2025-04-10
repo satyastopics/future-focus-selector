@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 interface StepIndicatorProps {
   currentStep: number;
@@ -7,39 +8,80 @@ interface StepIndicatorProps {
 }
 
 const StepIndicator = ({ currentStep, totalSteps }: StepIndicatorProps) => {
+  const isMobile = useIsMobile();
+  
+  const steps = [
+    { name: "Choose Clusters", description: "Select career clusters that interest you" },
+    { name: "Select Careers", description: "Choose specific careers from your clusters" },
+    { name: "View Report", description: "See your personalized career report" }
+  ];
+  
   return (
-    <div className="w-full max-w-md mx-auto my-6">
-      <div className="flex items-center justify-between">
-        {Array.from({ length: totalSteps }).map((_, index) => (
-          <React.Fragment key={index}>
-            <div className="flex flex-col items-center">
+    <div className="container mx-auto px-4 mb-8">
+      <div className="relative">
+        <div className="hidden md:flex items-center justify-between">
+          {steps.map((step, index) => (
+            <div key={index} className="relative z-10 flex flex-col items-center">
               <div 
-                className={`w-8 h-8 rounded-full flex items-center justify-center 
-                          ${index < currentStep 
-                            ? 'bg-career-purple text-white' 
-                            : index === currentStep 
-                              ? 'bg-career-purple text-white border-2 border-white ring-2 ring-career-purple' 
-                              : 'bg-gray-200 text-gray-500'}`}
+                className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                  currentStep >= index 
+                    ? 'bg-career-purple text-white' 
+                    : 'bg-gray-200 text-gray-500'
+                }`}
               >
-                {index < currentStep ? (
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                ) : (
-                  <span className="text-sm font-medium">{index + 1}</span>
-                )}
+                {index + 1}
               </div>
-              <span className={`text-xs mt-1 ${index === currentStep ? 'font-medium text-career-purple' : 'text-gray-500'}`}>
-                {index === 0 ? 'Clusters' : index === 1 ? 'Careers' : 'Report'}
-              </span>
+              <div className="mt-2 text-center">
+                <div className={`font-medium ${currentStep >= index ? 'text-career-purple' : 'text-gray-500'}`}>
+                  {step.name}
+                </div>
+                <div className="text-xs text-gray-500 max-w-[150px]">
+                  {step.description}
+                </div>
+              </div>
             </div>
-            {index < totalSteps - 1 && (
+          ))}
+          <div className="absolute top-5 h-1 w-full bg-gray-200 -z-10"></div>
+          <div 
+            className="absolute top-5 h-1 bg-career-purple -z-10 transition-all duration-300"
+            style={{ 
+              width: `${currentStep === 0 ? 0 : currentStep === 1 ? 50 : 100}%`,
+            }}  
+          ></div>
+        </div>
+        
+        {/* Mobile version */}
+        <div className="md:hidden">
+          <div className="flex items-center justify-between mb-4">
+            {steps.map((step, index) => (
               <div 
-                className={`flex-1 h-1 max-w-[80px] ${index < currentStep ? 'bg-career-purple' : 'bg-gray-200'}`}
-              />
-            )}
-          </React.Fragment>
-        ))}
+                key={index} 
+                className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                  currentStep >= index 
+                    ? 'bg-career-purple text-white' 
+                    : 'bg-gray-200 text-gray-500'
+                }`}
+              >
+                {index + 1}
+              </div>
+            ))}
+            <div className="absolute top-4 h-1 w-full bg-gray-200 -z-10"></div>
+            <div 
+              className="absolute top-4 h-1 bg-career-purple -z-10 transition-all duration-300"
+              style={{ 
+                width: `${currentStep === 0 ? 0 : currentStep === 1 ? 50 : 100}%`,
+              }}  
+            ></div>
+          </div>
+          <div className="text-center">
+            <div className="font-medium text-career-purple">
+              {steps[currentStep].name}
+            </div>
+            <div className="text-xs text-gray-500">
+              {steps[currentStep].description}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

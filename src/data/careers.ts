@@ -635,6 +635,38 @@ export const careers: Career[] = [
       "Stay updated on sustainable farming technologies"
     ]
   },
+  {
+    id: "sustainable-farmer",
+    title: "Sustainable Farmer",
+    description: "Use eco-friendly methods to grow crops and raise animals. You focus on protecting the environment while producing food.",
+    clusterId: "agriculture",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Environmental awareness", "Plant/animal care", "Business management", "Problem-solving", "Patience"],
+    roadmap: [
+      "Learn sustainable farming practices through online courses and YouTube",
+      "Gain hands-on experience through apprenticeships or volunteering",
+      "Study soil science and composting techniques through free resources",
+      "Start small with container or community garden plots",
+      "Build direct-to-consumer sales channels and participate in farmers markets"
+    ]
+  },
+  {
+    id: "agricultural-drone-operator",
+    title: "Agricultural Drone Operator",
+    description: "Use drones to monitor crops, spread seeds or fertilizers, and collect data about farm conditions. You help make farming more precise and efficient.",
+    clusterId: "agriculture",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Drone piloting", "Data analysis", "Technical skills", "Problem-solving", "Attention to detail"],
+    roadmap: [
+      "Learn drone basics through free online tutorials and videos",
+      "Practice flying with budget drones to develop piloting skills",
+      "Study agricultural applications through webinars and case studies",
+      "Get FAA certification for commercial drone operation",
+      "Build a portfolio of agricultural drone services and data analysis projects"
+    ]
+  },
   
   // Law & Public Safety
   {
@@ -683,6 +715,38 @@ export const careers: Career[] = [
       "Learn specialized forensic techniques",
       "Gain laboratory experience",
       "Develop understanding of criminal justice system"
+    ]
+  },
+  {
+    id: "emergency-manager",
+    title: "Emergency Manager",
+    description: "Prepare for and coordinate responses to disasters like hurricanes, floods, or fires. You create plans to keep people safe during emergencies.",
+    clusterId: "lawPublicSafety",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Leadership", "Crisis management", "Communication", "Planning", "Decision-making"],
+    roadmap: [
+      "Learn emergency management basics through FEMA's free online courses",
+      "Volunteer with emergency response organizations",
+      "Build knowledge of different types of disasters and responses",
+      "Develop project management and coordination skills",
+      "Network with professionals in emergency services"
+    ]
+  },
+  {
+    id: "cybersecurity-law-specialist",
+    title: "Cybersecurity Law Specialist",
+    description: "Focus on laws about internet crimes, data privacy, and digital security. You help protect people and businesses from online threats.",
+    clusterId: "lawPublicSafety",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Legal knowledge", "Technical understanding", "Problem-solving", "Communication", "Research"],
+    roadmap: [
+      "Build foundation in both technology and law through online courses",
+      "Take free cybersecurity courses from major universities",
+      "Study privacy laws and regulations through online resources",
+      "Follow cybersecurity news and legal developments",
+      "Create a portfolio of research or articles on cybersecurity legal issues"
     ]
   },
   
@@ -735,6 +799,38 @@ export const careers: Career[] = [
       "Develop strong network in the financial industry"
     ]
   },
+  {
+    id: "financial-planner",
+    title: "Financial Planner",
+    description: "Help individuals manage their money, save for the future, and reach financial goals. You create personalized financial plans and give investment advice.",
+    clusterId: "finance",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Financial knowledge", "Communication", "Problem-solving", "Empathy", "Analytical thinking"],
+    roadmap: [
+      "Learn personal finance basics through free online courses",
+      "Study investment principles and strategies through books and videos",
+      "Build your own investment portfolio to gain experience",
+      "Take free courses on retirement planning and tax strategies",
+      "Consider certification like CFP while building a client base"
+    ]
+  },
+  {
+    id: "cryptocurrency-specialist",
+    title: "Cryptocurrency Specialist",
+    description: "Understand digital currencies like Bitcoin and the blockchain technology behind them. You help people and businesses navigate this new financial landscape.",
+    clusterId: "finance",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Technical knowledge", "Financial understanding", "Research", "Critical thinking", "Adaptability"],
+    roadmap: [
+      "Learn blockchain fundamentals through free online resources",
+      "Study cryptocurrency markets and trading principles",
+      "Practice with small amounts in personal crypto accounts",
+      "Build projects using blockchain technology",
+      "Stay updated on regulatory changes and new developments"
+    ]
+  },
   
   // Human Services & Counseling
   {
@@ -783,6 +879,38 @@ export const careers: Career[] = [
       "Complete master's or doctoral degree in therapy",
       "Fulfill supervised clinical hours",
       "Obtain therapy license"
+    ]
+  },
+  {
+    id: "career-coach",
+    title: "Career Coach",
+    description: "Help people find jobs they love and develop their careers. You provide guidance on job searching, resume writing, and professional development.",
+    clusterId: "humanServices",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Communication", "Empathy", "Industry knowledge", "Networking", "Motivation"],
+    roadmap: [
+      "Develop strong knowledge about different career paths",
+      "Learn coaching techniques through online courses",
+      "Build your personal brand and online presence",
+      "Start helping people informally to build experience",
+      "Create a portfolio of success stories and testimonials"
+    ]
+  },
+  {
+    id: "rehabilitation-specialist",
+    title: "Rehabilitation Specialist",
+    description: "Help people recover from injuries, illnesses, or addictions. You work with clients to regain skills and live independently.",
+    clusterId: "humanServices",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Patience", "Empathy", "Medical knowledge", "Communication", "Problem-solving"],
+    roadmap: [
+      "Learn about different types of rehabilitation needs",
+      "Get a degree in rehabilitation counseling or related field",
+      "Gain hands-on experience through internships",
+      "Develop specialization in specific rehabilitation areas",
+      "Obtain necessary certification or licensure"
     ]
   },
   
@@ -834,7 +962,205 @@ export const careers: Career[] = [
       "Gain experience through policy-focused internships",
       "Stay informed about current social and political issues"
     ]
-  }
+  },
+  {
+    id: "government-relations-specialist",
+    title: "Government Relations Specialist",
+    description: "Work with government officials on behalf of businesses or organizations. You help companies navigate regulations and influence policy decisions.",
+    clusterId: "governmentPublicAdmin",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Communication", "Networking", "Political knowledge", "Problem-solving", "Negotiation"],
+    roadmap: [
+      "Learn about government structures and political processes",
+      "Build network in government agencies and organizations",
+      "Develop strong communication and persuasion skills",
+      "Gain experience through related internships or volunteering",
+      "Stay informed about political developments and regulations"
+    ]
+  },
+  {
+    id: "grant-writer",
+    title: "Grant Writer",
+    description: "Help organizations get funding by writing proposals to government agencies or foundations. You translate ideas into compelling funding requests.",
+    clusterId: "governmentPublicAdmin",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Writing", "Research", "Attention to detail", "Project planning", "Communication"],
+    roadmap: [
+      "Develop strong writing and research skills",
+      "Learn grant writing fundamentals through free online courses",
+      "Volunteer to write grants for small nonprofits",
+      "Build a portfolio of successful grant applications",
+      "Network with nonprofits and funding organizations"
+    ]
+  },
+  
+  // Adding careers for hospitality & tourism
+  {
+    id: "hotel-manager",
+    title: "Hotel Manager",
+    description: "Run hotels and make sure guests have a good experience. You oversee staff, operations, and customer service to ensure everything runs smoothly.",
+    clusterId: "hospitality",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Leadership", "Customer service", "Organization", "Problem-solving", "Communication"],
+    roadmap: [
+      "Gain experience in various hotel departments",
+      "Learn hospitality management fundamentals",
+      "Develop leadership and people management skills",
+      "Study financial management for hospitality businesses",
+      "Build strong customer service and problem-solving abilities"
+    ]
+  },
+  {
+    id: "event-planner",
+    title: "Event Planner",
+    description: "Organize conferences, weddings, and other special events. You handle all the details to make sure events run smoothly and meet clients' expectations.",
+    clusterId: "hospitality",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Organization", "Communication", "Creativity", "Problem-solving", "Attention to detail"],
+    roadmap: [
+      "Learn event planning basics through free online resources",
+      "Plan small events for friends or community organizations",
+      "Build a portfolio with photos and testimonials",
+      "Develop vendor relationships and networking skills",
+      "Create a social media presence showcasing your work"
+    ]
+  },
+  {
+    id: "travel-consultant",
+    title: "Travel Consultant",
+    description: "Help people plan trips and vacations. You recommend destinations, book transportation and accommodation, and provide travel advice.",
+    clusterId: "hospitality",
+    isHighIncome: false,
+    isFutureReady: false,
+    skills: ["Geography knowledge", "Customer service", "Research", "Communication", "Organization"],
+    roadmap: [
+      "Develop extensive knowledge about global destinations",
+      "Learn about different travel options and accommodations",
+      "Build experience by planning trips for yourself and others",
+      "Create detailed travel guides and itineraries",
+      "Develop specialization in specific types of travel"
+    ]
+  },
+  {
+    id: "tourism-marketing-specialist",
+    title: "Tourism Marketing Specialist",
+    description: "Promote cities, countries, or attractions to potential visitors. You create advertising campaigns and content to attract tourists.",
+    clusterId: "hospitality",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Marketing", "Communication", "Creativity", "Social media", "Cultural awareness"],
+    roadmap: [
+      "Learn digital marketing fundamentals through free online courses",
+      "Develop content creation skills for social media",
+      "Build a portfolio by creating sample campaigns",
+      "Study tourism trends and traveler psychology",
+      "Create a personal brand showcasing destinations creatively"
+    ]
+  },
+  {
+    id: "sustainable-tourism-developer",
+    title: "Sustainable Tourism Developer",
+    description: "Create eco-friendly tourism experiences that protect the environment and benefit local communities. You design responsible travel options.",
+    clusterId: "hospitality",
+    isHighIncome: false,
+    isFutureReady: true,
+    skills: ["Environmental knowledge", "Business planning", "Cultural sensitivity", "Communication", "Problem-solving"],
+    roadmap: [
+      "Learn about environmental conservation and sustainability",
+      "Study successful eco-tourism models worldwide",
+      "Develop knowledge of sustainable business practices",
+      "Build relationships with local communities and businesses",
+      "Create sample sustainable tourism plans and proposals"
+    ]
+  },
+  
+  // Adding careers for manufacturing & production
+  {
+    id: "production-manager",
+    title: "Production Manager",
+    description: "Oversee manufacturing processes in factories. You make sure products are made efficiently, safely, and with good quality.",
+    clusterId: "manufacturing",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Leadership", "Technical knowledge", "Problem-solving", "Organization", "Quality control"],
+    roadmap: [
+      "Gain hands-on experience in manufacturing environments",
+      "Learn about production processes and workflows",
+      "Develop leadership and team management skills",
+      "Study quality control and efficiency improvement methods",
+      "Build knowledge of safety regulations and procedures"
+    ]
+  },
+  {
+    id: "quality-control-inspector",
+    title: "Quality Control Inspector",
+    description: "Check products to make sure they meet standards. You test items, find defects, and help improve manufacturing processes.",
+    clusterId: "manufacturing",
+    isHighIncome: false,
+    isFutureReady: false,
+    skills: ["Attention to detail", "Technical knowledge", "Problem-solving", "Communication", "Data analysis"],
+    roadmap: [
+      "Learn quality control principles and techniques",
+      "Develop technical knowledge about specific products",
+      "Build experience with testing equipment and procedures",
+      "Study statistical analysis for quality management",
+      "Understand manufacturing processes and materials"
+    ]
+  },
+  {
+    id: "cnc-machinist",
+    title: "CNC Machinist",
+    description: "Operate computerized machines that cut and shape materials. You program the machines and ensure they produce precise parts.",
+    clusterId: "manufacturing",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Technical skills", "Computer programming", "Precision", "Problem-solving", "Attention to detail"],
+    roadmap: [
+      "Learn basic machining principles through tutorials and courses",
+      "Study CNC programming languages and techniques",
+      "Practice with simulation software and small machines",
+      "Develop blueprint reading and technical drawing skills",
+      "Build experience through apprenticeships or entry-level positions"
+    ]
+  },
+  {
+    id: "industrial-designer",
+    title: "Industrial Designer",
+    description: "Design products that will be manufactured. You consider how things look, work, and can be made efficiently.",
+    clusterId: "manufacturing",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Creativity", "Technical drawing", "3D modeling", "Problem-solving", "Manufacturing knowledge"],
+    roadmap: [
+      "Learn design principles and product development",
+      "Master 3D modeling software through tutorials",
+      "Study manufacturing processes and materials",
+      "Build a portfolio of product designs and prototypes",
+      "Develop understanding of user experience and ergonomics"
+    ]
+  },
+  {
+    id: "automation-technician",
+    title: "Automation Technician",
+    description: "Install and maintain automated manufacturing systems. You work with robots and computerized equipment that make production faster and more efficient.",
+    clusterId: "manufacturing",
+    isHighIncome: true,
+    isFutureReady: true,
+    skills: ["Technical skills", "Troubleshooting", "Programming", "Electronics knowledge", "Mechanical skills"],
+    roadmap: [
+      "Learn basics of electronics and mechanics online",
+      "Study programmable logic controllers (PLCs) through tutorials",
+      "Build small automation projects using Arduino or similar platforms",
+      "Develop robotics programming skills through online courses",
+      "Practice troubleshooting through simulations and real problems"
+    ]
+  },
+  
+  // ... Add more career clusters and careers as needed
 ];
 
 export const getCareersByClusterIds = (clusterIds: string[]): Career[] => {

@@ -8,12 +8,14 @@ import ClusterSelection from '@/components/ClusterSelection';
 import CareerSelection from '@/components/CareerSelection';
 import FinalReport from '@/components/FinalReport';
 import { useToast } from '@/components/ui/use-toast';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Index = () => {
   const [step, setStep] = useState(0);
   const [selectedClusterIds, setSelectedClusterIds] = useState<string[]>([]);
   const [selectedCareerIds, setSelectedCareerIds] = useState<string[]>([]);
   const { toast } = useToast();
+  const isMobile = useIsMobile();
   
   const filteredCareers = getCareersByClusterIds(selectedClusterIds);
   const selectedCareers = careers.filter(career => selectedCareerIds.includes(career.id));
@@ -64,14 +66,19 @@ const Index = () => {
     }
     
     setStep(prev => prev + 1);
+    
+    // Scroll to top when moving to next step
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header />
       
-      <main className="flex-grow py-8">
-        <StepIndicator currentStep={step} totalSteps={3} />
+      <main className="flex-grow py-4 md:py-8">
+        <div className="container mx-auto px-4">
+          <StepIndicator currentStep={step} totalSteps={3} />
+        </div>
         
         {step === 0 && (
           <ClusterSelection

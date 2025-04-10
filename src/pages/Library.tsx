@@ -3,12 +3,19 @@ import React, { useState } from 'react';
 import { careerClusters } from '@/data/careerClusters';
 import { careers } from '@/data/careers';
 import Header from '@/components/Header';
-import { ChevronDown, ChevronUp, ArrowLeft } from 'lucide-react';
+import { ChevronDown, ChevronUp, ArrowLeft, Search, Info } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useIsMobile } from '@/hooks/use-mobile';
+import { Input } from '@/components/ui/input';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 const Library = () => {
   const [expandedCareerId, setExpandedCareerId] = useState<string | null>(null);
   const [selectedCluster, setSelectedCluster] = useState<string | null>(null);
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  const isMobile = useIsMobile();
   
   const handleToggleCareer = (careerId: string) => {
     setExpandedCareerId(prev => prev === careerId ? null : careerId);
@@ -21,6 +28,7 @@ const Library = () => {
   const handleClusterSelect = (clusterId: string) => {
     setSelectedCluster(clusterId);
     setExpandedCareerId(null);
+    setSearchTerm('');
   };
   
   const handleBackToMain = () => {
@@ -28,51 +36,111 @@ const Library = () => {
     setExpandedCareerId(null);
   };
   
+  // Filter clusters by search term
+  const filteredClusters = careerClusters.filter(cluster => {
+    if (!searchTerm) return true;
+    return (
+      cluster.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      cluster.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  });
+  
+  // Filter careers by search term
+  const filterCareers = (careers) => {
+    if (!searchTerm) return careers;
+    return careers.filter(career => 
+      career.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      career.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      career.skills.some(skill => skill.toLowerCase().includes(searchTerm.toLowerCase()))
+    );
+  };
+  
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header />
       
-      <main className="flex-grow py-8 container mx-auto px-4">
-        <div className="flex items-center justify-between mb-6">
-          <h1 className="text-2xl md:text-3xl font-bold text-career-purple">
-            Career Library
-          </h1>
-          <Link 
-            to="/"
-            className="bg-career-purple text-white px-4 py-2 rounded-lg hover:bg-career-dark-purple transition-colors flex items-center"
-          >
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Explorer
-          </Link>
+      <main className="flex-grow py-4 md:py-8 container mx-auto px-4">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <div>
+            <h1 className="text-2xl md:text-3xl font-bold text-career-purple">
+              Career Library
+            </h1>
+            <p className="text-sm text-gray-600 mt-1">
+              Browse all careers by cluster or search to find specific roles
+            </p>
+          </div>
+          
+          <div className="flex gap-2">
+            <Link to="/">
+              <Button
+                variant="outline"
+                size={isMobile ? "sm" : "default"}
+                className="flex items-center gap-1"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                <span className={isMobile ? "hidden" : "inline"}>Back to Explorer</span>
+                <span className={isMobile ? "inline" : "hidden"}>Explorer</span>
+              </Button>
+            </Link>
+          </div>
         </div>
         
         <div className="bg-white rounded-lg shadow-md p-4 mb-6">
-          <p className="text-gray-700">
-            Browse careers by cluster or search for specific careers to learn more about them. 
-            Click on any career to see detailed information about skills required and learning roadmaps.
-          </p>
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            <div className="w-full md:w-1/2 relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+              <Input 
+                placeholder="Search careers, skills, or clusters..." 
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="pl-10"
+              />
+            </div>
+            <div className="w-full md:w-1/2 flex items-center gap-2">
+              <p className="text-sm text-gray-600 whitespace-nowrap">Quick tip:</p>
+              <div className="bg-career-light-purple bg-opacity-20 text-career-purple text-xs font-medium px-2 py-1 rounded-full animate-pulse">
+                Click any career to see details
+              </div>
+            </div>
+          </div>
         </div>
         
         {!selectedCluster ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {careerClusters.map(cluster => (
-              <div 
-                key={cluster.id}
-                className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow cursor-pointer"
-                onClick={() => handleClusterSelect(cluster.id)}
-              >
-                <div className="flex items-center mb-2">
-                  <span className="text-4xl mr-3">{cluster.icon}</span>
-                  <h2 className="text-xl font-semibold text-career-purple">{cluster.title}</h2>
+            {filteredClusters.map(cluster => {
+              const careersInCluster = getCareersForCluster(cluster.id);
+              return (
+                <div 
+                  key={cluster.id}
+                  className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow cursor-pointer border border-transparent hover:border-career-light-purple"
+                  onClick={() => handleClusterSelect(cluster.id)}
+                >
+                  <div className="flex items-center mb-2">
+                    <span className="text-4xl mr-3">{cluster.icon}</span>
+                    <h2 className="text-xl font-semibold text-career-purple">{cluster.title}</h2>
+                  </div>
+                  <p className="text-gray-600 text-sm">{cluster.description}</p>
+                  <div className="mt-3 flex flex-wrap gap-1">
+                    {careersInCluster.length > 0 ? (
+                      <>
+                        <Badge variant="outline" className="bg-career-light-purple bg-opacity-10">
+                          {careersInCluster.length} careers
+                        </Badge>
+                        {careersInCluster.filter(c => c.isHighIncome).length > 0 && (
+                          <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
+                            {careersInCluster.filter(c => c.isHighIncome).length} high income
+                          </Badge>
+                        )}
+                      </>
+                    ) : (
+                      <Badge variant="outline" className="bg-gray-100">
+                        No careers yet
+                      </Badge>
+                    )}
+                  </div>
                 </div>
-                <p className="text-gray-600 text-sm">{cluster.description}</p>
-                <div className="mt-2">
-                  <span className="text-career-purple text-sm font-medium">
-                    {getCareersForCluster(cluster.id).length} careers available
-                  </span>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         ) : (
           <div>
@@ -86,17 +154,19 @@ const Library = () => {
             
             <div className="bg-white rounded-lg shadow-md p-4 mb-6">
               {careerClusters.find(c => c.id === selectedCluster) && (
-                <div className="flex items-center mb-4">
-                  <span className="text-4xl mr-3">
-                    {careerClusters.find(c => c.id === selectedCluster)?.icon}
-                  </span>
-                  <div>
-                    <h2 className="text-xl font-semibold text-career-purple">
-                      {careerClusters.find(c => c.id === selectedCluster)?.title}
-                    </h2>
-                    <p className="text-gray-600 text-sm">
-                      {careerClusters.find(c => c.id === selectedCluster)?.description}
-                    </p>
+                <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                  <div className="flex items-center">
+                    <span className="text-4xl mr-3">
+                      {careerClusters.find(c => c.id === selectedCluster)?.icon}
+                    </span>
+                    <div>
+                      <h2 className="text-xl font-semibold text-career-purple">
+                        {careerClusters.find(c => c.id === selectedCluster)?.title}
+                      </h2>
+                      <p className="text-gray-600 text-sm">
+                        {careerClusters.find(c => c.id === selectedCluster)?.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               )}
@@ -117,76 +187,125 @@ const Library = () => {
             </div>
             
             <div className="space-y-4">
-              {getCareersForCluster(selectedCluster).map(career => (
-                <div 
-                  key={career.id}
-                  className="bg-white rounded-lg shadow-md overflow-hidden"
-                >
+              {filterCareers(getCareersForCluster(selectedCluster)).length > 0 ? (
+                filterCareers(getCareersForCluster(selectedCluster)).map(career => (
                   <div 
-                    className={`p-4 cursor-pointer flex justify-between items-center ${
-                      expandedCareerId === career.id ? 'bg-career-light-purple bg-opacity-20' : ''
-                    }`}
-                    onClick={() => handleToggleCareer(career.id)}
+                    key={career.id}
+                    className="bg-white rounded-lg shadow-md overflow-hidden border border-transparent hover:border-career-light-purple transition-colors"
                   >
-                    <div className="flex items-center">
-                      <h3 className="font-semibold text-lg">{career.title}</h3>
-                      <div className="ml-3 flex items-center space-x-2">
-                        {career.isHighIncome && (
-                          <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">
-                            High Income
-                          </span>
-                        )}
-                        {career.isFutureReady && (
-                          <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
-                            Future Ready
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                    <div>
-                      {expandedCareerId === career.id ? (
-                        <ChevronUp className="h-5 w-5 text-career-purple" />
-                      ) : (
-                        <ChevronDown className="h-5 w-5 text-career-purple" />
-                      )}
-                    </div>
-                  </div>
-                  
-                  {expandedCareerId === career.id && (
-                    <div className="p-4 border-t border-gray-100">
-                      <p className="text-gray-600 mb-4">{career.description}</p>
-                      
-                      <div className="mb-4">
-                        <h4 className="font-medium text-career-purple mb-2">Required Skills:</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {career.skills.map(skill => (
-                            <span 
-                              key={skill} 
-                              className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                            >
-                              {skill}
-                            </span>
-                          ))}
+                    <div 
+                      className={`p-4 cursor-pointer flex justify-between items-center ${
+                        expandedCareerId === career.id ? 'bg-career-light-purple bg-opacity-20' : ''
+                      }`}
+                      onClick={() => handleToggleCareer(career.id)}
+                    >
+                      <div className="flex-1">
+                        <div className="flex flex-col md:flex-row md:items-center gap-2">
+                          <h3 className="font-semibold text-lg">{career.title}</h3>
+                          <div className="flex items-center space-x-2">
+                            {career.isHighIncome && (
+                              <TooltipProvider>
+                                <Tooltip>
+                                  <TooltipTrigger asChild>
+                                    <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">
+                                      High Income
+                                    </span>
+                                  </TooltipTrigger>
+                                  <TooltipContent>
+                                    <p>This career typically offers above-average income potential</p>
+                                  </TooltipContent>
+                                </Tooltip>
+                              </TooltipProvider>
+                            )}
+                            {career.isFutureReady && (
+                              <TooltipProvider>
+                                <Tooltip>
+                                  <TooltipTrigger asChild>
+                                    <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
+                                      Future Ready
+                                    </span>
+                                  </TooltipTrigger>
+                                  <TooltipContent>
+                                    <p>This career has strong growth potential in the future job market</p>
+                                  </TooltipContent>
+                                </Tooltip>
+                              </TooltipProvider>
+                            )}
+                          </div>
                         </div>
+                        {expandedCareerId !== career.id && (
+                          <p className="text-gray-600 text-sm mt-1 line-clamp-2">{career.description}</p>
+                        )}
                       </div>
-                      
-                      <div>
-                        <h4 className="font-medium text-career-purple mb-2">Learning Roadmap:</h4>
-                        <div className="space-y-2 pl-4">
-                          {career.roadmap.map((step, index) => (
-                            <div key={index} className="flex items-start">
-                              <span className="w-6 h-6 bg-career-light-purple text-career-purple rounded-full flex items-center justify-center flex-shrink-0 mr-2">
-                                {index + 1}
+                      <div className="ml-4 flex flex-col items-center">
+                        {expandedCareerId === career.id ? (
+                          <>
+                            <ChevronUp className="h-5 w-5 text-career-purple" />
+                            <span className="text-xs text-career-purple">Close</span>
+                          </>
+                        ) : (
+                          <>
+                            <ChevronDown className="h-5 w-5 text-career-purple" />
+                            <span className="text-xs text-career-purple">Details</span>
+                          </>
+                        )}
+                      </div>
+                    </div>
+                    
+                    {expandedCareerId === career.id && (
+                      <div className="p-4 border-t border-gray-100">
+                        <p className="text-gray-600 mb-4">{career.description}</p>
+                        
+                        <div className="mb-4">
+                          <h4 className="font-medium text-career-purple mb-2">Required Skills:</h4>
+                          <div className="flex flex-wrap gap-2">
+                            {career.skills.map(skill => (
+                              <span 
+                                key={skill} 
+                                className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
+                              >
+                                {skill}
                               </span>
-                              <p className="text-gray-700">{step}</p>
-                            </div>
-                          ))}
+                            ))}
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <div className="flex items-center gap-2 mb-2">
+                            <h4 className="font-medium text-career-purple">Learning Roadmap:</h4>
+                            <Badge variant="outline" className="bg-yellow-50 text-yellow-700 border-yellow-200">
+                              Self-Learning Focus
+                            </Badge>
+                          </div>
+                          <div className="space-y-3 pl-0 md:pl-4">
+                            {career.roadmap.map((step, index) => (
+                              <div key={index} className="flex items-start bg-gray-50 p-2 rounded border border-gray-100">
+                                <span className="w-6 h-6 bg-career-light-purple text-career-purple rounded-full flex items-center justify-center flex-shrink-0 mr-2">
+                                  {index + 1}
+                                </span>
+                                <p className="text-gray-700">{step}</p>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  )}
+                    )}
+                  </div>
+                ))
+              ) : (
+                <div className="bg-white rounded-lg p-8 text-center shadow-sm border border-gray-200">
+                  <Info className="h-12 w-12 text-gray-400 mx-auto mb-2" />
+                  <h3 className="text-lg font-medium text-gray-600 mb-1">No matching careers found</h3>
+                  <p className="text-gray-500 mb-4">Try adjusting your search term or browse another cluster</p>
+                  <Button 
+                    variant="outline" 
+                    onClick={() => setSearchTerm('')}
+                    className="border-career-purple text-career-purple hover:bg-career-light-purple hover:text-career-purple"
+                  >
+                    Clear Search
+                  </Button>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         )}
