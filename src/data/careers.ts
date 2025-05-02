@@ -1,11 +1,12 @@
 
 import { careerClusters } from './careerData/clusters';
 import { careers, getCareersByClusterIds, getCommonSkills, getTransferableSkills, getFutureReadyCareers, getHighIncomeCareers } from './careerData';
-import { Career, CareerCluster } from './types';
+import type { Career, CareerCluster } from './types';
 
 // Re-export everything from the new structure
 export {
-  Career,
+  type Career,
+  type CareerCluster,
   careers,
   careerClusters,
   getCareersByClusterIds,
