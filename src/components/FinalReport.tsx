@@ -2,7 +2,6 @@
 import React, { useRef } from 'react';
 import { Career, CareerCluster } from '../data/types';
 import { getCommonSkills, getTransferableSkills } from '../data/careers';
-import { careerClusters } from '../data/careerData/clusters';
 import { Button } from "./ui/button";
 import {
   Accordion,
@@ -16,12 +15,17 @@ import { useToast } from "../hooks/use-toast";
 
 interface FinalReportProps {
   selectedCareers: Career[];
+  clusters: CareerCluster[];  // Added this prop to match what's being passed
+  onBack?: () => void;
+  onReset?: () => void;
 }
 
 const FinalReport: React.FC<FinalReportProps> = ({
-  selectedCareers
+  selectedCareers,
+  clusters,
+  onBack,
+  onReset
 }) => {
-  const clusters = careerClusters;
   const reportRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
   
