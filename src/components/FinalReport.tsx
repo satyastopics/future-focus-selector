@@ -29,8 +29,11 @@ const FinalReport = ({
   const reportRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
   
-  const commonSkills = getCommonSkills(selectedCareers);
-  const transferableSkills = getTransferableSkills(selectedCareers);
+  // Add defensive checks to make sure selectedCareers is not undefined
+  const careers = selectedCareers || [];
+  
+  const commonSkills = getCommonSkills(careers);
+  const transferableSkills = getTransferableSkills(careers);
   
   // Group skills into categories
   const stemSkills = ['Math', 'Science', 'Statistics', 'Physics', 'Biology', 'Chemistry', 'Research', 'Analysis', 'Laboratory techniques', 'Analytical thinking', 'Critical thinking', 'Problem-solving', 'Logical thinking'];
@@ -58,21 +61,23 @@ const FinalReport = ({
   );
 
   const downloadReport = () => {
-    if (!selectedCareers.length) return;
+    if (!careers.length) return;
     
     // Create document content
     let content = `
 # Your Career Path Report
 
 ## Selected Career Paths
-${selectedCareers.map(career => `
+${careers.map(career => `
 ### ${career.title}
 ${career.description}
 
 **Key Skills:** ${career.skills.join(', ')}
 
 **Career Roadmap:**
-${career.roadmap.map((step, i) => `${i+1}. ${step}`).join('\n')}
+${career.roadmap && career.roadmap.length > 0 
+  ? career.roadmap.map((step, i) => `${i+1}. ${step}`).join('\n')
+  : 'No specific roadmap provided.'}
 
 **Self-Learning Resources:**
 - Online Courses: Platforms like Coursera, edX, Khan Academy, and YouTube offer free courses on almost any subject
@@ -258,7 +263,7 @@ Future-ready careers require a mix of STEM knowledge, technology skills, and ent
         </h3>
         
         <Accordion type="single" collapsible className="w-full">
-          {selectedCareers.map((career) => {
+          {careers.map((career) => {
             const careerCluster = clusters.find(c => c.id === career.clusterId);
             
             return (
@@ -321,16 +326,20 @@ Future-ready careers require a mix of STEM knowledge, technology skills, and ent
                           <GraduationCap className="h-4 w-4 mr-2" />
                           Traditional Career Path
                         </h5>
-                        <ol className="list-none space-y-2 text-sm">
-                          {career.roadmap.map((step, index) => (
-                            <li key={index} className="flex">
-                              <span className="bg-career-light-purple text-career-purple rounded-full h-5 w-5 flex items-center justify-center text-xs mr-2 flex-shrink-0 mt-0.5">
-                                {index + 1}
-                              </span>
-                              <span>{step}</span>
-                            </li>
-                          ))}
-                        </ol>
+                        {career.roadmap && career.roadmap.length > 0 ? (
+                          <ol className="list-none space-y-2 text-sm">
+                            {career.roadmap.map((step, index) => (
+                              <li key={index} className="flex">
+                                <span className="bg-career-light-purple text-career-purple rounded-full h-5 w-5 flex items-center justify-center text-xs mr-2 flex-shrink-0 mt-0.5">
+                                  {index + 1}
+                                </span>
+                                <span>{step}</span>
+                              </li>
+                            ))}
+                          </ol>
+                        ) : (
+                          <p className="text-sm text-gray-500">No specific roadmap provided for this career.</p>
+                        )}
                       </div>
                       
                       <div className="bg-white rounded-md border border-green-200 p-4">
