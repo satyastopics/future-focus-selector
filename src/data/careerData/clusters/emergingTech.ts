@@ -114,5 +114,79 @@ export const emergingTechCareers: Career[] = [
       "Stay current with advances in AI and interface design"
     ],
     aiRelated: true
+  },
+  {
+    id: "digital-fabrication-specialist",
+    title: "Digital Fabrication Specialist",
+    description: "Use advanced manufacturing technologies like 3D printing, CNC machining, and laser cutting to produce complex physical objects from digital designs.",
+    clusterId: "emergingTech",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$70,000 - $120,000",
+    skills: ["CAD/CAM", "Additive manufacturing", "Materials knowledge", "Design for manufacturing", "Prototyping"],
+    roadmap: [
+      "Build foundation in design and manufacturing technology",
+      "Learn multiple digital fabrication tools and techniques",
+      "Develop expertise in materials selection and optimization",
+      "Gain experience creating complex prototypes and products",
+      "Stay current with advances in additive and subtractive manufacturing"
+    ]
+  },
+  {
+    id: "biotechnology-researcher",
+    title: "Biotechnology Researcher",
+    description: "Investigate and develop technologies that use living organisms or their products to solve problems in medicine, agriculture, and industrial applications.",
+    clusterId: "emergingTech",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$80,000 - $150,000",
+    skills: ["Molecular biology", "Research methods", "Lab techniques", "Data analysis", "Interdisciplinary collaboration"],
+    roadmap: [
+      "Build strong foundation in biology and chemistry",
+      "Develop research skills and laboratory techniques",
+      "Learn specialized areas like cell culture or molecular analysis",
+      "Gain experience through research projects and internships",
+      "Stay current with biotechnology advances and applications"
+    ]
+  },
+  {
+    id: "computational-linguist",
+    title: "Computational Linguist",
+    description: "Develop systems that can understand, interpret, and generate human language, creating applications for translation, voice recognition, and natural language processing.",
+    clusterId: "emergingTech",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $150,000",
+    skills: ["Linguistics", "NLP algorithms", "Machine learning", "Programming", "Data analysis"],
+    roadmap: [
+      "Build foundation in linguistics and computer science",
+      "Learn NLP techniques and algorithms",
+      "Develop expertise in machine learning for language",
+      "Gain experience building language processing applications",
+      "Stay current with advances in language models and algorithms"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "neuromorphic-computing-engineer",
+    title: "Neuromorphic Computing Engineer",
+    description: "Design computing systems inspired by the structure and function of the human brain, creating more efficient and intelligent machines.",
+    clusterId: "emergingTech",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$100,000 - $170,000",
+    skills: ["Neural networks", "Computer architecture", "Hardware design", "Algorithms", "Neuroscience principles"],
+    roadmap: [
+      "Build foundation in computer engineering and neuroscience",
+      "Learn about neural network architectures and algorithms",
+      "Develop expertise in hardware-software co-design",
+      "Gain experience with neuromorphic computing platforms",
+      "Stay current with advances in brain-inspired computing"
+    ],
+    aiRelated: true
   }
 ];

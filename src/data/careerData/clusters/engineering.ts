@@ -163,5 +163,57 @@ export const engineeringCareers: Career[] = [
       "Stay current with evolving AI hardware and software technologies"
     ],
     aiRelated: true
+  },
+  {
+    id: "biomechanical-engineer",
+    title: "Biomechanical Engineer",
+    description: "Combine principles of mechanical engineering with biological systems to develop solutions for healthcare, sports performance, and human augmentation.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $125,000",
+    skills: ["Biomechanics", "Material science", "Human anatomy", "Computational modeling", "Design thinking"],
+    roadmap: [
+      "Build foundation in mechanical engineering and human biology",
+      "Develop expertise in biomechanical principles and analysis",
+      "Learn simulation and modeling tools for biological systems",
+      "Gain experience in product development for human applications",
+      "Stay current with advances in materials and medical technology"
+    ]
+  },
+  {
+    id: "geospatial-engineer",
+    title: "Geospatial Engineer",
+    description: "Apply engineering principles to mapping and analyzing geographic data, creating solutions for urban planning, environmental management, and disaster response.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$70,000 - $110,000",
+    skills: ["GIS systems", "Remote sensing", "Spatial analysis", "Data visualization", "Programming"],
+    roadmap: [
+      "Build foundation in geographic information systems and engineering",
+      "Develop expertise in geospatial data collection and processing",
+      "Learn relevant programming languages and spatial analysis tools",
+      "Gain experience with remote sensing and satellite data",
+      "Stay current with advances in geospatial technology"
+    ]
+  },
+  {
+    id: "water-systems-engineer",
+    title: "Water Systems Engineer",
+    description: "Design and implement systems for water treatment, distribution, conservation, and management to address growing global water challenges.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$75,000 - $120,000",
+    skills: ["Hydraulics", "Water quality analysis", "System modeling", "Environmental regulations", "Sustainability principles"],
+    roadmap: [
+      "Build foundation in civil or environmental engineering",
+      "Develop expertise in water treatment and distribution systems",
+      "Learn relevant regulations and sustainability practices",
+      "Gain experience with water system planning and implementation",
+      "Stay current with advances in water conservation technology"
+    ]
   }
 ];

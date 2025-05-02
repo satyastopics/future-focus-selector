@@ -1,13 +1,15 @@
 
 import { Career, CareerCluster } from '../types';
 import { careerClusters } from './clusters';
+import { aiFutureCareers } from './clusters/aiFuture';
+import { emergingTechCareers } from './clusters/emergingTech';
 import { technologyCareers } from './clusters/technology';
+import { engineeringCareers } from './clusters/engineering';
+import { scienceResearchCareers } from './clusters/scienceResearch';
 import { healthcareCareers } from './clusters/healthcare';
 import { businessCareers } from './clusters/business';
-import { engineeringCareers } from './clusters/engineering';
 import { educationCareers } from './clusters/education';
 import { artsMediaCareers } from './clusters/artsMedia';
-import { scienceResearchCareers } from './clusters/scienceResearch';
 import { agricultureCareers } from './clusters/agriculture';
 import { lawPublicSafetyCareers } from './clusters/lawPublicSafety';
 import { hospitalityCareers } from './clusters/hospitality';
@@ -26,18 +28,19 @@ import { militaryDefenseCareers } from './clusters/militaryDefense';
 import { internationalRelationsCareers } from './clusters/internationalRelations';
 import { artisanCraftsCareers } from './clusters/artisanCrafts';
 import { miningExtractionCareers } from './clusters/miningExtraction';
-import { aiFutureCareers } from './clusters/aiFuture';
-import { emergingTechCareers } from './clusters/emergingTech';
 
 // Combine all careers from different clusters
+// Priority order: AI Future, Emerging Tech, Technology, Engineering, followed by others
 export const careers: Career[] = [
+  ...aiFutureCareers,
+  ...emergingTechCareers,
   ...technologyCareers,
+  ...engineeringCareers,
+  ...scienceResearchCareers,
   ...healthcareCareers,
   ...businessCareers,
-  ...engineeringCareers,
   ...educationCareers,
   ...artsMediaCareers,
-  ...scienceResearchCareers,
   ...agricultureCareers,
   ...lawPublicSafetyCareers,
   ...hospitalityCareers,
@@ -55,9 +58,7 @@ export const careers: Career[] = [
   ...militaryDefenseCareers,
   ...internationalRelationsCareers,
   ...artisanCraftsCareers,
-  ...miningExtractionCareers,
-  ...aiFutureCareers,
-  ...emergingTechCareers
+  ...miningExtractionCareers
 ];
 
 // Helper functions
