@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { BookOpen, Briefcase, Layers, LightBulb, ArrowRight, Star } from 'lucide-react';
+import { BookOpen, Briefcase, Layers, Lightbulb, ArrowRight, Star } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const Index = () => {
@@ -108,7 +108,7 @@ const Index = () => {
             <Card className="border-t-4 border-t-green-500">
               <CardHeader>
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <LightBulb className="h-6 w-6 text-green-600" />
+                  <Lightbulb className="h-6 w-6 text-green-600" />
                 </div>
                 <CardTitle>Build Your Plan</CardTitle>
                 <CardDescription>
