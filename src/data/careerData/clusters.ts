@@ -28,160 +28,168 @@ export const careerClusters: CareerCluster[] = [
     title: "Engineering & Design",
     description: "Design and build things like bridges, machines, or products. You solve problems using math and science. This is for those who like to make things and see how they work.",
     icon: "🛠️",
-    keySkills: ["Math skills", "Spatial reasoning", "Technical drawing", "Problem-solving", "Creativity"]
+    keySkills: ["Math skills", "Spatial reasoning", "Problem-solving", "Design thinking", "Technical knowledge"]
   },
   {
     id: "education",
-    title: "Education & Teaching",
-    description: "Help others learn new things. You might teach in schools, create learning materials, or train adults. This is for those who enjoy sharing knowledge and watching others grow.",
+    title: "Education & Training",
+    description: "Teach others and help them learn. You could work with kids, college students, or adults learning new job skills. This is for those who are patient and enjoy helping others grow.",
     icon: "🎓",
-    keySkills: ["Communication", "Patience", "Organization", "Subject expertise", "Adaptability"]
+    keySkills: ["Communication", "Patience", "Organization", "Creativity", "Subject knowledge"]
   },
   {
     id: "artsMedia",
     title: "Arts & Media",
-    description: "Create art, music, videos, or write stories. You might design graphics, act in films, or report news. This is for creative people who like to express themselves.",
+    description: "Create things that people watch, read, or enjoy. You might make movies, write stories, design art, or create music. This is for creative people who want to express ideas in new ways.",
     icon: "🎨",
-    keySkills: ["Creativity", "Visual skills", "Communication", "Digital tools", "Self-expression"]
+    keySkills: ["Creativity", "Visual/audio skills", "Communication", "Storytelling", "Artistic technique"]
   },
   {
     id: "scienceResearch",
     title: "Science & Research",
-    description: "Study the world to discover new things. You might work in labs, study plants and animals, or create new materials. This is for curious people who like to experiment and find answers.",
+    description: "Discover new things about our world through experiments and study. You might research animals, chemicals, space, or tiny organisms. This is for curious people who like to find answers.",
     icon: "🔬",
-    keySkills: ["Critical thinking", "Analytical skills", "Attention to detail", "Data analysis", "Research"]
+    keySkills: ["Analytical thinking", "Attention to detail", "Research methodology", "Scientific knowledge", "Critical thinking"]
   },
   {
     id: "agriculture",
-    title: "Agriculture & Food",
-    description: "Grow food and take care of plants and animals. You might work on farms, create new foods, or protect the environment. This is for those who like being outdoors and working with nature.",
+    title: "Agriculture & Natural Resources",
+    description: "Work with plants, animals, land, and natural resources. You might grow food, manage forests, or develop new farming techniques. This is for those who like the outdoors and working with nature.",
     icon: "🌱",
-    keySkills: ["Biology knowledge", "Physical stamina", "Problem-solving", "Environmental awareness", "Technical skills"]
+    keySkills: ["Environmental knowledge", "Physical stamina", "Problem-solving", "Technical skills", "Observation"]
   },
   {
     id: "lawPublicSafety",
     title: "Law & Public Safety",
-    description: "Keep people safe and make sure laws are followed. You might be a police officer, lawyer, or firefighter. This is for those who care about fairness and protecting others.",
+    description: "Protect people, enforce laws, and ensure justice. You might be a lawyer, police officer, or work in security. This is for those who want to help keep communities safe and fair.",
     icon: "⚖️",
-    keySkills: ["Critical thinking", "Ethics", "Communication", "Problem-solving", "Physical fitness"]
+    keySkills: ["Critical thinking", "Ethics", "Communication", "Attention to detail", "Decision making"]
   },
   {
     id: "hospitality",
     title: "Hospitality & Tourism",
-    description: "Help people enjoy their free time. You might work in hotels, plan events, or guide tourists. This is for friendly people who like making others happy.",
+    description: "Help people have enjoyable experiences when they travel or go out. You might work in hotels, restaurants, events, or travel planning. This is for those who enjoy serving others and creating positive experiences.",
     icon: "🏨",
-    keySkills: ["Customer service", "Communication", "Cultural awareness", "Organization", "Adaptability"]
+    keySkills: ["Customer service", "Communication", "Cultural awareness", "Organization", "Problem-solving"]
   },
   {
     id: "finance",
     title: "Finance & Banking",
-    description: "Help people and companies manage their money. You might work in a bank, help with taxes, or give advice about saving money. This is for those who are good with numbers and problem-solving.",
+    description: "Work with money and help people or businesses manage their finances. You might advise on investments, manage accounts, or analyze financial data. This is for those who are good with numbers and details.",
     icon: "💰",
-    keySkills: ["Math skills", "Analytical thinking", "Attention to detail", "Ethical judgment", "Financial literacy"]
+    keySkills: ["Mathematical ability", "Analysis", "Attention to detail", "Financial knowledge", "Problem-solving"]
   },
   {
     id: "manufacturing",
     title: "Manufacturing & Production",
-    description: "Make things in factories or workshops. You might operate machines, check quality, or plan how to make products better. This is for those who like seeing how things are made.",
+    description: "Make products and improve how they're created. You might work in factories, design production systems, or ensure product quality. This is for those who like to see tangible results of their work.",
     icon: "🏭",
-    keySkills: ["Technical skills", "Precision", "Safety awareness", "Problem-solving", "Teamwork"]
+    keySkills: ["Technical knowledge", "Precision", "Problem-solving", "Safety awareness", "Quality control"]
   },
   {
     id: "transportationLogistics",
     title: "Transportation & Logistics",
-    description: "Move people and things from place to place. You might drive vehicles, fly planes, or plan shipping routes. This is for those who like travel and solving puzzles.",
-    icon: "🚚",
-    keySkills: ["Spatial reasoning", "Time management", "Problem-solving", "Technical skills", "Safety focus"]
+    description: "Move people and products from one place to another efficiently. You might plan shipping routes, manage supply chains, or work with transportation systems. This is for those who like planning and organizing.",
+    icon: "🚢",
+    keySkills: ["Organization", "Spatial reasoning", "Efficiency focus", "Problem-solving", "Technical knowledge"]
   },
   {
     id: "construction",
-    title: "Construction & Architecture",
-    description: "Build and design houses and buildings. You might work with your hands, use big machines, or draw plans for new structures. This is for those who like seeing their work come to life.",
+    title: "Construction & Infrastructure",
+    description: "Build and maintain structures where people live, work, and play. You might construct buildings, manage projects, or inspect construction safety. This is for those who like to build things and see visible results.",
     icon: "🏗️",
-    keySkills: ["Spatial reasoning", "Math skills", "Physical stamina", "Attention to detail", "Technical drawing"]
+    keySkills: ["Technical knowledge", "Physical abilities", "Safety awareness", "Spatial reasoning", "Project management"]
   },
   {
     id: "humanServices",
     title: "Human Services & Counseling",
-    description: "Help people with their problems and feelings. You might be a counselor, social worker, or help families in need. This is for caring people who are good listeners.",
+    description: "Help people overcome challenges and improve their lives. You might provide counseling, social services, or community support. This is for those who are compassionate and want to make a difference in others' lives.",
     icon: "🤝",
-    keySkills: ["Empathy", "Active listening", "Problem-solving", "Communication", "Emotional intelligence"]
+    keySkills: ["Empathy", "Communication", "Patience", "Ethics", "Problem-solving"]
   },
   {
     id: "environmentEnergy",
     title: "Environment & Energy",
-    description: "Protect nature and create clean energy. You might study pollution, develop solar power, or help save endangered animals. This is for those who care about the planet.",
+    description: "Work to protect our planet and develop sustainable ways to produce energy. You might research environmental issues, develop clean energy, or help reduce pollution. This is for those who care about nature and sustainability.",
     icon: "🌍",
-    keySkills: ["Environmental awareness", "Science knowledge", "Problem-solving", "Technical skills", "Ethical thinking"]
+    keySkills: ["Environmental knowledge", "Scientific thinking", "Technical skills", "Problem-solving", "Analytical thinking"]
   },
   {
     id: "governmentPublicAdmin",
     title: "Government & Public Administration",
-    description: "Work for the government to help run cities and countries. You might plan community programs, help with voting, or manage government offices. This is for those who want to serve the public.",
+    description: "Help government agencies serve citizens and implement public policies. You might manage programs, analyze policies, or work in public service. This is for those who want to improve how government works.",
     icon: "🏛️",
-    keySkills: ["Organization", "Communication", "Ethics", "Policy understanding", "Problem-solving"]
+    keySkills: ["Policy knowledge", "Communication", "Organization", "Ethics", "Critical thinking"]
   },
   {
     id: "marketingSales",
     title: "Marketing & Sales",
-    description: "Help businesses sell their products. You might create ads, talk to customers, or study what people like to buy. This is for creative and persuasive people.",
-    icon: "📢",
-    keySkills: ["Communication", "Creativity", "Persuasion", "Digital literacy", "Data analysis"]
+    description: "Help businesses connect with customers and sell products or services. You might create advertising campaigns, analyze consumer behavior, or work directly with customers. This is for persuasive people who understand what motivates others.",
+    icon: "📱",
+    keySkills: ["Communication", "Persuasion", "Strategic thinking", "Creativity", "Customer understanding"]
   },
   {
     id: "sportsRecreation",
     title: "Sports & Recreation",
-    description: "Help people stay active and have fun. You might be a coach, fitness trainer, or plan sports events. This is for those who enjoy physical activity and helping others.",
-    icon: "⚽",
-    keySkills: ["Physical fitness", "Leadership", "Communication", "Motivation", "Safety awareness"]
+    description: "Help people stay active, have fun, and improve their physical well-being. You might coach teams, manage fitness programs, or organize recreational activities. This is for active people who enjoy physical activities and helping others.",
+    icon: "🏆",
+    keySkills: ["Physical fitness", "Leadership", "Motivation", "Knowledge of sports", "Safety awareness"]
   },
   {
     id: "fashionDesign",
     title: "Fashion & Design",
-    description: "Create clothing and accessories. You might design clothes, make jewelry, or work in fashion shows. This is for creative people with an eye for style.",
+    description: "Create clothing, accessories, and visual styles that reflect trends and individual expression. You might design products, predict fashion trends, or create visual merchandising. This is for creative people with an eye for aesthetics.",
     icon: "👗",
-    keySkills: ["Creativity", "Visual skills", "Technical skills", "Trend awareness", "Attention to detail"]
+    keySkills: ["Visual creativity", "Trend awareness", "Technical design", "Aesthetic sense", "Attention to detail"]
   },
   {
     id: "communicationMedia",
     title: "Communication & Media",
-    description: "Share information with many people. You might write for newspapers, make videos, or manage social media. This is for those who like telling stories and using technology.",
-    icon: "📱",
-    keySkills: ["Communication", "Digital literacy", "Creativity", "Critical thinking", "Content creation"]
+    description: "Share information and stories through various media channels. You might write content, create videos, manage social media, or produce news. This is for those who are good at communicating ideas to others.",
+    icon: "📺",
+    keySkills: ["Communication", "Content creation", "Technical media skills", "Storytelling", "Audience understanding"]
   },
   {
     id: "militaryDefense",
     title: "Military & Defense",
-    description: "Protect the country and help during emergencies. You might serve in the army, work with military technology, or help with rescue operations. This is for those who are brave and disciplined.",
-    icon: "🪖",
-    keySkills: ["Physical fitness", "Discipline", "Technical skills", "Leadership", "Teamwork"]
+    description: "Protect your country and provide security through military service or defense-related industries. This field involves a wide range of roles from combat to technical, medical, and administrative positions.",
+    icon: "🛡️",
+    keySkills: ["Discipline", "Physical fitness", "Technical skills", "Leadership", "Teamwork"]
   },
   {
     id: "internationalRelations",
-    title: "International Relations & Languages",
-    description: "Work with people from different countries. You might translate languages, help with global business, or work at embassies. This is for those who like different cultures and languages.",
+    title: "International Relations & Global Affairs",
+    description: "Work across countries and cultures to address global challenges and foster international cooperation. You might work in diplomacy, international development, or global business.",
     icon: "🌐",
-    keySkills: ["Language skills", "Cultural awareness", "Communication", "Diplomacy", "Adaptability"]
+    keySkills: ["Cultural awareness", "Languages", "Diplomacy", "Policy knowledge", "Communication"]
   },
   {
     id: "artisanCrafts",
-    title: "Artisan & Crafts",
-    description: "Make beautiful things by hand. You might create furniture, pottery, or jewelry. This is for creative people who enjoy working with their hands and making unique items.",
-    icon: "🧶",
-    keySkills: ["Creativity", "Manual dexterity", "Attention to detail", "Technical skills", "Artistic vision"]
+    title: "Artisan Crafts & Trades",
+    description: "Create handmade products and provide skilled manual services. You might work with wood, metal, textiles, or other materials to craft unique items or provide specialized services.",
+    icon: "🔨",
+    keySkills: ["Manual dexterity", "Attention to detail", "Craftsmanship", "Design sense", "Material knowledge"]
   },
   {
     id: "miningExtraction",
-    title: "Mining & Extraction",
-    description: "Find and collect valuable materials from the earth. You might look for minerals, operate mining equipment, or plan how to safely dig underground. This is for those who like geology and exploring.",
+    title: "Mining & Resource Extraction",
+    description: "Locate and extract natural resources from the earth, including minerals, metals, oil, and gas. This field includes exploration, extraction, processing, and environmental management.",
     icon: "⛏️",
-    keySkills: ["Geological knowledge", "Technical skills", "Safety awareness", "Physical stamina", "Problem-solving"]
+    keySkills: ["Technical knowledge", "Safety awareness", "Mechanical aptitude", "Problem-solving", "Environmental awareness"]
   },
   {
     id: "aiFuture",
     title: "AI & Future Technologies",
-    description: "Work with cutting-edge technologies like artificial intelligence, quantum computing, and mixed reality. Create solutions that will shape our future and solve complex problems.",
+    description: "Work on cutting-edge technologies that will shape our future, with a focus on artificial intelligence and other emerging fields that will dramatically transform society and work.",
     icon: "🤖",
-    keySkills: ["Advanced computing", "Data analysis", "Critical thinking", "Innovation", "Adaptability"]
+    keySkills: ["Technical innovation", "Computational thinking", "Complex problem-solving", "Research ability", "Interdisciplinary knowledge"]
+  },
+  {
+    id: "emergingTech",
+    title: "Emerging Technologies",
+    description: "Work at the frontier of technological innovation with breakthrough technologies like synthetic biology, brain-computer interfaces, quantum computing, and advanced materials science.",
+    icon: "✨",
+    keySkills: ["Innovation mindset", "Cross-disciplinary thinking", "Technical expertise", "Research methodology", "Systems thinking"]
   }
 ];
+

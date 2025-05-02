@@ -1,3 +1,4 @@
+
 import { Career, CareerCluster } from '../types';
 import { careerClusters } from './clusters';
 import { technologyCareers } from './clusters/technology';
@@ -26,6 +27,7 @@ import { internationalRelationsCareers } from './clusters/internationalRelations
 import { artisanCraftsCareers } from './clusters/artisanCrafts';
 import { miningExtractionCareers } from './clusters/miningExtraction';
 import { aiFutureCareers } from './clusters/aiFuture';
+import { emergingTechCareers } from './clusters/emergingTech';
 
 // Combine all careers from different clusters
 export const careers: Career[] = [
@@ -54,7 +56,8 @@ export const careers: Career[] = [
   ...internationalRelationsCareers,
   ...artisanCraftsCareers,
   ...miningExtractionCareers,
-  ...aiFutureCareers
+  ...aiFutureCareers,
+  ...emergingTechCareers
 ];
 
 // Helper functions
