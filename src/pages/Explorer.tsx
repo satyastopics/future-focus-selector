@@ -85,18 +85,8 @@ const Explorer = () => {
           </div>
           
           <StepIndicator
-            steps={[
-              { id: 1, label: "Select Clusters" },
-              { id: 2, label: "Choose Careers" },
-              { id: 3, label: "View Report" },
-            ]}
             currentStep={currentStep}
-            onStepClick={(step) => {
-              // Only allow going back, not forward
-              if (step < currentStep) {
-                setCurrentStep(step);
-              }
-            }}
+            totalSteps={3}
           />
           
           <div className="mt-8">
