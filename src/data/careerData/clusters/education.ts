@@ -3,105 +3,126 @@ import { Career } from '../../types';
 
 export const educationCareers: Career[] = [
   {
-    id: "elementary-teacher",
-    title: "Elementary School Teacher",
-    description: "Help young children learn basic subjects like math, language arts, and science while developing their social and academic skills.",
+    id: "teacher-k12",
+    title: "K-12 Teacher",
+    description: "Educate students in elementary, middle, or high school settings. Develop lesson plans, assess student progress, and create engaging learning experiences.",
     clusterId: "education",
     isHighIncome: false,
     isFutureReady: true,
-    averageSalary: "$60,000 - $75,000",
-    skills: ["Communication", "Patience", "Organization", "Creativity", "Adaptability"],
+    averageSalary: "$45,000 - $75,000",
+    skills: ["Communication", "Subject expertise", "Classroom management", "Curriculum development", "Assessment design"],
     roadmap: [
-      "Earn a bachelor's degree in elementary education",
+      "Earn bachelor's degree in education or subject area",
       "Complete student teaching experience",
-      "Obtain teaching certification/license for your state",
-      "Consider specialized endorsements like ESL or special education",
-      "Pursue master's degree for advancement opportunities"
-    ]
-  },
-  {
-    id: "high-school-teacher",
-    title: "High School Teacher",
-    description: "Teach specialized subjects to teenagers while helping them prepare for college or careers after graduation.",
-    clusterId: "education",
-    isHighIncome: false,
-    isFutureReady: true,
-    averageSalary: "$62,000 - $85,000",
-    skills: ["Subject expertise", "Communication", "Classroom management", "Assessment design", "Technology integration"],
-    roadmap: [
-      "Earn a bachelor's degree in your subject area",
-      "Complete teacher preparation program",
-      "Fulfill student teaching requirements",
-      "Obtain state teaching license with subject endorsements",
-      "Consider advanced certification or graduate studies"
-    ]
-  },
-  {
-    id: "instructional-designer",
-    title: "Instructional Designer",
-    description: "Create engaging learning materials for students or employees, including online courses, training programs, and educational resources.",
-    clusterId: "education",
-    isHighIncome: true,
-    isFutureReady: true,
-    averageSalary: "$75,000 - $110,000",
-    skills: ["eLearning development", "Curriculum design", "Project management", "Educational technology", "Assessment creation"],
-    roadmap: [
-      "Obtain bachelor's degree in education, instructional design or related field",
-      "Learn instructional design models (ADDIE, SAM, etc.)",
-      "Develop skills with learning management systems and authoring tools",
-      "Build portfolio of instructional materials",
-      "Consider specialized certifications or master's degree"
+      "Obtain teaching license/certification for your state",
+      "Consider specializing in high-demand subjects",
+      "Pursue professional development opportunities"
     ]
   },
   {
     id: "education-administrator",
     title: "Education Administrator",
-    description: "Oversee school operations, develop policies, manage staff, and ensure educational programs meet standards and goals.",
-    clusterId: "education",
-    isHighIncome: true,
-    isFutureReady: true,
-    averageSalary: "$95,000 - $150,000",
-    skills: ["Leadership", "Budget management", "Educational policy", "Staff development", "Strategic planning"],
-    roadmap: [
-      "Gain teaching experience (5+ years recommended)",
-      "Earn master's degree in educational leadership or administration",
-      "Obtain administrative certification/licensure",
-      "Seek assistant principal or program coordinator positions",
-      "Pursue doctoral degree for higher-level positions"
-    ]
-  },
-  {
-    id: "education-researcher",
-    title: "Education Researcher",
-    description: "Study teaching methods, learning processes, and education systems to improve educational practices and policies.",
+    description: "Oversee educational programs and institutions as a principal, dean, or district leader. Develop policies, manage staff, and ensure educational quality.",
     clusterId: "education",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$70,000 - $120,000",
-    skills: ["Research methodology", "Data analysis", "Academic writing", "Grant writing", "Critical thinking"],
+    skills: ["Leadership", "Policy development", "Budget management", "Staff supervision", "Educational assessment"],
     roadmap: [
-      "Complete advanced degree (master's or PhD) in education or related field",
-      "Develop research skills and methodology expertise",
-      "Publish research in academic journals",
-      "Build network with other researchers and institutions",
-      "Secure research grants and funding"
+      "Gain experience as a teacher or education professional",
+      "Earn master's degree in educational leadership or administration",
+      "Obtain administrative certification",
+      "Build experience in policy development and implementation",
+      "Develop strong community relations skills"
     ]
+  },
+  {
+    id: "instructional-designer",
+    title: "Instructional Designer",
+    description: "Create educational materials and learning experiences for various settings including corporate training, online courses, and educational institutions.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$65,000 - $95,000",
+    skills: ["Learning theory", "Curriculum development", "Educational technology", "Multimedia production", "Assessment design"],
+    roadmap: [
+      "Build foundation in education or related field",
+      "Learn instructional design methodologies and models",
+      "Develop e-learning and multimedia production skills",
+      "Create portfolio showcasing instructional design projects",
+      "Stay current with learning technology trends"
+    ]
+  },
+  {
+    id: "educational-technology-specialist",
+    title: "Educational Technology Specialist",
+    description: "Integrate technology into educational settings to enhance learning. Train educators on new tools and develop innovative digital learning solutions.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$60,000 - $90,000",
+    skills: ["Educational software", "Digital learning tools", "Technology integration", "Teacher training", "Digital pedagogy"],
+    roadmap: [
+      "Build foundation in education and technology",
+      "Develop expertise with learning management systems",
+      "Learn multimedia content creation",
+      "Gain experience implementing edtech solutions",
+      "Stay current with emerging educational technologies"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "ai-learning-designer",
+    title: "AI Learning Designer",
+    description: "Create personalized learning systems using artificial intelligence to adapt to individual student needs and learning styles.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$85,000 - $130,000",
+    skills: ["AI algorithms", "Learning analytics", "Educational psychology", "Data science", "Instructional design"],
+    roadmap: [
+      "Build strong foundation in education or learning sciences",
+      "Develop technical skills in AI and machine learning",
+      "Learn about adaptive learning systems and personalization",
+      "Gain experience with educational data analysis",
+      "Collaborate on AI-driven educational projects"
+    ],
+    aiRelated: true
   },
   {
     id: "special-education-teacher",
     title: "Special Education Teacher",
-    description: "Work with students who have various learning, emotional, or physical disabilities, creating individualized education plans.",
+    description: "Work with students who have various disabilities or learning differences, developing individualized education plans and specialized instruction.",
     clusterId: "education",
     isHighIncome: false,
     isFutureReady: true,
-    averageSalary: "$63,000 - $85,000",
-    skills: ["Individualized instruction", "Behavior management", "IEP development", "Adaptive technology", "Patience"],
+    averageSalary: "$50,000 - $80,000",
+    skills: ["Specialized instructional techniques", "IEP development", "Adaptive teaching", "Behavioral support", "Progress monitoring"],
     roadmap: [
       "Earn bachelor's degree in special education",
-      "Complete specialized coursework in disability areas",
-      "Gain practical experience through student teaching",
-      "Obtain special education teaching license",
-      "Consider additional certifications in specific disability areas"
+      "Complete specialized training and certification",
+      "Gain experience with diverse special needs populations",
+      "Develop expertise in assistive technologies",
+      "Stay current with special education laws and practices"
+    ]
+  },
+  {
+    id: "curriculum-developer",
+    title: "Curriculum Developer",
+    description: "Design and create educational content, courses, and programs that meet learning standards and objectives for schools or organizations.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$65,000 - $90,000",
+    skills: ["Curriculum mapping", "Educational standards", "Content development", "Assessment design", "Educational research"],
+    roadmap: [
+      "Build foundation in education and subject matter expertise",
+      "Learn curriculum development frameworks and standards",
+      "Gain experience in instructional design principles",
+      "Develop skills in educational assessment and evaluation",
+      "Stay current with educational research and best practices"
     ]
   }
 ];

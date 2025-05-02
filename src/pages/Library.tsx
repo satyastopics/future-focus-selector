@@ -164,9 +164,9 @@ const Library = () => {
               <div>
                 <h3 className="font-medium text-gray-800 mb-2">Key Skills for this Cluster:</h3>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {careerClusters.find(c => c.id === selectedCluster)?.keySkills?.map(skill => (
+                  {careerClusters.find(c => c.id === selectedCluster)?.keySkills?.map((skill, index) => (
                     <span 
-                      key={skill} 
+                      key={`${skill}-${index}`} 
                       className="bg-career-light-purple text-career-purple px-2 py-1 rounded-full text-sm"
                     >
                       {skill}

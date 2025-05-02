@@ -5,87 +5,124 @@ export const artsMediaCareers: Career[] = [
   {
     id: "graphic-designer",
     title: "Graphic Designer",
-    description: "Create visual concepts to communicate ideas through images, layouts, and typography for websites, advertisements, product packaging, and more.",
+    description: "Create visual concepts to communicate ideas that inspire, inform, or captivate consumers through physical and digital media.",
     clusterId: "artsMedia",
     isHighIncome: false,
     isFutureReady: true,
-    averageSalary: "$55,000 - $85,000",
-    skills: ["Visual design", "Typography", "Color theory", "Adobe Creative Suite", "Brand identity"],
+    averageSalary: "$45,000 - $85,000",
+    skills: ["Visual design", "Typography", "Color theory", "Adobe Creative Suite", "Layout design"],
     roadmap: [
-      "Develop foundational art and design skills",
-      "Learn industry-standard software (Adobe Photoshop, Illustrator, InDesign)",
-      "Build a diverse portfolio showing range of styles and projects",
-      "Consider degree or certification in graphic design",
-      "Specialize in areas like web design, packaging, or branding"
+      "Build foundation in visual arts and design principles",
+      "Learn industry-standard design software",
+      "Develop a portfolio showcasing your design work",
+      "Gain experience through internships or freelance work",
+      "Specialize in a design niche like branding or UI/UX"
     ]
   },
   {
-    id: "video-producer",
-    title: "Video Producer",
-    description: "Oversee all aspects of video production from concept development to final editing for films, TV shows, advertisements, or online content.",
+    id: "film-director",
+    title: "Film Director",
+    description: "Oversee creative aspects of film production, including guiding actors, determining camera angles, and implementing the creative vision.",
     clusterId: "artsMedia",
     isHighIncome: true,
-    isFutureReady: true,
-    averageSalary: "$65,000 - $120,000",
-    skills: ["Visual storytelling", "Project management", "Budgeting", "Team leadership", "Video editing"],
-    roadmap: [
-      "Study film production or related field",
-      "Master video production software and equipment",
-      "Gain experience through internships or assistant roles",
-      "Build portfolio of diverse video projects",
-      "Network with others in the industry and build client relationships"
-    ]
-  },
-  {
-    id: "photographer",
-    title: "Photographer",
-    description: "Capture and create compelling images for artistic expression, documentation, commercial purposes, or journalistic coverage.",
-    clusterId: "artsMedia",
-    isHighIncome: false,
     isFutureReady: false,
-    averageSalary: "$40,000 - $80,000",
-    skills: ["Composition", "Lighting techniques", "Camera operation", "Photo editing", "Visual storytelling"],
+    averageSalary: "$60,000 - $150,000+",
+    skills: ["Visual storytelling", "Script analysis", "Actor direction", "Production management", "Creative vision"],
     roadmap: [
-      "Master photography fundamentals (exposure, composition, lighting)",
-      "Develop proficiency with professional camera equipment",
-      "Learn photo editing software like Adobe Lightroom and Photoshop",
-      "Build specialized portfolio in chosen photography niche",
-      "Create professional website and marketing strategy"
+      "Study film theory and production techniques",
+      "Create short films to develop your craft",
+      "Network with other filmmakers and industry professionals",
+      "Work in various production roles to understand filmmaking",
+      "Develop a distinctive directorial style and vision"
     ]
   },
   {
-    id: "game-artist",
-    title: "Video Game Artist",
-    description: "Create visual elements for video games including characters, environments, animations, and user interface components.",
+    id: "animation-artist",
+    title: "Animation Artist",
+    description: "Create animated sequences for film, television, video games, and digital media using various techniques and software.",
     clusterId: "artsMedia",
     isHighIncome: true,
     isFutureReady: true,
-    averageSalary: "$70,000 - $120,000",
-    skills: ["3D modeling", "Texturing", "Animation", "Visual design", "Game engines"],
+    averageSalary: "$60,000 - $110,000",
+    skills: ["Drawing", "3D modeling", "Animation principles", "Character design", "Motion dynamics"],
     roadmap: [
-      "Develop strong traditional art fundamentals",
-      "Learn industry software like Maya, Blender, or ZBrush",
-      "Build technical understanding of game development pipeline",
-      "Create game art portfolio with diverse assets",
-      "Specialize in concept art, character modeling, or environment design"
+      "Develop strong foundational art skills",
+      "Learn industry-standard animation software",
+      "Create an animation demo reel showcasing your skills",
+      "Specialize in a type of animation (3D, 2D, character, etc.)",
+      "Gain professional experience through studios or freelance work"
+    ]
+  },
+  {
+    id: "virtual-production-designer",
+    title: "Virtual Production Designer",
+    description: "Create digital environments and visual effects for films, games, and virtual experiences using real-time rendering technology.",
+    clusterId: "artsMedia",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $130,000",
+    skills: ["3D modeling", "Real-time engines", "Virtual cinematography", "Digital lighting", "Photogrammetry"],
+    roadmap: [
+      "Build foundation in traditional art and design",
+      "Learn real-time rendering engines like Unreal Engine",
+      "Develop skills in virtual production workflows",
+      "Create portfolio showcasing virtual environments",
+      "Stay current with rapidly evolving virtual production technology"
     ],
     aiRelated: true
   },
   {
-    id: "art-director",
-    title: "Art Director",
-    description: "Lead creative teams in developing the overall visual look and feel for magazines, newspapers, product packaging, films, or television shows.",
+    id: "ar-vr-content-creator",
+    title: "AR/VR Content Creator",
+    description: "Design and produce immersive experiences for augmented and virtual reality platforms across entertainment, education, and business applications.",
     clusterId: "artsMedia",
     isHighIncome: true,
     isFutureReady: true,
-    averageSalary: "$85,000 - $150,000",
-    skills: ["Leadership", "Visual communication", "Project management", "Creative direction", "Brand development"],
+    emergingField: true,
+    averageSalary: "$70,000 - $120,000",
+    skills: ["3D modeling", "Interactive design", "Spatial thinking", "Programming basics", "User experience design"],
     roadmap: [
-      "Build strong foundation as designer or artist",
-      "Develop leadership and project management skills",
-      "Gain experience working with cross-functional teams",
-      "Create compelling portfolio showing creative vision",
-      "Network with industry professionals"
+      "Build foundation in digital art and design",
+      "Learn AR/VR development platforms",
+      "Understand principles of immersive storytelling",
+      "Create portfolio of AR/VR experiences",
+      "Stay current with emerging immersive technologies"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "music-producer",
+    title: "Music Producer",
+    description: "Oversee and manage the recording, production and arrangement of music for artists, bands, advertisements, film, and other media.",
+    clusterId: "artsMedia",
+    isHighIncome: true,
+    isFutureReady: false,
+    averageSalary: "$50,000 - $100,000+",
+    skills: ["Music theory", "Audio engineering", "Digital audio workstations", "Arrangement", "Industry knowledge"],
+    roadmap: [
+      "Develop strong musical foundation and ear training",
+      "Learn audio recording and production techniques",
+      "Master industry-standard music production software",
+      "Build portfolio by producing for various artists",
+      "Network within the music industry"
+    ]
+  },
+  {
+    id: "game-artist",
+    title: "Game Artist",
+    description: "Create visual elements for video games including characters, environments, objects, and animations that enhance gameplay.",
+    clusterId: "artsMedia",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$60,000 - $100,000",
+    skills: ["2D/3D art", "Texture creation", "Character design", "Environment design", "Game engine knowledge"],
+    roadmap: [
+      "Build strong foundation in traditional and digital art",
+      "Learn industry-standard 2D and 3D software",
+      "Understand game art pipelines and constraints",
+      "Create game-ready assets for your portfolio",
+      "Specialize in a specific area like character or environment art"
     ]
   }
 ];
