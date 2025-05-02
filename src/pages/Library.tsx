@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { careerClusters } from '@/data/careerClusters';
+import { careerClusters } from '@/data/careers';
 import { careers } from '@/data/careers';
 import Header from '@/components/Header';
 import { ChevronDown, ChevronUp, ArrowLeft, Search, Info, BookOpen, Briefcase } from 'lucide-react';
@@ -51,7 +51,7 @@ const Library = () => {
     return careers.filter(career => 
       career.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       career.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      career.skills.some(skill => skill.toLowerCase().includes(searchTerm.toLowerCase()))
+      (career.skills && career.skills.some(skill => skill.toLowerCase().includes(searchTerm.toLowerCase())))
     );
   };
   
@@ -216,38 +216,42 @@ const Library = () => {
                       <div className="p-4 border-t border-gray-100">
                         <p className="text-gray-600 mb-4">{career.description}</p>
                         
-                        <div className="mb-4">
-                          <h4 className="font-medium text-career-purple mb-2">Required Skills:</h4>
-                          <div className="flex flex-wrap gap-2">
-                            {career.skills.map(skill => (
-                              <span 
-                                key={skill} 
-                                className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                              >
-                                {skill}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                        
-                        <div>
-                          <div className="flex items-center gap-2 mb-2">
-                            <h4 className="font-medium text-career-purple">Learning Roadmap:</h4>
-                            <Badge variant="outline" className="bg-yellow-50 text-yellow-700 border-yellow-200">
-                              Growth Path
-                            </Badge>
-                          </div>
-                          <div className="space-y-3 pl-0 md:pl-4">
-                            {career.roadmap.map((step, index) => (
-                              <div key={index} className="flex items-start bg-gray-50 p-2 rounded border border-gray-100">
-                                <span className="w-6 h-6 bg-career-light-purple text-career-purple rounded-full flex items-center justify-center flex-shrink-0 mr-2">
-                                  {index + 1}
+                        {career.skills && career.skills.length > 0 && (
+                          <div className="mb-4">
+                            <h4 className="font-medium text-career-purple mb-2">Required Skills:</h4>
+                            <div className="flex flex-wrap gap-2">
+                              {career.skills.map((skill, index) => (
+                                <span 
+                                  key={`${skill}-${index}`} 
+                                  className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
+                                >
+                                  {skill}
                                 </span>
-                                <p className="text-gray-700">{step}</p>
-                              </div>
-                            ))}
+                              ))}
+                            </div>
                           </div>
-                        </div>
+                        )}
+                        
+                        {career.roadmap && career.roadmap.length > 0 && (
+                          <div>
+                            <div className="flex items-center gap-2 mb-2">
+                              <h4 className="font-medium text-career-purple">Learning Roadmap:</h4>
+                              <Badge variant="outline" className="bg-yellow-50 text-yellow-700 border-yellow-200">
+                                Growth Path
+                              </Badge>
+                            </div>
+                            <div className="space-y-3 pl-0 md:pl-4">
+                              {career.roadmap.map((step, index) => (
+                                <div key={index} className="flex items-start bg-gray-50 p-2 rounded border border-gray-100">
+                                  <span className="w-6 h-6 bg-career-light-purple text-career-purple rounded-full flex items-center justify-center flex-shrink-0 mr-2">
+                                    {index + 1}
+                                  </span>
+                                  <p className="text-gray-700">{step}</p>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                         
                         <div className="mt-4 pt-4 border-t border-gray-100">
                           <div className="flex items-center mb-2">
