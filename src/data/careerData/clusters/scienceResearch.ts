@@ -1,4 +1,3 @@
-
 import { Career } from '../../types';
 
 export const scienceResearchCareers: Career[] = [
@@ -163,5 +162,76 @@ export const scienceResearchCareers: Career[] = [
       "Stay current with advances in neuroscience research"
     ],
     aiRelated: true
+  },
+  {
+    id: "space-scientist",
+    title: "Space Scientist",
+    description: "Study celestial objects, space phenomena, and the physical conditions in space to advance our understanding of the universe and develop space technologies.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$80,000 - $150,000",
+    skills: ["Astrophysics", "Data analysis", "Research methodology", "Mathematical modeling", "Instrument operation"],
+    roadmap: [
+      "Build strong foundation in physics and astronomy",
+      "Pursue advanced degree in space science or related field",
+      "Develop expertise in specific space research area",
+      "Gain experience with space data analysis and instrumentation",
+      "Collaborate on space research projects and publications"
+    ]
+  },
+  {
+    id: "genomics-researcher",
+    title: "Genomics Researcher",
+    description: "Study and analyze entire genomes to understand gene function, genetic diseases, and develop personalized medical treatments.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$85,000 - $140,000",
+    skills: ["Genome sequencing", "Bioinformatics", "Statistical genetics", "Laboratory techniques", "Research design"],
+    roadmap: [
+      "Build foundation in molecular biology and genetics",
+      "Develop strong bioinformatics and data analysis skills",
+      "Learn genomic sequencing technologies",
+      "Gain experience with genomic data interpretation",
+      "Stay current with advances in genomics research"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "green-chemistry-scientist",
+    title: "Green Chemistry Scientist",
+    description: "Develop chemical products and processes that reduce or eliminate hazardous substances, focusing on sustainable chemistry principles.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $130,000",
+    skills: ["Chemistry", "Sustainable design", "Life-cycle assessment", "Laboratory techniques", "Environmental science"],
+    roadmap: [
+      "Build strong foundation in chemistry",
+      "Learn green chemistry principles and methodologies",
+      "Develop expertise in sustainable process design",
+      "Gain experience with alternative reagents and solvents",
+      "Stay current with advances in sustainable chemistry"
+    ]
+  },
+  {
+    id: "oceanographic-scientist",
+    title: "Oceanographic Scientist",
+    description: "Study the physical, chemical, and biological aspects of oceans to understand marine ecosystems, climate regulation, and develop ocean-based solutions.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$70,000 - $120,000",
+    skills: ["Marine biology", "Oceanography", "Data collection", "Field research", "Environmental analysis"],
+    roadmap: [
+      "Build foundation in marine science or oceanography",
+      "Develop field research and data collection skills",
+      "Learn remote sensing and oceanographic instruments",
+      "Gain experience through research cruises and field work",
+      "Stay current with advances in ocean science and climate research"
+    ]
   }
 ];

@@ -1,4 +1,3 @@
-
 import { Career } from '../../types';
 
 export const educationCareers: Career[] = [
@@ -176,6 +175,63 @@ export const educationCareers: Career[] = [
       "Develop skills in digital learning tools and platforms",
       "Create portfolio of learning experience projects",
       "Stay current with innovations in educational technology"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "adaptive-learning-designer",
+    title: "Adaptive Learning Designer",
+    description: "Create personalized digital learning experiences that adapt to individual student needs, learning styles, and progress using data and algorithms.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$80,000 - $130,000",
+    skills: ["Learning science", "Data analytics", "Instructional design", "Educational technology", "Content development"],
+    roadmap: [
+      "Build foundation in education and instructional design",
+      "Learn data analytics and personalization algorithms",
+      "Develop expertise in adaptive learning platforms",
+      "Gain experience creating adaptive learning content",
+      "Stay current with learning analytics advances"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "immersive-learning-specialist",
+    title: "Immersive Learning Specialist",
+    description: "Design educational experiences using virtual reality, augmented reality, and mixed reality to create engaging and effective learning environments.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $120,000",
+    skills: ["VR/AR development", "Learning design", "3D modeling", "User experience", "Educational content creation"],
+    roadmap: [
+      "Build foundation in educational technology and design",
+      "Learn VR/AR development tools and techniques",
+      "Develop understanding of immersive learning principles",
+      "Gain experience creating educational XR experiences",
+      "Stay current with immersive technology advances"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "education-data-scientist",
+    title: "Education Data Scientist",
+    description: "Analyze educational data to improve learning outcomes, identify effective teaching strategies, and help institutions make data-driven decisions.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $140,000",
+    skills: ["Data analysis", "Educational research", "Statistical modeling", "Learning analytics", "Data visualization"],
+    roadmap: [
+      "Build foundation in data science and education",
+      "Learn educational measurement and assessment",
+      "Develop expertise in learning analytics platforms",
+      "Gain experience working with educational datasets",
+      "Stay current with advances in educational data mining"
     ],
     aiRelated: true
   }

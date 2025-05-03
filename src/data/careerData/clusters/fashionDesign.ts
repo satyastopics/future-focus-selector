@@ -1,4 +1,3 @@
-
 import { Career } from '../../types';
 
 export const fashionDesignCareers: Career[] = [
@@ -72,5 +71,80 @@ export const fashionDesignCareers: Career[] = [
       "Gain experience in textile development or research",
       "Stay current with innovative materials and processes"
     ]
+  },
+  {
+    id: "wearable-technology-designer",
+    title: "Wearable Technology Designer",
+    description: "Create clothing and accessories that integrate electronics, sensors, and other technologies to provide functionality beyond traditional fashion.",
+    clusterId: "fashionDesign",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$80,000 - $130,000",
+    skills: ["Fashion design", "Electronics integration", "User experience", "Prototyping", "Material innovation"],
+    roadmap: [
+      "Build foundation in fashion design and technology",
+      "Learn electronics and circuitry basics",
+      "Develop skills in e-textiles and conductive materials",
+      "Gain experience creating functional wearable prototypes",
+      "Stay current with wearable technology innovations"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "digital-fashion-designer",
+    title: "Digital Fashion Designer",
+    description: "Create virtual clothing and accessories for digital avatars, gaming, AR/VR experiences, and digital fashion marketplaces.",
+    clusterId: "fashionDesign",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $120,000",
+    skills: ["3D modeling", "Digital rendering", "Fashion design", "Animation", "Virtual texturing"],
+    roadmap: [
+      "Build foundation in fashion design and 3D modeling",
+      "Learn digital design tools like CLO 3D or Marvelous Designer",
+      "Develop expertise in digital fabric simulation",
+      "Gain experience creating digital fashion collections",
+      "Stay current with digital fashion platforms and technologies"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "circular-fashion-designer",
+    title: "Circular Fashion Designer",
+    description: "Design clothing with end-of-life considerations, focusing on recyclability, biodegradability, and cradle-to-cradle principles.",
+    clusterId: "fashionDesign",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$70,000 - $110,000",
+    skills: ["Sustainable design", "Material knowledge", "Zero-waste pattern cutting", "Lifecycle assessment", "Circular economy principles"],
+    roadmap: [
+      "Build foundation in fashion design and sustainability",
+      "Learn circular design principles and methodologies",
+      "Develop expertise in sustainable materials and processes",
+      "Gain experience creating recyclable or biodegradable garments",
+      "Stay current with circular fashion innovations"
+    ]
+  },
+  {
+    id: "fashion-ai-specialist",
+    title: "Fashion AI Specialist",
+    description: "Apply artificial intelligence to fashion design, trend forecasting, virtual try-on technologies, and personalized styling recommendations.",
+    clusterId: "fashionDesign",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $150,000",
+    skills: ["AI and machine learning", "Fashion knowledge", "Data analysis", "Algorithm development", "User experience"],
+    roadmap: [
+      "Build foundation in computer science and fashion",
+      "Learn machine learning and AI fundamentals",
+      "Develop expertise in computer vision for fashion",
+      "Gain experience with fashion datasets and algorithms",
+      "Stay current with AI applications in the fashion industry"
+    ],
+    aiRelated: true
   }
 ];

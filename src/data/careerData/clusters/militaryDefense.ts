@@ -1,4 +1,3 @@
-
 import { Career } from '../../types';
 
 export const militaryDefenseCareers: Career[] = [
@@ -73,5 +72,78 @@ export const militaryDefenseCareers: Career[] = [
       "Stay current with emerging defense technologies"
     ],
     aiRelated: true
+  },
+  {
+    id: "military-ai-strategist",
+    title: "Military AI Strategist",
+    description: "Develop and implement artificial intelligence strategies for defense applications, focusing on ethical use, capabilities, and counter-measures.",
+    clusterId: "militaryDefense",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$110,000 - $180,000",
+    skills: ["AI systems", "Defense strategy", "Risk assessment", "Ethical frameworks", "Technological forecasting"],
+    roadmap: [
+      "Build foundation in computer science and defense policy",
+      "Develop expertise in military AI applications",
+      "Learn about AI ethics and governance frameworks",
+      "Gain experience through defense contractors or military",
+      "Stay current with evolving AI defense technologies"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "space-force-technician",
+    title: "Space Force Technician",
+    description: "Operate and maintain military space systems including satellites, ground stations, and space-based defense technologies.",
+    clusterId: "militaryDefense",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$70,000 - $120,000",
+    skills: ["Satellite systems", "Communications technology", "Space operations", "Technical troubleshooting", "Security protocols"],
+    roadmap: [
+      "Build foundation in aerospace technology or engineering",
+      "Develop expertise in satellite and space systems",
+      "Join military space branch or defense contractor",
+      "Gain experience through specialized military training",
+      "Stay current with advances in space technology"
+    ]
+  },
+  {
+    id: "virtual-training-specialist",
+    title: "Virtual Training Specialist",
+    description: "Create immersive virtual reality training simulations for military personnel to practice complex operations in realistic environments.",
+    clusterId: "militaryDefense",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$85,000 - $140,000",
+    skills: ["VR development", "Military operations knowledge", "Instructional design", "Simulation modeling", "User experience"],
+    roadmap: [
+      "Build foundation in game development or simulation design",
+      "Learn military protocols and training requirements",
+      "Develop expertise in VR/AR technologies",
+      "Gain experience creating training simulations",
+      "Stay current with advances in virtual training technologies"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "electronic-warfare-specialist",
+    title: "Electronic Warfare Specialist",
+    description: "Develop and implement techniques to protect friendly electronic systems and disrupt enemy systems across electromagnetic and digital domains.",
+    clusterId: "militaryDefense",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$90,000 - $150,000",
+    skills: ["Electronic systems", "Signal analysis", "Jamming techniques", "Cyber operations", "Technical surveillance"],
+    roadmap: [
+      "Build foundation in electrical engineering or communications",
+      "Learn electronic warfare principles and technologies",
+      "Develop expertise in electromagnetic spectrum operations",
+      "Gain experience through military or defense contractors",
+      "Stay current with electronic warfare technologies"
+    ]
   }
 ];

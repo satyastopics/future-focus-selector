@@ -1,4 +1,3 @@
-
 import { Career } from '../../types';
 
 export const transportationLogisticsCareers: Career[] = [
@@ -90,6 +89,80 @@ export const transportationLogisticsCareers: Career[] = [
       "Learn transportation modeling and simulation tools",
       "Gain experience through city planning departments or consultancies",
       "Stay current with emerging mobility trends and technologies"
+    ]
+  },
+  {
+    id: "hyperloop-systems-engineer",
+    title: "Hyperloop Systems Engineer",
+    description: "Design and develop ultra-high-speed transportation systems using vacuum tubes and magnetic levitation to transform long-distance travel.",
+    clusterId: "transportationLogistics",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$100,000 - $170,000",
+    skills: ["Fluid dynamics", "Electromagnetic systems", "Mechanical design", "Control systems", "Safety engineering"],
+    roadmap: [
+      "Build strong foundation in mechanical or electrical engineering",
+      "Learn vacuum technology and electromagnetic principles",
+      "Develop expertise in transportation systems engineering",
+      "Gain experience with advanced transportation technologies",
+      "Stay current with hyperloop and high-speed transport developments"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "smart-transportation-planner",
+    title: "Smart Transportation Planner",
+    description: "Integrate digital technologies and data analytics into transportation planning to improve efficiency, sustainability, and user experience of urban mobility.",
+    clusterId: "transportationLogistics",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$80,000 - $140,000",
+    skills: ["Transportation planning", "Data analytics", "GIS mapping", "Smart city technologies", "Multimodal integration"],
+    roadmap: [
+      "Build foundation in urban planning or transportation engineering",
+      "Develop skills in transportation data analysis",
+      "Learn smart mobility technologies and applications",
+      "Gain experience with transportation modeling tools",
+      "Stay current with smart city and mobility innovations"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "cargo-delivery-drone-specialist",
+    title: "Cargo Delivery Drone Specialist",
+    description: "Develop and operate unmanned aerial systems for package delivery, focusing on route optimization, safety, and regulatory compliance.",
+    clusterId: "transportationLogistics",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $130,000",
+    skills: ["Drone technology", "Route planning", "Regulatory knowledge", "Systems integration", "Safety protocols"],
+    roadmap: [
+      "Build foundation in aviation or engineering",
+      "Learn drone technology and flight operations",
+      "Develop understanding of airspace regulations",
+      "Gain experience with delivery drone systems",
+      "Stay current with drone technology and delivery innovations"
+    ]
+  },
+  {
+    id: "sustainable-logistics-consultant",
+    title: "Sustainable Logistics Consultant",
+    description: "Help companies reduce the environmental impact of their supply chains through green transportation, optimized routes, and carbon footprint reduction.",
+    clusterId: "transportationLogistics",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$85,000 - $140,000",
+    skills: ["Supply chain management", "Carbon accounting", "Transportation optimization", "Sustainability metrics", "Process improvement"],
+    roadmap: [
+      "Build foundation in supply chain management or environmental science",
+      "Learn green logistics principles and methodologies",
+      "Develop expertise in carbon accounting for transportation",
+      "Gain experience implementing sustainable logistics initiatives",
+      "Stay current with green transportation technologies"
     ]
   }
 ];

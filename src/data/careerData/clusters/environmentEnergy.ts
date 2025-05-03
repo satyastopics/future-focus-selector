@@ -1,4 +1,3 @@
-
 import { Career } from '../../types';
 
 export const environmentEnergyCareers: Career[] = [
@@ -89,5 +88,94 @@ export const environmentEnergyCareers: Career[] = [
       "Stay current with evolving smart grid technologies"
     ],
     aiRelated: true
+  },
+  {
+    id: "energy-storage-engineer",
+    title: "Energy Storage Engineer",
+    description: "Design, develop, and test battery and energy storage systems to improve efficiency, capacity, and sustainability of renewable energy.",
+    clusterId: "environmentEnergy",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$85,000 - $140,000",
+    skills: ["Electrochemistry", "Materials science", "System modeling", "Electrical engineering", "Energy efficiency"],
+    roadmap: [
+      "Build foundation in electrical engineering or materials science",
+      "Learn battery chemistry and storage technologies",
+      "Develop expertise in energy management systems",
+      "Gain experience with storage system design and testing",
+      "Stay current with emerging energy storage technologies"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "climate-resilience-specialist",
+    title: "Climate Resilience Specialist",
+    description: "Develop strategies to help communities and organizations adapt to climate change impacts and build resilience against extreme weather events.",
+    clusterId: "environmentEnergy",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $130,000",
+    skills: ["Climate science", "Risk assessment", "Urban planning", "Stakeholder engagement", "Policy development"],
+    roadmap: [
+      "Build foundation in environmental science or policy",
+      "Develop understanding of climate impacts and vulnerabilities",
+      "Learn adaptation and resilience planning methodologies",
+      "Gain experience implementing resilience initiatives",
+      "Stay current with climate adaptation strategies and best practices"
+    ]
+  },
+  {
+    id: "bioenergy-specialist",
+    title: "Bioenergy Specialist",
+    description: "Develop and implement technologies to convert biomass into renewable energy, including biofuels, biogas, and biomass power generation.",
+    clusterId: "environmentEnergy",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$75,000 - $125,000",
+    skills: ["Biochemical processes", "Thermochemical conversion", "Systems integration", "Biomass assessment", "Process optimization"],
+    roadmap: [
+      "Build foundation in chemical engineering or related field",
+      "Learn bioenergy conversion technologies",
+      "Develop expertise in specific bioenergy pathways",
+      "Gain experience with bioenergy system design",
+      "Stay current with advances in bioenergy research"
+    ]
+  },
+  {
+    id: "water-resource-manager",
+    title: "Water Resource Manager",
+    description: "Plan and implement strategies for sustainable water use, conservation, and quality management to ensure water security in a changing climate.",
+    clusterId: "environmentEnergy",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$70,000 - $120,000",
+    skills: ["Hydrology", "Water quality assessment", "Resource planning", "Policy implementation", "Stakeholder management"],
+    roadmap: [
+      "Build foundation in environmental science or water resources",
+      "Learn water management principles and regulations",
+      "Develop expertise in water conservation technologies",
+      "Gain experience with watershed assessment and planning",
+      "Stay current with integrated water management approaches"
+    ]
+  },
+  {
+    id: "circular-economy-specialist",
+    title: "Circular Economy Specialist",
+    description: "Design systems and strategies to eliminate waste and continually reuse resources, helping organizations transition from linear to circular business models.",
+    clusterId: "environmentEnergy",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$80,000 - $130,000",
+    skills: ["Systems thinking", "Life cycle assessment", "Sustainable design", "Supply chain analysis", "Waste management"],
+    roadmap: [
+      "Build foundation in environmental science or sustainable business",
+      "Learn circular economy principles and frameworks",
+      "Develop expertise in material flows and product design",
+      "Gain experience implementing circular initiatives",
+      "Stay current with circular economy innovations and policies"
+    ]
   }
 ];
