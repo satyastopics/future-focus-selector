@@ -57,8 +57,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in quantum machine learning algorithms",
       "Gain experience with quantum simulators and hardware",
       "Contribute to research in quantum AI applications"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "human-ai-collaboration-designer",
@@ -77,8 +76,7 @@ export const aiFutureCareers: Career[] = [
       "Learn about AI capabilities and limitations",
       "Gain experience designing collaborative work systems",
       "Stay current with advances in AI interface design"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "ai-generated-content-specialist",
@@ -97,8 +95,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in prompt design and model fine-tuning",
       "Gain experience creating AI-human collaborative works",
       "Stay current with advances in generative AI technology"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "synthetic-biology-computational-expert",
@@ -117,8 +114,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in AI for biological design",
       "Gain experience with computational biology projects",
       "Stay current with advances in synthetic biology tools"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "autonomous-systems-architect",
@@ -137,8 +133,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in safety-critical systems design",
       "Gain experience with autonomous system projects",
       "Stay current with advances in autonomous technology"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "metaverse-architect",
@@ -176,8 +171,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in hardware acceleration techniques",
       "Gain experience designing AI-optimized hardware",
       "Stay current with advances in AI chip technology"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "space-technology-engineer",
@@ -214,8 +208,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in AI for robotic perception and planning",
       "Gain experience building sophisticated robot systems",
       "Stay current with advances in robotics technology"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "ai-personalized-education-designer",
@@ -234,8 +227,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in adaptive learning systems",
       "Gain experience creating personalized learning tools",
       "Stay current with advances in educational AI"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "predictive-healthcare-analyst",
@@ -254,8 +246,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in predictive health analytics",
       "Gain experience with healthcare prediction projects",
       "Stay current with advances in medical AI applications"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "digital-twin-architect",
@@ -293,8 +284,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in consumer behavior analysis",
       "Gain experience with neuromarketing research",
       "Stay current with advances in consumer neuroscience"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "augmented-human-specialist",
@@ -313,8 +303,7 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in human-technology interfaces",
       "Gain experience designing augmentation solutions",
       "Stay current with advances in human enhancement tech"
-    ],
-    aiRelated: true
+    ]
   },
   {
     id: "computational-creativity-engineer",
@@ -333,7 +322,6 @@ export const aiFutureCareers: Career[] = [
       "Develop expertise in generative systems for specific domains",
       "Gain experience creating novel AI creative tools",
       "Stay current with advances in creative AI technology"
-    ],
-    aiRelated: true
+    ]
   }
 ];
