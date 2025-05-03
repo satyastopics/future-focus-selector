@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { careerClusters } from '@/data/careers';
 import { careers } from '@/data/careers';
 import Header from '@/components/Header';
@@ -36,8 +35,43 @@ const Library = () => {
     setExpandedCareerId(null);
   };
   
+  // Sort clusters to prioritize future-oriented ones
+  const sortedClusters = useMemo(() => {
+    // Define priority clusters that should appear first
+    const priorityOrder = [
+      "aiFuture",          // AI & Future Technologies
+      "emergingTech",      // Emerging Technologies 
+      "technology",        // Technology & Computing
+      "engineering",       // Engineering & Design
+      "scienceResearch",   // Science & Research
+      "healthcare",        // Healthcare & Medicine
+      "environmentEnergy", // Environment & Energy
+      // Other clusters will follow in their original order
+    ];
+    
+    // Create a sorted copy of the clusters array
+    return [...careerClusters].sort((a, b) => {
+      const aIndex = priorityOrder.indexOf(a.id);
+      const bIndex = priorityOrder.indexOf(b.id);
+      
+      // If both are in priority list, sort by priority order
+      if (aIndex !== -1 && bIndex !== -1) {
+        return aIndex - bIndex;
+      }
+      
+      // If only a is in priority list, a comes first
+      if (aIndex !== -1) return -1;
+      
+      // If only b is in priority list, b comes first
+      if (bIndex !== -1) return 1;
+      
+      // Otherwise, keep original order
+      return 0;
+    });
+  }, []);
+  
   // Filter clusters by search term
-  const filteredClusters = careerClusters.filter(cluster => {
+  const filteredClusters = sortedClusters.filter(cluster => {
     if (!searchTerm) return true;
     return (
       cluster.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -53,6 +87,11 @@ const Library = () => {
       career.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (career.skills && career.skills.some(skill => skill.toLowerCase().includes(searchTerm.toLowerCase())))
     );
+  };
+  
+  // Highlight priority clusters with a visual indicator
+  const isPriorityCluster = (clusterId: string) => {
+    return ["aiFuture", "emergingTech", "technology", "engineering"].includes(clusterId);
   };
   
   return (
@@ -114,12 +153,23 @@ const Library = () => {
               return (
                 <div 
                   key={cluster.id}
-                  className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-all duration-300 cursor-pointer border border-transparent hover:border-career-light-purple"
+                  className={`bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-all duration-300 cursor-pointer border ${
+                    isPriorityCluster(cluster.id) 
+                      ? 'border-career-purple/30 ring-1 ring-career-purple/20' 
+                      : 'border-transparent hover:border-career-light-purple'
+                  }`}
                   onClick={() => handleClusterSelect(cluster.id)}
                 >
                   <div className="flex items-center mb-2">
                     <span className="text-4xl mr-3">{cluster.icon}</span>
-                    <h2 className="text-xl font-semibold text-career-purple">{cluster.title}</h2>
+                    <div>
+                      <h2 className="text-xl font-semibold text-career-purple">{cluster.title}</h2>
+                      {isPriorityCluster(cluster.id) && (
+                        <Badge className="bg-career-light-purple text-career-purple mt-1">
+                          High Future Potential
+                        </Badge>
+                      )}
+                    </div>
                   </div>
                   <p className="text-gray-600 text-sm mb-3">{cluster.description}</p>
                   <div className="mt-3 flex items-center">
@@ -153,6 +203,11 @@ const Library = () => {
                       <h2 className="text-xl font-semibold text-career-purple">
                         {careerClusters.find(c => c.id === selectedCluster)?.title}
                       </h2>
+                      {isPriorityCluster(selectedCluster) && (
+                        <Badge className="bg-career-light-purple text-career-purple mt-1">
+                          High Future Potential
+                        </Badge>
+                      )}
                       <p className="text-gray-600 text-sm">
                         {careerClusters.find(c => c.id === selectedCluster)?.description}
                       </p>

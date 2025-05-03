@@ -188,5 +188,96 @@ export const emergingTechCareers: Career[] = [
       "Stay current with advances in brain-inspired computing"
     ],
     aiRelated: true
+  },
+  {
+    id: "biomimicry-designer",
+    title: "Biomimicry Designer",
+    description: "Create innovative solutions to human challenges by emulating nature's patterns and strategies, applying biological principles to product design, architecture, and systems.",
+    clusterId: "emergingTech",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$80,000 - $140,000",
+    skills: ["Biology knowledge", "Design thinking", "Systems thinking", "Sustainability principles", "Interdisciplinary collaboration"],
+    roadmap: [
+      "Build foundation in biology and design disciplines",
+      "Learn biomimicry methodologies and frameworks",
+      "Develop expertise in sustainable design principles",
+      "Gain experience applying nature's strategies to human challenges",
+      "Stay current with advances in biomimicry applications"
+    ]
+  },
+  {
+    id: "holographic-engineer",
+    title: "Holographic Engineer",
+    description: "Develop and implement holographic display technologies for entertainment, communication, medical imaging, and data visualization applications.",
+    clusterId: "emergingTech",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $160,000",
+    skills: ["Optics", "Laser technology", "Digital light processing", "3D modeling", "Computer graphics"],
+    roadmap: [
+      "Build foundation in optics and computer graphics",
+      "Learn holographic display principles and technologies",
+      "Develop expertise in light-field rendering techniques",
+      "Gain experience with holographic prototyping",
+      "Stay current with advances in volumetric display technology"
+    ]
+  },
+  {
+    id: "bioprinting-specialist",
+    title: "Bioprinting Specialist",
+    description: "Use 3D printing technology to create living tissues and organs for medical research, drug testing, and potentially transplantation, combining biology with additive manufacturing.",
+    clusterId: "emergingTech",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$85,000 - $150,000",
+    skills: ["Tissue engineering", "3D bioprinting", "Cell culture", "Biomaterials", "CAD modeling"],
+    roadmap: [
+      "Build foundation in biology and bioengineering",
+      "Learn bioprinting technologies and techniques",
+      "Develop expertise in biomaterials and tissue engineering",
+      "Gain experience with bioprinting projects and applications",
+      "Stay current with advances in bioprinting and regenerative medicine"
+    ]
+  },
+  {
+    id: "crispr-gene-therapy-developer",
+    title: "CRISPR Gene Therapy Developer",
+    description: "Design and develop gene-editing therapies using CRISPR technology to treat genetic diseases, cancer, and other conditions by precisely modifying DNA.",
+    clusterId: "emergingTech",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$100,000 - $180,000",
+    skills: ["Molecular biology", "Gene editing", "CRISPR-Cas systems", "Genetic disease knowledge", "Biotechnology"],
+    roadmap: [
+      "Build strong foundation in molecular biology and genetics",
+      "Learn CRISPR-Cas gene editing systems",
+      "Develop expertise in therapeutic applications",
+      "Gain experience with gene therapy research and development",
+      "Stay current with advances in gene editing technologies"
+    ]
+  },
+  {
+    id: "swarm-robotics-engineer",
+    title: "Swarm Robotics Engineer",
+    description: "Design systems of multiple robots that work together to accomplish tasks through collective behavior, inspired by swarms in nature like ants or bees.",
+    clusterId: "emergingTech",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $160,000",
+    skills: ["Robotics", "Distributed systems", "Multi-agent algorithms", "Control theory", "Programming"],
+    roadmap: [
+      "Build foundation in robotics and computer science",
+      "Learn about swarm intelligence and collective behavior",
+      "Develop expertise in distributed control algorithms",
+      "Gain experience designing and testing swarm systems",
+      "Stay current with advances in distributed robotics"
+    ],
+    aiRelated: true
   }
 ];
