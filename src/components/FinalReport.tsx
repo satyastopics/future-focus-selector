@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { Career, CareerCluster } from '../data/types';
 import { getCommonSkills, getTransferableSkills } from '../data/careers';
@@ -10,7 +9,7 @@ import {
   AccordionTrigger,
 } from "./ui/accordion";
 import { Badge } from "./ui/badge";
-import { GraduationCap, Briefcase, Book, Award, FileDoc, BrainCircuit, Lightbulb, FileSpreadsheet } from "lucide-react";
+import { GraduationCap, Briefcase, Book, Award, FileText, BrainCircuit, Lightbulb, FileSpreadsheet } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
 import { Link } from "react-router-dom";
 
@@ -287,7 +286,7 @@ const FinalReport: React.FC<FinalReportProps> = ({
             variant="outline"
             className="flex items-center gap-1.5"
           >
-            <FileDoc className="h-4 w-4" /> Download Report
+            <FileText className="h-4 w-4" /> Download Report
           </Button>
         )}
       </div>
