@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "./ui/accordion";
 import { Badge } from "./ui/badge";
-import { GraduationCap, Briefcase, Book, Award, FileText, BrainCircuit, Lightbulb, FileSpreadsheet } from "lucide-react";
+import { GraduationCap, Briefcase, Book, Award, FileDoc, BrainCircuit, Lightbulb, FileSpreadsheet } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
 import { Link } from "react-router-dom";
 
@@ -70,13 +70,226 @@ const FinalReport: React.FC<FinalReportProps> = ({
     </div>
   );
 
-  // For now, we'll remove the download report functionality as requested
-  // We can implement a proper PDF or DOC export in the future
+  // Function to generate and download the report as a DOC file
+  const downloadReport = () => {
+    if (careers.length === 0) {
+      toast({
+        title: "No careers selected",
+        description: "Please select at least one career to generate a report.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    try {
+      // Create content for the document
+      let content = `
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Career Path Report</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+  h1 { color: #6D28D9; text-align: center; margin-bottom: 30px; }
+  h2 { color: #4F46E5; margin-top: 40px; border-bottom: 1px solid #E5E7EB; padding-bottom: 10px; }
+  h3 { color: #6D28D9; margin-top: 20px; }
+  .header { text-align: center; margin-bottom: 50px; }
+  .logo { font-weight: bold; font-size: 24px; color: #6D28D9; }
+  .skill-badge { 
+    display: inline-block; 
+    background-color: #E9D5FF; 
+    color: #6D28D9; 
+    padding: 5px 10px; 
+    border-radius: 15px; 
+    margin: 5px; 
+    font-size: 14px;
+  }
+  .career-title { color: #6D28D9; font-weight: bold; font-size: 18px; }
+  .career-cluster { color: #8B5CF6; font-style: italic; }
+  .career-salary { color: #6D28D9; font-weight: bold; }
+  .section { margin-bottom: 30px; }
+  .badge { 
+    display: inline-block; 
+    padding: 3px 8px; 
+    border-radius: 10px; 
+    font-size: 12px; 
+    margin-right: 5px;
+  }
+  .emerging { background-color: #D1FAE5; color: #065F46; }
+  .ai-related { background-color: #DBEAFE; color: #1E40AF; }
+  .skill-category { font-weight: bold; margin-top: 15px; color: #4F46E5; }
+  .step { margin-left: 20px; position: relative; padding-left: 25px; margin-bottom: 10px; }
+  .step-number { 
+    position: absolute; 
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #E9D5FF;
+    color: #6D28D9;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+  .footer { 
+    text-align: center; 
+    margin-top: 50px; 
+    padding-top: 20px; 
+    border-top: 1px solid #E5E7EB; 
+    color: #6B7280;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Career Explorer</div>
+    <p>FutureReadySchools.com</p>
+  </div>
+
+  <h1>Your Career Path Report</h1>
+  
+  <div class="section">
+    <h2>Transferable Skills Analysis</h2>
+    <p>These are valuable skills that appear across multiple career paths you've selected. They represent your most versatile and marketable abilities.</p>
+`;
+
+      // Add transferable skills by category
+      Object.entries(categorizedSkills).forEach(([category, skills]) => {
+        content += `<div class="skill-category">${category} Skills</div>`;
+        content += `<div>`;
+        skills.forEach(skill => {
+          content += `<span class="skill-badge">${skill}</span>`;
+        });
+        content += `</div>`;
+      });
+
+      // Add selected careers
+      content += `
+  </div>
+  
+  <div class="section">
+    <h2>Selected Career Paths</h2>
+`;
+
+      careers.forEach(career => {
+        const careerCluster = clusters.find(c => c.id === career.clusterId);
+        
+        content += `
+    <div style="margin-bottom: 40px;">
+      <h3 class="career-title">${career.title}</h3>
+      <p class="career-cluster">${careerCluster?.title || career.clusterId}</p>
+      
+      ${career.emergingField ? '<span class="badge emerging">Emerging Field</span>' : ''}
+      ${career.aiRelated ? '<span class="badge ai-related">AI-Related</span>' : ''}
+      
+      ${career.averageSalary ? `<p class="career-salary">Average Salary: ${career.averageSalary}</p>` : ''}
+      
+      <p>${career.description}</p>
+      
+      <div class="skill-category">Key Skills</div>
+      <div>
+`;
+        
+        career.skills.forEach(skill => {
+          content += `<span class="skill-badge">${skill}</span>`;
+        });
+        
+        content += `
+      </div>
+      
+      <div class="skill-category">Traditional Career Path:</div>
+`;
+        
+        if (career.roadmap && career.roadmap.length > 0) {
+          career.roadmap.forEach((step, index) => {
+            content += `<div class="step"><span class="step-number">${index + 1}</span>${step}</div>`;
+          });
+        } else {
+          content += `<p>No specific roadmap provided for this career.</p>`;
+        }
+        
+        content += `
+    </div>
+`;
+      });
+
+      // Add next steps and footer
+      content += `
+  </div>
+  
+  <div class="section">
+    <h2>Next Steps</h2>
+    <div class="skill-category">Career Exploration</div>
+    <ul>
+      <li>Conduct informational interviews with professionals in your chosen fields</li>
+      <li>Shadow professionals for a day to see what the work is really like</li>
+      <li>Join industry groups and online forums to learn more about daily challenges</li>
+      <li>Attend industry events, conferences, or meetups</li>
+    </ul>
+    
+    <div class="skill-category">Skill Development</div>
+    <ul>
+      <li>Identify the gap between your current skills and those needed</li>
+      <li>Create a learning plan focusing on transferable skills first</li>
+      <li>Look for free or low-cost online courses to build fundamental knowledge</li>
+      <li>Practice with real-world projects or volunteer opportunities</li>
+    </ul>
+  </div>
+  
+  <div class="footer">
+    Career Explorer Report | Generated on ${new Date().toLocaleDateString()} | FutureReadySchools.com
+  </div>
+</body>
+</html>
+`;
+
+      // Create a Blob with the content
+      const blob = new Blob([content], { type: 'application/msword' });
+      
+      // Create a download link
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `career-report-${new Date().toISOString().slice(0, 10)}.doc`;
+      
+      // Trigger the download
+      document.body.appendChild(link);
+      link.click();
+      
+      // Clean up
+      URL.revokeObjectURL(url);
+      document.body.removeChild(link);
+      
+      toast({
+        title: "Report downloaded",
+        description: "Your career report has been downloaded successfully.",
+      });
+    } catch (error) {
+      console.error("Error generating report:", error);
+      toast({
+        title: "Error downloading report",
+        description: "There was a problem generating your report. Please try again.",
+        variant: "destructive"
+      });
+    }
+  };
 
   return (
     <div ref={reportRef} className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800">Your Career Path Report</h1>
+        {careers.length > 0 && (
+          <Button 
+            onClick={downloadReport} 
+            variant="outline"
+            className="flex items-center gap-1.5"
+          >
+            <FileDoc className="h-4 w-4" /> Download Report
+          </Button>
+        )}
       </div>
       
       {careers.length === 0 ? (
@@ -293,12 +506,12 @@ const FinalReport: React.FC<FinalReportProps> = ({
                 
                 <div className="bg-white rounded-lg shadow-sm p-4 flex flex-col items-center text-center">
                   <FileSpreadsheet className="h-8 w-8 text-career-purple mb-2" />
-                  <h4 className="font-semibold text-gray-800 mb-2">Planning Guide</h4>
+                  <h4 className="font-semibold text-gray-800 mb-2">Career Planning Guide</h4>
                   <p className="text-sm text-gray-600 mb-4">
-                    Access our comprehensive student career planning guide with templates and checklists
+                    Access our comprehensive interactive career planning guide with templates and checklists
                   </p>
                   <Button className="mt-auto" variant="secondary">
-                    Download Guide
+                    Access Guide
                   </Button>
                 </div>
               </div>

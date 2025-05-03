@@ -250,8 +250,8 @@ const Index = () => {
         </div>
       </section>
       
-      {/* New Career Tools Section */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      {/* New Career Tools Section - Moved to bottom of page */}
+      <section className="py-16 bg-gray-50 border-t border-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-career-purple/10 text-career-purple text-sm font-medium mb-4">
@@ -316,10 +316,10 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-6">
-                  A holistic guide with checklists, timelines and resources to help plan every aspect of your career journey.
+                  Access our informational app with checklists, timelines and resources to help plan every aspect of your career journey.
                 </p>
                 <Button className="w-full" variant="secondary">
-                  Download Guide <ArrowRight className="ml-2 h-4 w-4" />
+                  Access Guide <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </CardContent>
             </Card>
@@ -548,7 +548,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Final CTA section - Enhanced */}
+      {/* Final CTA section */}
       <section className="bg-gradient-to-r from-career-purple to-purple-700 py-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[length:20px_20px]"></div>
         <div className="absolute -top-16 -right-16 w-32 h-32 bg-yellow-400 rounded-full filter blur-2xl opacity-20"></div>
