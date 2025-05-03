@@ -215,5 +215,99 @@ export const engineeringCareers: Career[] = [
       "Gain experience with water system planning and implementation",
       "Stay current with advances in water conservation technology"
     ]
+  },
+  // New future-ready engineering careers added below
+  {
+    id: "quantum-computing-engineer",
+    title: "Quantum Computing Engineer",
+    description: "Design and develop quantum computing hardware and software systems that leverage quantum mechanics to solve previously intractable problems.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$100,000 - $180,000",
+    skills: ["Quantum mechanics", "Advanced mathematics", "Programming", "Algorithm design", "Physics"],
+    roadmap: [
+      "Build strong foundation in physics and mathematics",
+      "Learn quantum computing principles and frameworks",
+      "Develop expertise in quantum algorithms and programming languages",
+      "Gain experience through research projects or internships with quantum computing companies",
+      "Stay current with rapidly evolving quantum technologies"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "neural-interface-engineer",
+    title: "Neural Interface Engineer",
+    description: "Create systems that connect human brains directly to computers, enabling control of devices through thought and supporting medical applications for neurological conditions.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $160,000",
+    skills: ["Neuroscience", "Electronics", "Signal processing", "Machine learning", "Biomedical engineering"],
+    roadmap: [
+      "Build foundation in neuroscience and electrical engineering",
+      "Develop expertise in brain-computer interfaces and neural recording",
+      "Learn signal processing and machine learning techniques",
+      "Gain experience with medical devices and human-computer interaction",
+      "Stay current with advances in neurotechnology and neural interfaces"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "synthetic-biology-engineer",
+    title: "Synthetic Biology Engineer",
+    description: "Apply engineering principles to design new biological systems and redesign existing ones, with applications in medicine, agriculture, materials, and environmental remediation.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$85,000 - $150,000",
+    skills: ["Genetic engineering", "Molecular biology", "Bioinformatics", "Systems modeling", "Design thinking"],
+    roadmap: [
+      "Build strong foundation in biology and engineering principles",
+      "Develop expertise in genetic engineering and molecular techniques",
+      "Learn computational modeling and bioinformatics tools",
+      "Gain experience with laboratory techniques and experimental design",
+      "Stay current with advances in synthetic biology and biotechnology"
+    ]
+  },
+  {
+    id: "ar-vr-engineer",
+    title: "AR/VR Systems Engineer",
+    description: "Design and develop augmented and virtual reality systems for applications in education, healthcare, entertainment, manufacturing, and more.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $150,000",
+    skills: ["3D modeling", "Computer vision", "Spatial computing", "User experience design", "Programming"],
+    roadmap: [
+      "Build foundation in computer science and 3D graphics",
+      "Learn AR/VR development platforms and tools",
+      "Develop expertise in spatial computing and human-computer interaction",
+      "Gain experience creating immersive experiences and applications",
+      "Stay current with advances in AR/VR hardware and software"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "space-systems-engineer",
+    title: "Space Systems Engineer",
+    description: "Design, develop and test spacecraft systems for exploration, Earth observation, communication, and space resource utilization in the growing commercial space sector.",
+    clusterId: "engineering",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $160,000",
+    skills: ["Orbital mechanics", "Systems engineering", "Spacecraft design", "Thermal analysis", "Space electronics"],
+    roadmap: [
+      "Build strong foundation in aerospace engineering and physics",
+      "Develop expertise in spacecraft systems and space environments",
+      "Learn spacecraft design tools and simulation techniques",
+      "Gain experience through space-related projects or internships",
+      "Stay current with advances in space technology and commercial space ventures"
+    ]
   }
 ];

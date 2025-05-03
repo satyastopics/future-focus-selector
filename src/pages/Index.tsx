@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { BookOpen, Briefcase, Layers, Lightbulb, ArrowRight, Star, ChevronDown, ChevronRight, CircleCheck, Compass } from 'lucide-react';
+import { BookOpen, Briefcase, Layers, Lightbulb, ArrowRight, Star, ChevronDown, ChevronRight, CircleCheck, Compass, BrainCircuit, FileSpreadsheet } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const Index = () => {
@@ -247,6 +246,83 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* New Career Tools Section */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-career-purple/10 text-career-purple text-sm font-medium mb-4">
+              <Compass className="h-3.5 w-3.5 mr-1.5" /> Career Planning Tools
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Comprehensive Career Planning Resources</h2>
+            <p className="text-gray-600 mt-2 max-w-3xl mx-auto">
+              Beyond exploration, we offer specialized tools to help you make informed career decisions
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="border-t-4 border-t-blue-500 hover:shadow-md transition-shadow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <BrainCircuit className="h-6 w-6 text-blue-600" />
+                </div>
+                <CardTitle>Psychometric Assessment</CardTitle>
+                <CardDescription>
+                  Discover your strengths, aptitudes and personality traits
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-6">
+                  Our validated psychometric assessment helps identify your natural abilities and matches them to ideal career paths.
+                </p>
+                <Button className="w-full" variant="secondary">
+                  Take Assessment <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-t-4 border-t-green-500 hover:shadow-md transition-shadow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                  <Lightbulb className="h-6 w-6 text-green-600" />
+                </div>
+                <CardTitle>Problem-Based Explorer</CardTitle>
+                <CardDescription>
+                  Find careers based on problems you want to solve
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-6">
+                  Identify meaningful career paths by starting with the real-world challenges you're passionate about addressing.
+                </p>
+                <Button className="w-full" variant="secondary">
+                  Explore Problems <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-t-4 border-t-purple-500 hover:shadow-md transition-shadow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                  <FileSpreadsheet className="h-6 w-6 text-purple-600" />
+                </div>
+                <CardTitle>Career Planning Guide</CardTitle>
+                <CardDescription>
+                  Comprehensive roadmap for students and parents
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-6">
+                  A holistic guide with checklists, timelines and resources to help plan every aspect of your career journey.
+                </p>
+                <Button className="w-full" variant="secondary">
+                  Download Guide <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

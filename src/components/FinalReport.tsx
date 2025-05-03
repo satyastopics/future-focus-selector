@@ -10,12 +10,13 @@ import {
   AccordionTrigger,
 } from "./ui/accordion";
 import { Badge } from "./ui/badge";
-import { GraduationCap, Briefcase, Book, Award, FileText } from "lucide-react";
+import { GraduationCap, Briefcase, Book, Award, FileText, BrainCircuit, Lightbulb, FileSpreadsheet } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
+import { Link } from "react-router-dom";
 
 interface FinalReportProps {
   selectedCareers: Career[];
-  clusters: CareerCluster[];  // Added this prop to match what's being passed
+  clusters: CareerCluster[];
   onBack?: () => void;
   onReset?: () => void;
 }
@@ -69,77 +70,13 @@ const FinalReport: React.FC<FinalReportProps> = ({
     </div>
   );
 
-  const downloadReport = () => {
-    if (!careers.length) return;
-    
-    // Create document content
-    let content = `
-# Your Career Path Report
+  // For now, we'll remove the download report functionality as requested
+  // We can implement a proper PDF or DOC export in the future
 
-## Selected Career Paths
-${careers.map(career => `
-### ${career.title}
-${career.description}
-
-**Key Skills:** ${career.skills.join(', ')}
-
-**Career Roadmap:**
-${career.roadmap && career.roadmap.length > 0 
-  ? career.roadmap.map((step, i) => `${i+1}. ${step}`).join('\n')
-  : 'No specific roadmap provided.'}
-
-**Self-Learning Resources:**
-- Online Courses: Platforms like Coursera, edX, Khan Academy, and YouTube offer free courses on almost any subject
-- Community College: Many offer affordable courses related to this career path
-- Books and Tutorials: Check your local library or online resources
-- Professional Organizations: Many offer resources for those entering the field
-
-`).join('\n')}
-
-## Transferable Skills Analysis
-These are skills that would be valuable across multiple career paths you've selected:
-
-${Object.entries(categorizedSkills).map(([category, skills]) => `
-### ${category} Skills
-${skills.join(', ')}
-`).join('\n')}
-
-## Next Steps to Consider
-
-1. **Explore each career further** through informational interviews with professionals
-2. **Identify any gaps** in your current skills compared to these career requirements
-3. **Create a learning plan** focusing on the transferable skills highlighted above
-4. **Look for entry-level opportunities** or internships to gain practical experience
-5. **Connect with professional organizations** related to your chosen careers
-`;
-
-    // Create and download the text file
-    const element = document.createElement('a');
-    const file = new Blob([content], {type: 'text/plain'});
-    element.href = URL.createObjectURL(file);
-    element.download = 'Career_Path_Report.md';
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
-    
-    toast({
-      title: "Report Downloaded",
-      description: "Your career path report has been downloaded successfully.",
-    });
-  };
-  
   return (
     <div ref={reportRef} className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800">Your Career Path Report</h1>
-        
-        <Button 
-          onClick={downloadReport} 
-          className="bg-career-purple hover:bg-career-dark-purple text-white"
-        >
-          <FileText className="h-4 w-4 mr-2" />
-          Download Report
-        </Button>
       </div>
       
       {careers.length === 0 ? (
@@ -298,7 +235,7 @@ ${skills.join(', ')}
               Next Steps
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="bg-white border border-gray-200 rounded-md p-4">
                 <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
                   <Briefcase className="h-4 w-4 mr-2" />
@@ -325,9 +262,72 @@ ${skills.join(', ')}
                 </ul>
               </div>
             </div>
+            
+            {/* New CTA section for additional resources */}
+            <div className="bg-career-light-purple/20 rounded-xl p-6 border border-career-light-purple/30 mt-8">
+              <h3 className="text-xl font-semibold text-career-purple mb-4 text-center">
+                Additional Career Planning Resources
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-white rounded-lg shadow-sm p-4 flex flex-col items-center text-center">
+                  <BrainCircuit className="h-8 w-8 text-career-purple mb-2" />
+                  <h4 className="font-semibold text-gray-800 mb-2">Psychometric Assessment</h4>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Discover your strengths, abilities, and career fit with our detailed psychometric assessment
+                  </p>
+                  <Button className="mt-auto" variant="secondary">
+                    Take Assessment
+                  </Button>
+                </div>
+                
+                <div className="bg-white rounded-lg shadow-sm p-4 flex flex-col items-center text-center">
+                  <Lightbulb className="h-8 w-8 text-career-purple mb-2" />
+                  <h4 className="font-semibold text-gray-800 mb-2">Problem-Based Explorer</h4>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Find careers based on real-world problems you're passionate about solving
+                  </p>
+                  <Button className="mt-auto" variant="secondary">
+                    Explore Problems
+                  </Button>
+                </div>
+                
+                <div className="bg-white rounded-lg shadow-sm p-4 flex flex-col items-center text-center">
+                  <FileSpreadsheet className="h-8 w-8 text-career-purple mb-2" />
+                  <h4 className="font-semibold text-gray-800 mb-2">Planning Guide</h4>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Access our comprehensive student career planning guide with templates and checklists
+                  </p>
+                  <Button className="mt-auto" variant="secondary">
+                    Download Guide
+                  </Button>
+                </div>
+              </div>
+            </div>
           </section>
         </>
       )}
+      
+      <div className="flex justify-between mt-8 pt-4 border-t border-gray-200">
+        {onBack && (
+          <Button 
+            onClick={onBack}
+            variant="outline"
+            className="flex items-center gap-2"
+          >
+            Back to Careers
+          </Button>
+        )}
+        
+        {onReset && (
+          <Button 
+            onClick={onReset}
+            variant="secondary"
+            className="ml-auto"
+          >
+            Start Over
+          </Button>
+        )}
+      </div>
     </div>
   );
 };
