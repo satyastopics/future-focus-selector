@@ -70,5 +70,56 @@ export const humanServicesCareers: Career[] = [
       "Gain experience working directly with communities",
       "Consider certification like Certified Community Health Worker"
     ]
+  },
+  {
+    id: "mental-health-technician",
+    title: "Mental Health Technician",
+    description: "Provide direct care and support to individuals with mental health conditions in hospitals, residential facilities, or community settings.",
+    clusterId: "humanServices",
+    isHighIncome: false,
+    isFutureReady: true,
+    averageSalary: "$35,000 - $55,000",
+    skills: ["Patient care", "Crisis intervention", "Observation", "Documentation", "Compassion"],
+    roadmap: [
+      "Complete relevant education (certificate or associate's degree)",
+      "Gain experience working with mental health populations",
+      "Obtain certification like CMHT or MHRT",
+      "Develop skills in crisis prevention and intervention",
+      "Build expertise in specific mental health conditions"
+    ]
+  },
+  {
+    id: "rehabilitation-counselor",
+    title: "Rehabilitation Counselor",
+    description: "Help individuals with disabilities achieve independence and improve their quality of life through counseling and advocacy.",
+    clusterId: "humanServices",
+    isHighIncome: false,
+    isFutureReady: true,
+    averageSalary: "$45,000 - $75,000",
+    skills: ["Counseling", "Case management", "Vocational assessment", "Advocacy", "Resource coordination"],
+    roadmap: [
+      "Earn master's degree in rehabilitation counseling",
+      "Complete required supervised clinical experience",
+      "Obtain certification like CRC (Certified Rehabilitation Counselor)",
+      "Develop knowledge of disability services and resources",
+      "Build expertise in specific disability populations"
+    ]
+  },
+  {
+    id: "art-therapist",
+    title: "Art Therapist",
+    description: "Use creative processes and art-making to help individuals improve mental health, cope with stress, or overcome trauma.",
+    clusterId: "humanServices",
+    isHighIncome: false,
+    isFutureReady: true,
+    averageSalary: "$45,000 - $80,000",
+    skills: ["Art techniques", "Therapeutic principles", "Assessment", "Communication", "Empathy"],
+    roadmap: [
+      "Complete bachelor's degree in art, psychology, or related field",
+      "Earn master's degree in art therapy",
+      "Complete required supervised clinical hours",
+      "Obtain credential as Registered Art Therapist (ATR)",
+      "Consider board certification (ATR-BC)"
+    ]
   }
 ];

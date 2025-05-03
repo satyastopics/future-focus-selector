@@ -124,5 +124,59 @@ export const educationCareers: Career[] = [
       "Develop skills in educational assessment and evaluation",
       "Stay current with educational research and best practices"
     ]
+  },
+  {
+    id: "education-consultant",
+    title: "Education Consultant",
+    description: "Provide expertise to schools, districts, or educational organizations to improve teaching practices, student outcomes, and educational programs.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$70,000 - $130,000",
+    skills: ["Educational assessment", "Strategic planning", "Professional development", "Communication", "Data analysis"],
+    roadmap: [
+      "Build strong foundation in education through teaching or administration",
+      "Develop expertise in specific educational areas or methodologies",
+      "Gain experience implementing educational improvements",
+      "Develop consulting skills and business practices",
+      "Build network of education professionals and references"
+    ]
+  },
+  {
+    id: "educational-researcher",
+    title: "Educational Researcher",
+    description: "Conduct studies to investigate learning processes, educational methods, and teaching strategies to improve educational practices and outcomes.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$65,000 - $110,000",
+    skills: ["Research methodology", "Data analysis", "Educational theory", "Academic writing", "Critical thinking"],
+    roadmap: [
+      "Complete graduate education in education research or related field",
+      "Develop strong research and statistical analysis skills",
+      "Learn educational measurement and assessment methods",
+      "Gain experience designing and conducting education studies",
+      "Build publication record in educational journals"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "learning-experience-designer",
+    title: "Learning Experience Designer",
+    description: "Design engaging, effective learning experiences that combine educational theory, user experience principles, and innovative technology.",
+    clusterId: "education",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $115,000",
+    skills: ["User experience design", "Learning theory", "Digital tools", "Visual design", "Educational psychology"],
+    roadmap: [
+      "Build foundation in education, UX design, or related field",
+      "Learn principles of user experience and learning theory",
+      "Develop skills in digital learning tools and platforms",
+      "Create portfolio of learning experience projects",
+      "Stay current with innovations in educational technology"
+    ],
+    aiRelated: true
   }
 ];

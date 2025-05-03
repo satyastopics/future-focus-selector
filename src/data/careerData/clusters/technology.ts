@@ -179,5 +179,62 @@ export const technologyCareers: Career[] = [
       "Build portfolio of AR/VR projects"
     ],
     aiRelated: true
+  },
+  {
+    id: "mlops-engineer",
+    title: "MLOps Engineer",
+    description: "Bridge the gap between data science and operations by creating systems to deploy, monitor, and maintain machine learning models in production environments.",
+    clusterId: "technology",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$100,000 - $160,000",
+    skills: ["Machine learning", "Software engineering", "DevOps", "Data pipelines", "System architecture"],
+    roadmap: [
+      "Build foundation in software engineering and ML",
+      "Learn CI/CD and DevOps practices",
+      "Develop skills in containerization and orchestration",
+      "Master ML model deployment and monitoring",
+      "Stay current with MLOps tools and best practices"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "edge-computing-developer",
+    title: "Edge Computing Developer",
+    description: "Create applications that process data near its source (the 'edge') rather than in centralized cloud environments, enabling faster responses and reduced bandwidth.",
+    clusterId: "technology",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $150,000",
+    skills: ["Distributed systems", "IoT platforms", "Embedded programming", "Networking", "System optimization"],
+    roadmap: [
+      "Build foundation in software development",
+      "Learn edge computing architectures and constraints",
+      "Develop skills in embedded systems and IoT",
+      "Master efficient data processing techniques",
+      "Gain experience with edge computing platforms"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "ai-ethics-specialist",
+    title: "AI Ethics Specialist",
+    description: "Evaluate and address ethical concerns in AI systems, ensuring fairness, transparency, accountability, and privacy in artificial intelligence applications.",
+    clusterId: "technology",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$90,000 - $160,000",
+    skills: ["AI systems", "Ethics principles", "Policy development", "Bias detection", "Interdisciplinary communication"],
+    roadmap: [
+      "Build foundation in AI technology and ethics",
+      "Develop understanding of bias and fairness in algorithms",
+      "Learn methods for transparent and explainable AI",
+      "Gain experience auditing AI systems for ethical concerns",
+      "Stay current with AI ethics frameworks and regulations"
+    ],
+    aiRelated: true
   }
 ];

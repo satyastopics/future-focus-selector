@@ -145,5 +145,62 @@ export const healthcareCareers: Career[] = [
       "Gain experience through internships or research",
       "Stay current with medical technology advances"
     ]
+  },
+  {
+    id: "healthcare-ai-specialist",
+    title: "Healthcare AI Specialist",
+    description: "Develop and implement artificial intelligence solutions specifically for healthcare applications, from diagnosis assistance to treatment planning.",
+    clusterId: "healthcare",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$100,000 - $170,000",
+    skills: ["AI algorithms", "Healthcare knowledge", "Data science", "Machine learning", "Clinical workflows"],
+    roadmap: [
+      "Build strong foundation in computer science and AI",
+      "Develop understanding of healthcare systems and needs",
+      "Learn about medical data types and structures",
+      "Gain experience implementing AI in healthcare settings",
+      "Stay current with healthcare AI research and regulations"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "precision-medicine-researcher",
+    title: "Precision Medicine Researcher",
+    description: "Develop personalized medical treatments based on individual genetic profiles, lifestyle, and environmental factors to improve therapeutic outcomes.",
+    clusterId: "healthcare",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$85,000 - $150,000",
+    skills: ["Genetics", "Bioinformatics", "Research methodology", "Data analysis", "Medical knowledge"],
+    roadmap: [
+      "Build strong foundation in genetics and molecular biology",
+      "Develop bioinformatics and data analysis skills",
+      "Learn about clinical medicine and therapeutics",
+      "Gain research experience in genomics or personalized medicine",
+      "Stay current with advances in genetic medicine"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "remote-patient-monitoring-specialist",
+    title: "Remote Patient Monitoring Specialist",
+    description: "Design and manage systems for monitoring patients at home using connected devices, ensuring early intervention and reducing hospital readmissions.",
+    clusterId: "healthcare",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $120,000",
+    skills: ["Healthcare technology", "Patient education", "Data analysis", "Clinical assessment", "Care coordination"],
+    roadmap: [
+      "Build foundation in nursing or allied health field",
+      "Develop expertise in remote monitoring technologies",
+      "Learn about chronic disease management",
+      "Gain experience with telehealth and virtual care",
+      "Stay current with connected healthcare devices"
+    ],
+    aiRelated: true
   }
 ];

@@ -72,5 +72,57 @@ export const lawPublicSafetyCareers: Career[] = [
       "Build network in both legal and technology communities"
     ],
     aiRelated: true
+  },
+  {
+    id: "forensic-psychologist",
+    title: "Forensic Psychologist",
+    description: "Apply psychological principles to legal matters, providing assessments for courts, advising on jury selection, or counseling in correctional facilities.",
+    clusterId: "lawPublicSafety",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$75,000 - $120,000",
+    skills: ["Psychological assessment", "Legal knowledge", "Report writing", "Testimony skills", "Clinical expertise"],
+    roadmap: [
+      "Complete bachelor's degree in psychology or related field",
+      "Earn doctoral degree in psychology with forensic focus",
+      "Complete supervised clinical experience",
+      "Obtain state licensure as psychologist",
+      "Pursue specialized training in forensic assessment"
+    ]
+  },
+  {
+    id: "crisis-negotiator",
+    title: "Crisis Negotiator",
+    description: "Resolve high-risk situations like hostage scenarios or suicide attempts through communication and de-escalation techniques.",
+    clusterId: "lawPublicSafety",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$65,000 - $110,000",
+    skills: ["Communication", "Psychology", "Conflict resolution", "Stress management", "Decision-making"],
+    roadmap: [
+      "Begin career in law enforcement or mental health",
+      "Develop strong communication and people skills",
+      "Complete specialized training in crisis negotiation",
+      "Gain experience in high-stress communication scenarios",
+      "Continue education in psychology and negotiation techniques"
+    ]
+  },
+  {
+    id: "intelligence-analyst-law",
+    title: "Intelligence Analyst",
+    description: "Collect and analyze information from various sources to identify security threats, criminal activities, or terrorism risks.",
+    clusterId: "lawPublicSafety",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$70,000 - $115,000",
+    skills: ["Data analysis", "Research", "Critical thinking", "Pattern recognition", "Communication"],
+    roadmap: [
+      "Earn degree in criminal justice, intelligence studies, or related field",
+      "Develop strong analytical and research skills",
+      "Learn intelligence analysis methodologies",
+      "Gain experience through internships or entry-level positions",
+      "Obtain security clearances as required"
+    ],
+    aiRelated: true
   }
 ];

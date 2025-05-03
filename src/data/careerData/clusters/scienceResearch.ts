@@ -107,5 +107,61 @@ export const scienceResearchCareers: Career[] = [
       "Gain experience in specific materials research area",
       "Stay current with advances in materials science"
     ]
+  },
+  {
+    id: "nanotechnology-researcher",
+    title: "Nanotechnology Researcher",
+    description: "Investigate and manipulate materials at the nanoscale to develop new technologies and applications in medicine, electronics, and materials science.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$80,000 - $140,000",
+    skills: ["Nanofabrication", "Materials science", "Laboratory techniques", "Imaging technologies", "Research design"],
+    roadmap: [
+      "Build foundation in physics, chemistry, or engineering",
+      "Learn nanoscale characterization and fabrication techniques",
+      "Develop expertise in specific nanotechnology applications",
+      "Gain experience with advanced instrumentation",
+      "Stay current with nanotechnology research advances"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "bioinformatician",
+    title: "Bioinformatician",
+    description: "Develop software tools and methods to understand biological data, especially in genomics, proteomics, and systems biology.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $135,000",
+    skills: ["Programming", "Biological knowledge", "Data analysis", "Algorithm design", "Database management"],
+    roadmap: [
+      "Build foundation in biology and computer science",
+      "Learn programming languages commonly used in bioinformatics",
+      "Develop expertise in biological data analysis",
+      "Gain experience with genomic and proteomic datasets",
+      "Stay current with bioinformatics methods and tools"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "neuroscientist",
+    title: "Neuroscientist",
+    description: "Study the structure and function of the brain and nervous system to advance understanding of cognition, behavior, and neurological disorders.",
+    clusterId: "scienceResearch",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$75,000 - $150,000",
+    skills: ["Neuroimaging", "Data analysis", "Research design", "Laboratory techniques", "Scientific writing"],
+    roadmap: [
+      "Build foundation in neuroscience, biology, or psychology",
+      "Learn neuroimaging and electrophysiology techniques",
+      "Develop expertise in specific neuroscience subfield",
+      "Gain research experience through laboratory work",
+      "Stay current with advances in neuroscience research"
+    ],
+    aiRelated: true
   }
 ];
