@@ -5,12 +5,12 @@ export const sportsRecreationCareers: Career[] = [
   {
     id: "sports-analyst",
     title: "Sports Analyst",
-    description: "Use statistics and data to evaluate player performance, team strategies, and game outcomes for teams or media organizations.",
+    description: "You study numbers and information about sports games and players. You look at how many goals someone scores, how fast they run, or how well teams play together. You use this information to help teams decide which players to pick, what game plans to use, or to explain to TV viewers why teams are winning or losing. Your work helps teams and fans understand sports better.",
     clusterId: "sportsRecreation",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$60,000 - $100,000",
-    skills: ["Sports knowledge", "Data analysis", "Statistical modeling", "Communication", "Critical thinking"],
+    skills: ["Understanding sports rules deeply", "Finding patterns in player statistics", "Using special computer programs to track performance", "Explaining complex game situations simply", "Predicting which strategies might work best"],
     roadmap: [
       "Build strong foundation in sports and statistics",
       "Develop expertise in sports analytics tools and methods",
@@ -23,12 +23,12 @@ export const sportsRecreationCareers: Career[] = [
   {
     id: "athletic-trainer",
     title: "Athletic Trainer",
-    description: "Prevent, diagnose, and treat muscle and bone injuries and illnesses in athletes and active individuals.",
+    description: "You help athletes stay healthy and recover when they get hurt. You wrap sprained ankles, create exercise plans for injured players, and teach ways to prevent getting hurt. You're often right on the sidelines during games, ready to help if someone gets injured. You work with doctors to make sure athletes heal properly. Your work helps athletes perform their best and stay safe.",
     clusterId: "sportsRecreation",
     isHighIncome: false,
     isFutureReady: true,
     averageSalary: "$50,000 - $75,000",
-    skills: ["Injury assessment", "Treatment techniques", "Rehabilitation programs", "Emergency care", "Preventive strategies"],
+    skills: ["Quickly figuring out what's wrong with an injury", "Wrapping and taping injuries properly", "Creating safe exercise plans for recovery", "Knowing when someone needs to see a doctor", "Teaching athletes how to avoid injuries"],
     roadmap: [
       "Complete athletic training degree program",
       "Obtain certification from Board of Certification (BOC)",
@@ -40,12 +40,12 @@ export const sportsRecreationCareers: Career[] = [
   {
     id: "sports-marketing-director",
     title: "Sports Marketing Director",
-    description: "Develop and implement marketing strategies for sports teams, leagues, events, or related products and services.",
+    description: "You help sports teams and companies sell tickets, find sponsors, and get fans excited. You might create ads for a new stadium, find companies to put their names on jerseys, or plan special game events that fans will enjoy. You think of ways to make people love their teams even more. Your work helps sports teams make money and build stronger connections with fans.",
     clusterId: "sportsRecreation",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$75,000 - $130,000",
-    skills: ["Marketing strategy", "Brand management", "Sponsorship development", "Event promotion", "Digital marketing"],
+    skills: ["Creating exciting ad campaigns for teams", "Finding companies willing to sponsor sports events", "Planning special game day activities", "Building team brands that fans love", "Using social media to connect with young fans"],
     roadmap: [
       "Build foundation in marketing and sports management",
       "Gain experience in sports industry through internships",
@@ -57,13 +57,13 @@ export const sportsRecreationCareers: Career[] = [
   {
     id: "esports-manager",
     title: "Esports Manager",
-    description: "Oversee operations, player development, and business strategies for professional video game teams or esports organizations.",
+    description: "You run teams that play video games professionally in competitions. You find talented players, arrange practice schedules, and work with coaches to improve team performance. You also find sponsors to support your team and plan tournament travel. You help your players stay healthy mentally and physically during long gaming sessions. Your work helps build the growing world of competitive video gaming.",
     clusterId: "sportsRecreation",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$60,000 - $100,000",
-    skills: ["Gaming knowledge", "Team management", "Business development", "Event coordination", "Social media"],
+    skills: ["Spotting talented gamers", "Understanding many different video games deeply", "Creating team practice schedules", "Finding sponsors who want to reach gamers", "Managing young players' health and stress"],
     roadmap: [
       "Build strong foundation in esports ecosystem and games",
       "Develop business and management skills",
@@ -75,13 +75,13 @@ export const sportsRecreationCareers: Career[] = [
   {
     id: "fitness-technology-developer",
     title: "Fitness Technology Developer",
-    description: "Create and improve apps, wearables, and other digital tools to enhance physical fitness, training, and wellness activities.",
+    description: "You make apps and gadgets that help people exercise better. You might create a watch that counts steps and heartbeats, an app that gives workout ideas, or smart gym equipment that tracks how strong someone is getting. You combine your knowledge of exercise with computer skills. Your work helps people stay healthy by making fitness more fun and effective.",
     clusterId: "sportsRecreation",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$75,000 - $125,000",
-    skills: ["Programming", "UX/UI design", "Fitness knowledge", "Data analysis", "Problem-solving"],
+    skills: ["Writing code for health and fitness apps", "Making devices easy and fun to use", "Understanding how exercise affects the body", "Creating personalized workout recommendations", "Using sensors to track body movements accurately"],
     roadmap: [
       "Build strong technical foundation in software development",
       "Develop understanding of fitness principles and user needs",

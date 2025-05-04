@@ -5,12 +5,12 @@ export const financeCareers: Career[] = [
   {
     id: "financial-analyst",
     title: "Financial Analyst",
-    description: "Evaluate investment opportunities, assess financial performance, and create financial models to guide business decisions.",
+    description: "You study companies to see if they are good places to put money. You look at how much money they make, how much they spend, and what new products they're creating. Then you make special math models on computers that show if a company will likely grow or not. Your advice helps people and businesses decide where to invest their money to earn more.",
     clusterId: "finance",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$70,000 - $120,000",
-    skills: ["Financial modeling", "Data analysis", "Financial statement analysis", "Industry research", "Problem-solving"],
+    skills: ["Creating computer models about money", "Reading financial reports to find important details", "Understanding what makes businesses successful", "Explaining complicated money matters simply", "Spotting business trends before others"],
     roadmap: [
       "Complete degree in finance, economics, or related field",
       "Develop strong analytical and spreadsheet skills",
@@ -22,13 +22,13 @@ export const financeCareers: Career[] = [
   {
     id: "financial-technology-developer",
     title: "Financial Technology Developer",
-    description: "Create software and systems for financial services, including payment platforms, investment apps, and banking systems.",
+    description: "You build computer programs that help people manage money. You might create an app for paying friends, a website for investing in stocks, or systems that help banks process payments quickly and safely. Your programs need to be very secure since they deal with people's money. Your work makes managing money faster, easier, and safer for everyone.",
     clusterId: "finance",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$90,000 - $160,000",
-    skills: ["Programming", "Financial knowledge", "Data security", "API integration", "Problem-solving"],
+    skills: ["Writing secure code for money applications", "Connecting different banking systems together", "Making complicated transactions simple for users", "Keeping financial data very safe", "Understanding money rules and regulations"],
     roadmap: [
       "Build strong programming and software development skills",
       "Develop understanding of financial systems and regulations",
@@ -41,13 +41,13 @@ export const financeCareers: Career[] = [
   {
     id: "blockchain-financial-analyst",
     title: "Blockchain Financial Analyst",
-    description: "Analyze blockchain technologies and crypto assets for investment opportunities, risks, and business applications.",
+    description: "You study special digital money systems like Bitcoin. You understand how these new types of money work and help companies decide if they should use them. You look at the risks and benefits of blockchain technologies and explain them to businesses. You also watch for new developments in this fast-changing field. Your work helps companies understand and use these new digital money systems.",
     clusterId: "finance",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$85,000 - $150,000",
-    skills: ["Blockchain technology", "Financial analysis", "Risk assessment", "Cryptocurrency markets", "Data analysis"],
+    skills: ["Understanding how blockchain and cryptocurrencies work", "Spotting risks in new digital currencies", "Following changing rules about digital money", "Explaining complex technology in simple terms", "Analyzing if blockchain solutions make business sense"],
     roadmap: [
       "Build strong foundation in finance or technology",
       "Develop deep understanding of blockchain technology",
@@ -60,12 +60,12 @@ export const financeCareers: Career[] = [
   {
     id: "risk-manager",
     title: "Risk Manager",
-    description: "Identify and analyze potential risks to an organization's assets, operations, and investments, developing strategies to mitigate them.",
+    description: "You help companies understand what bad things might happen to their business and how to prepare. You look for dangers like data theft, market crashes, or business problems. Then you create plans to reduce these risks or lessen their damage. Your work is like being a safety officer for a company's money and operations, helping them avoid problems before they happen.",
     clusterId: "finance",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$85,000 - $140,000",
-    skills: ["Risk assessment", "Statistical analysis", "Financial modeling", "Regulatory knowledge", "Problem-solving"],
+    skills: ["Finding hidden dangers in business plans", "Creating computer models that show possible problems", "Understanding financial safety rules", "Developing emergency plans for financial troubles", "Balancing safety measures with business growth"],
     roadmap: [
       "Earn degree in finance, economics, or mathematics",
       "Develop strong analytical and quantitative skills",
@@ -77,13 +77,13 @@ export const financeCareers: Career[] = [
   {
     id: "esg-investment-analyst",
     title: "ESG Investment Analyst",
-    description: "Evaluate investments based on environmental, social, and governance factors in addition to financial performance.",
+    description: "You look at companies not just to see if they make money, but also if they help the planet and people. ESG means Environment, Social, and Governance. You check if companies pollute less, treat workers fairly, and have honest leaders. You help people invest in good companies that make the world better while still earning money. Your work encourages businesses to care about more than just profits.",
     clusterId: "finance",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$75,000 - $130,000",
-    skills: ["ESG metrics", "Financial analysis", "Research", "Sustainability knowledge", "Data analysis"],
+    skills: ["Measuring a company's environmental impact", "Checking how workers are treated", "Spotting businesses with strong ethical practices", "Creating investment plans that match people's values", "Understanding which green practices actually help the planet"],
     roadmap: [
       "Build foundation in finance or investment analysis",
       "Develop knowledge of ESG frameworks and metrics",
