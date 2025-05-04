@@ -5,12 +5,12 @@ export const manufacturingCareers: Career[] = [
   {
     id: "industrial-engineer",
     title: "Industrial Engineer",
-    description: "Optimize complex manufacturing processes and systems to eliminate waste, reduce costs, and increase efficiency.",
+    description: "You find ways to make factories work better. You study how products are made and think of ways to do it faster, cheaper, or with better quality. You might redesign assembly lines, create more efficient work schedules, or reduce wasted materials. You use math and problem-solving to improve manufacturing processes. Your work helps companies make products more efficiently.",
     clusterId: "manufacturing",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$75,000 - $110,000",
-    skills: ["Process optimization", "Data analysis", "Lean manufacturing", "Problem-solving", "Project management"],
+    skills: ["Improving work processes", "Reducing waste", "Time and motion studies", "Factory layout planning", "Production problem solving"],
     roadmap: [
       "Earn degree in industrial engineering",
       "Develop knowledge of manufacturing processes",
@@ -22,12 +22,12 @@ export const manufacturingCareers: Career[] = [
   {
     id: "robotics-engineer",
     title: "Robotics Engineer",
-    description: "Design, build, and program robots for manufacturing and production environments to automate complex tasks.",
+    description: "You create robots that work in factories. You design, build, and program machines that can do tasks like welding, painting, or moving heavy items. You make sure these robots work safely alongside human workers. You must know about mechanics, electronics, and computer programming. Your work helps factories produce more goods with greater precision and safety.",
     clusterId: "manufacturing",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$85,000 - $130,000",
-    skills: ["Robotics programming", "Mechanical design", "Electronics", "Problem-solving", "Systems integration"],
+    skills: ["Robot programming", "Mechanical design", "Electronics knowledge", "Safety system design", "Machine troubleshooting"],
     roadmap: [
       "Study robotics, mechanical or electrical engineering",
       "Learn robotics programming languages and platforms",
@@ -40,12 +40,12 @@ export const manufacturingCareers: Career[] = [
   {
     id: "manufacturing-operations-manager",
     title: "Manufacturing Operations Manager",
-    description: "Oversee daily production activities, quality control, and staff management to meet production and efficiency goals.",
+    description: "You run the day-to-day activities in a factory. You lead teams of workers, schedule production, monitor quality control, and solve problems that arise. You make sure products are made correctly, on time, and within budget. You also focus on workplace safety and following regulations. Your leadership ensures factories run smoothly and meet their production goals.",
     clusterId: "manufacturing",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$80,000 - $140,000",
-    skills: ["Leadership", "Process management", "Quality control", "Staff development", "Problem-solving"],
+    skills: ["Factory team leadership", "Production scheduling", "Quality control oversight", "Budget management", "Safety compliance"],
     roadmap: [
       "Build foundation in engineering, business, or related field",
       "Gain experience in manufacturing environment",
@@ -57,13 +57,13 @@ export const manufacturingCareers: Career[] = [
   {
     id: "manufacturing-analytics-specialist",
     title: "Manufacturing Analytics Specialist",
-    description: "Apply data analysis and predictive modeling to manufacturing data to optimize processes, predict equipment failures, and improve quality.",
+    description: "You use data to make factories smarter. You collect information from machines, workers, and quality inspections to find patterns. You might predict when machines will break down, identify bottlenecks in production, or find ways to use less energy. Your computer and math skills help factories make better decisions based on data instead of guesses.",
     clusterId: "manufacturing",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$80,000 - $120,000",
-    skills: ["Data analysis", "Statistical modeling", "Programming", "Manufacturing knowledge", "Problem-solving"],
+    skills: ["Analyzing factory data", "Using specialized software", "Creating helpful charts", "Predicting maintenance needs", "Spotting production trends"],
     roadmap: [
       "Build strong foundation in data science or analytics",
       "Develop understanding of manufacturing processes",
@@ -76,13 +76,13 @@ export const manufacturingCareers: Career[] = [
   {
     id: "additive-manufacturing-engineer",
     title: "Additive Manufacturing Engineer",
-    description: "Specialize in 3D printing and other additive manufacturing technologies to design and produce complex parts and products.",
+    description: "You are an expert in 3D printing for industrial use. You design products specifically for 3D printing, choose the right materials, and set up printers for production. You can create complex parts that would be impossible to make with traditional methods. Your knowledge helps companies make customized products quickly or produce parts that are lighter yet stronger than conventional ones.",
     clusterId: "manufacturing",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$75,000 - $115,000",
-    skills: ["3D modeling", "Materials science", "Design for additive manufacturing", "Quality assurance", "Problem-solving"],
+    skills: ["3D modeling for printing", "Material selection knowledge", "3D printer operation", "Quality testing", "Design optimization"],
     roadmap: [
       "Study mechanical engineering or manufacturing technology",
       "Learn 3D modeling software and slicing programs",

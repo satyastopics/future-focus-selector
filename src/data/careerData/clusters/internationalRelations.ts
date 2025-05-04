@@ -5,12 +5,12 @@ export const internationalRelationsCareers: Career[] = [
   {
     id: "foreign-service-officer",
     title: "Foreign Service Officer",
-    description: "Represent your country's interests abroad through diplomacy, negotiation, and engagement with foreign governments.",
+    description: "You represent your country in other nations. You work at embassies and consulates around the world, helping your fellow citizens abroad and building relationships between countries. You might negotiate trade agreements, handle visa applications, or organize cultural exchanges. You need to understand different cultures and speak foreign languages. Your work helps countries cooperate and solve global problems.",
     clusterId: "internationalRelations",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$70,000 - $150,000",
-    skills: ["Diplomacy", "Foreign languages", "Cultural awareness", "Policy knowledge", "Negotiation"],
+    skills: ["Speaking foreign languages", "Understanding different cultures", "Diplomatic communication", "Negotiation skills", "Knowledge of world affairs"],
     roadmap: [
       "Build strong foundation in international relations or related field",
       "Develop proficiency in one or more foreign languages",
@@ -22,12 +22,12 @@ export const internationalRelationsCareers: Career[] = [
   {
     id: "international-development-specialist",
     title: "International Development Specialist",
-    description: "Design and implement programs to improve economic, social, or environmental conditions in developing countries.",
+    description: "You help improve lives in developing countries. You might work on projects that bring clean water to villages, create schools, improve farming methods, or establish healthcare clinics. You work with local communities to understand their needs and find solutions that fit their culture. Your work helps reduce poverty and create better opportunities for people around the world.",
     clusterId: "internationalRelations",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$65,000 - $110,000",
-    skills: ["Program management", "Cross-cultural communication", "Monitoring and evaluation", "Grant writing", "Community engagement"],
+    skills: ["Planning development projects", "Working with diverse communities", "Understanding global issues", "Managing international teams", "Evaluating program success"],
     roadmap: [
       "Complete degree in international development or related field",
       "Gain field experience through volunteering or internships",
@@ -39,12 +39,12 @@ export const internationalRelationsCareers: Career[] = [
   {
     id: "global-health-advisor",
     title: "Global Health Advisor",
-    description: "Develop strategies and programs to address health challenges and improve healthcare systems across countries and regions.",
+    description: "You work to improve health around the world. You might help countries fight disease outbreaks, create vaccination programs, or train local healthcare workers. You study health data to find problems and create solutions that work in different cultures and settings. Your expertise helps save lives and build stronger healthcare systems in countries that need support.",
     clusterId: "internationalRelations",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$75,000 - $130,000",
-    skills: ["Public health knowledge", "Program development", "Data analysis", "Cultural competence", "Policy development"],
+    skills: ["Understanding global diseases", "Planning health programs", "Working across cultures", "Analyzing health data", "Training healthcare workers"],
     roadmap: [
       "Build foundation in public health or medical field",
       "Develop understanding of global health systems and challenges",
@@ -56,12 +56,12 @@ export const internationalRelationsCareers: Career[] = [
   {
     id: "cross-cultural-communications-specialist",
     title: "Cross-Cultural Communications Specialist",
-    description: "Help organizations communicate effectively across cultural boundaries through training, consulting, and communication strategy.",
+    description: "You help people from different cultures understand each other better. You might train business people before they work overseas, help companies adapt their messages for global audiences, or resolve misunderstandings between international teams. You understand how communication styles differ across cultures. Your expertise helps prevent conflicts and builds successful international relationships.",
     clusterId: "internationalRelations",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$65,000 - $100,000",
-    skills: ["Cultural awareness", "Communication strategy", "Training development", "Conflict resolution", "Research"],
+    skills: ["Understanding cultural differences", "Adapting communication styles", "Teaching cultural awareness", "Resolving cultural conflicts", "International etiquette knowledge"],
     roadmap: [
       "Study international communications or cross-cultural studies",
       "Develop expertise in multiple cultural contexts",
@@ -73,12 +73,12 @@ export const internationalRelationsCareers: Career[] = [
   {
     id: "international-trade-specialist",
     title: "International Trade Specialist",
-    description: "Facilitate international business by navigating trade policies, regulations, and market entry strategies.",
+    description: "You help businesses sell their products to other countries. You understand trade rules, shipping procedures, and international business customs. You might help companies find overseas buyers, navigate customs regulations, or adapt products for different markets. Your knowledge helps businesses grow by accessing global markets and brings foreign products to your country.",
     clusterId: "internationalRelations",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$70,000 - $120,000",
-    skills: ["Trade policy", "Market analysis", "Regulatory knowledge", "Negotiation", "Business strategy"],
+    skills: ["Understanding trade rules", "Market research across countries", "Export procedures knowledge", "International business customs", "Negotiating across cultures"],
     roadmap: [
       "Build foundation in international business or economics",
       "Learn about trade agreements and regulations",

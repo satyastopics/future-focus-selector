@@ -5,12 +5,12 @@ export const constructionCareers: Career[] = [
   {
     id: "construction-manager",
     title: "Construction Manager",
-    description: "Plan, coordinate, budget, and supervise construction projects from development to completion, ensuring safety and quality.",
+    description: "You oversee building projects from start to finish. You plan work schedules, hire workers, order materials, and make sure everything stays on budget. You check that work is done safely and correctly according to building plans. You solve problems that come up during construction. Your leadership helps create new buildings that are safe and well-built.",
     clusterId: "construction",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$75,000 - $125,000",
-    skills: ["Project management", "Budgeting", "Technical knowledge", "Leadership", "Problem-solving"],
+    skills: ["Reading building plans", "Managing construction teams", "Scheduling work phases", "Solving building problems", "Keeping projects on budget"],
     roadmap: [
       "Build foundation through construction experience or education",
       "Develop knowledge of construction methods and materials",
@@ -22,13 +22,13 @@ export const constructionCareers: Career[] = [
   {
     id: "building-information-modeling-specialist",
     title: "Building Information Modeling Specialist",
-    description: "Create and manage digital 3D models of buildings to optimize design, construction, and operation processes.",
+    description: "You create 3D computer models of buildings before they're built. Your models show every detail - plumbing, electrical wiring, support beams, and more. These models help find problems before construction starts, saving time and money. You help architects, engineers, and builders work together better. Your digital skills help make building projects run more smoothly.",
     clusterId: "construction",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$70,000 - $100,000",
-    skills: ["3D modeling", "BIM software", "Construction knowledge", "Collaboration", "Technical problem-solving"],
+    skills: ["Creating 3D building models", "Using BIM software", "Understanding construction details", "Finding design problems early", "Helping teams work together"],
     roadmap: [
       "Study architecture, engineering, or construction management",
       "Master BIM software platforms like Revit or ArchiCAD",
@@ -40,13 +40,13 @@ export const constructionCareers: Career[] = [
   {
     id: "sustainable-construction-specialist",
     title: "Sustainable Construction Specialist",
-    description: "Apply eco-friendly principles to building projects, focusing on energy efficiency, renewable materials, and environmental impact.",
+    description: "You help build structures that are kind to the environment. You find ways to use less energy, reduce waste, and choose eco-friendly materials. You might work on green buildings that generate their own power or collect rainwater. You know about special certifications for environmentally friendly buildings. Your work helps fight climate change through better construction.",
     clusterId: "construction",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$70,000 - $110,000",
-    skills: ["Green building standards", "Energy modeling", "Materials knowledge", "Regulatory compliance", "Project assessment"],
+    skills: ["Green building knowledge", "Energy efficiency planning", "Eco-friendly material selection", "Water conservation techniques", "Sustainability certifications"],
     roadmap: [
       "Build foundation in construction, engineering, or architecture",
       "Learn sustainable building principles and certification systems",
@@ -58,13 +58,13 @@ export const constructionCareers: Career[] = [
   {
     id: "construction-technology-manager",
     title: "Construction Technology Manager",
-    description: "Implement and manage advanced technologies for construction projects, including drones, AR/VR, IoT, and automation systems.",
+    description: "You bring new technologies to building sites. You might use drones to check construction progress, set up computer systems that track materials, or use virtual reality to show clients what buildings will look like. You teach construction workers to use new digital tools. Your tech knowledge helps build things faster, safer, and with fewer mistakes.",
     clusterId: "construction",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$85,000 - $130,000",
-    skills: ["Technology integration", "Digital tools", "Construction knowledge", "Training", "Problem-solving"],
+    skills: ["Using construction drones", "Setting up digital tracking", "Teaching new tech tools", "Solving technology problems", "Finding better building methods"],
     roadmap: [
       "Develop strong foundation in construction processes",
       "Build expertise in construction technology platforms",

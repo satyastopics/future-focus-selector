@@ -5,12 +5,12 @@ export const communicationMediaCareers: Career[] = [
   {
     id: "content-creator",
     title: "Content Creator",
-    description: "Produce engaging digital content like videos, podcasts, blogs, or social media posts for brands, media companies, or personal channels.",
+    description: "You make videos, podcasts, photos, or written posts that people enjoy online. You might run your own YouTube channel, Instagram account, or blog about topics you love. You know how to tell stories that people want to share with friends. Your creative work entertains or teaches others while building your personal brand and following.",
     clusterId: "communicationMedia",
     isHighIncome: false,
     isFutureReady: true,
     averageSalary: "$45,000 - $100,000+",
-    skills: ["Content development", "Storytelling", "Video production", "Social media", "Personal branding"],
+    skills: ["Making engaging videos", "Storytelling", "Building online following", "Using social media well", "Creating your own brand"],
     roadmap: [
       "Develop skills in chosen content medium (video, writing, etc.)",
       "Learn about audience engagement and content strategy",
@@ -22,12 +22,12 @@ export const communicationMediaCareers: Career[] = [
   {
     id: "digital-communications-manager",
     title: "Digital Communications Manager",
-    description: "Develop and implement an organization's online communication strategy across websites, social media, email, and other digital channels.",
+    description: "You manage how organizations talk to people online. You create content for websites, social media, and email campaigns. You plan when and where to post messages for maximum impact. During crises, you craft careful responses. You track how people respond to online messages and adjust strategies. Your work helps organizations build strong connections with their audience.",
     clusterId: "communicationMedia",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$70,000 - $110,000",
-    skills: ["Strategic communication", "Content strategy", "Social media management", "Analytics", "Crisis communication"],
+    skills: ["Planning online messages", "Writing engaging content", "Managing social accounts", "Using data to improve posts", "Responding to online comments"],
     roadmap: [
       "Build foundation in communications or marketing",
       "Develop skills across digital channels and platforms",
@@ -39,12 +39,12 @@ export const communicationMediaCareers: Career[] = [
   {
     id: "podcast-producer",
     title: "Podcast Producer",
-    description: "Plan, record, edit, and distribute podcast episodes, overseeing the creative and technical aspects of audio production.",
+    description: "You create audio shows that people listen to online. You plan episode topics, record interviews, edit sound files, and publish finished podcasts. You might add music, fix sound problems, or cut out mistakes. You also help promote shows to find new listeners. Your audio skills help create programs that entertain or educate people during their commutes or free time.",
     clusterId: "communicationMedia",
     isHighIncome: false,
     isFutureReady: true,
     averageSalary: "$50,000 - $90,000",
-    skills: ["Audio production", "Storytelling", "Interview techniques", "Project management", "Distribution strategy"],
+    skills: ["Recording clear audio", "Editing sound files", "Planning episode content", "Interview techniques", "Audio storytelling"],
     roadmap: [
       "Develop audio production and editing skills",
       "Learn podcast formats and storytelling techniques",
@@ -56,13 +56,13 @@ export const communicationMediaCareers: Career[] = [
   {
     id: "augmented-reality-content-developer",
     title: "Augmented Reality Content Developer",
-    description: "Create interactive AR experiences for entertainment, education, marketing, or industrial applications.",
+    description: "You create special digital experiences that appear in the real world. Using phones or special glasses, people can see your digital creations overlaid onto the world around them. You might make games where virtual characters appear in parks, shopping apps that show how furniture would look in someone's home, or educational apps that make learning more interactive. Your work brings digital magic into everyday life.",
     clusterId: "communicationMedia",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$80,000 - $140,000",
-    skills: ["3D modeling", "AR development", "UX design", "Creative storytelling", "Technical problem-solving"],
+    skills: ["Creating 3D digital models", "AR programming", "Spatial thinking", "Interactive storytelling", "User experience design"],
     roadmap: [
       "Build foundation in 3D design and development",
       "Learn AR development tools and platforms",
@@ -75,12 +75,12 @@ export const communicationMediaCareers: Career[] = [
   {
     id: "technical-writer",
     title: "Technical Writer",
-    description: "Create clear instructions, guides, and documentation for complex products, software, or processes.",
+    description: "You explain complicated things in simple ways. You write instructions, help guides, and manuals for products and software that are easy for anyone to understand. You take complex information from engineers and turn it into clear steps that users can follow. Your writing helps people use products correctly without getting frustrated or confused.",
     clusterId: "communicationMedia",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$70,000 - $100,000",
-    skills: ["Clear writing", "Information design", "Research", "Subject matter comprehension", "User empathy"],
+    skills: ["Making complex ideas simple", "Writing clear instructions", "Creating helpful diagrams", "Organizing information logically", "Understanding user needs"],
     roadmap: [
       "Develop strong writing and communication skills",
       "Learn technical documentation tools and formats",

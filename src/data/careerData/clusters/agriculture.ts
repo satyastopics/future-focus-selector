@@ -5,12 +5,12 @@ export const agricultureCareers: Career[] = [
   {
     id: "agricultural-engineer",
     title: "Agricultural Engineer",
-    description: "Design agricultural equipment and systems to improve farming efficiency, sustainability, and environmental protection.",
+    description: "You design farm machines and systems to grow food better. You create equipment that helps farmers plant, water, and harvest crops more easily. You also make plans to save water and protect soil. Your work helps farms produce more food while taking care of the environment. You solve practical problems to help feed people around the world.",
     clusterId: "agriculture",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$75,000 - $100,000",
-    skills: ["Engineering principles", "Sustainable design", "Problem-solving", "Technical drawing", "Environmental awareness"],
+    skills: ["Designing farm equipment", "Planning irrigation systems", "Solving practical problems", "Environmental protection", "Technical drawing"],
     roadmap: [
       "Earn degree in agricultural or biological engineering",
       "Gain hands-on experience with agricultural systems",
@@ -22,12 +22,12 @@ export const agricultureCareers: Career[] = [
   {
     id: "precision-agriculture-specialist",
     title: "Precision Agriculture Specialist",
-    description: "Use technology such as GPS, sensors, drones, and software to help farmers optimize crop yields while conserving resources.",
+    description: "You use technology to help farmers grow more food with less waste. You work with special tools like GPS, drones, and sensors to check soil and plants. These tools tell farmers exactly where to add water or plant food, and when crops are ready to harvest. Your work helps farms save money and be kinder to the environment.",
     clusterId: "agriculture",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$70,000 - $95,000",
-    skills: ["GIS mapping", "Data analysis", "Agricultural knowledge", "Technology integration", "Problem-solving"],
+    skills: ["Using GPS mapping", "Flying farm drones", "Reading soil and plant data", "Computer knowledge", "Problem-solving"],
     roadmap: [
       "Study agricultural science or technology",
       "Learn GIS and remote sensing technologies",
@@ -40,12 +40,12 @@ export const agricultureCareers: Career[] = [
   {
     id: "food-scientist",
     title: "Food Scientist",
-    description: "Research and develop new food products, improve food processing methods, and ensure food safety and quality.",
+    description: "You study food to make it taste better, stay fresh longer, and be healthier. You might create new food products, improve how food is made, or make sure food is safe to eat. You test different ingredients and cooking methods in special labs. Your work helps bring new and better food products to stores for everyone to enjoy.",
     clusterId: "agriculture",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$72,000 - $110,000",
-    skills: ["Food chemistry", "Product development", "Quality control", "Sensory evaluation", "Regulatory knowledge"],
+    skills: ["Food chemistry knowledge", "Testing food quality", "Creating new recipes", "Lab testing skills", "Food safety rules"],
     roadmap: [
       "Earn degree in food science or related field",
       "Develop laboratory and analysis skills",
@@ -57,13 +57,13 @@ export const agricultureCareers: Career[] = [
   {
     id: "agricultural-data-analyst",
     title: "Agricultural Data Analyst",
-    description: "Analyze farming data to help improve crop yields, optimize resource use, and increase agricultural efficiency.",
+    description: "You look at numbers and information about farms to help them grow more food. You study weather patterns, soil tests, crop yields, and market prices. Then you help farmers make better decisions about what to plant, when to plant it, and how to take care of their crops. Your computer skills help make farming smarter and more successful.",
     clusterId: "agriculture",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$75,000 - $105,000",
-    skills: ["Data analysis", "Statistical modeling", "Programming", "Agricultural knowledge", "Visualization"],
+    skills: ["Working with farm data", "Using special computer programs", "Understanding farming", "Making helpful charts", "Spotting important patterns"],
     roadmap: [
       "Study data science, statistics, or agricultural informatics",
       "Learn programming languages like R or Python",
