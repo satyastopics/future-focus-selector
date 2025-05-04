@@ -86,5 +86,40 @@ export const internationalRelationsCareers: Career[] = [
       "Gain experience through government agencies or international businesses",
       "Stay current with evolving trade policies and markets"
     ]
+  },
+  {
+    id: "humanitarian-aid-coordinator",
+    title: "Humanitarian Aid Coordinator",
+    description: "You organize help during emergencies like natural disasters or conflicts. You arrange food, shelter, medical care, and other supplies for people in crisis. You work with many different organizations to make sure aid reaches those who need it most. You must make quick decisions in difficult situations. Your work helps save lives and bring comfort to people during their most desperate times.",
+    clusterId: "internationalRelations",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$65,000 - $95,000",
+    skills: ["Crisis management", "Coordinating different organizations", "Logistics planning", "Needs assessment", "Working in difficult conditions"],
+    roadmap: [
+      "Build foundation in international relations or humanitarian studies",
+      "Gain field experience through volunteer or entry-level positions",
+      "Develop expertise in humanitarian standards and principles",
+      "Learn project management and coordination skills",
+      "Build experience in progressively challenging environments"
+    ]
+  },
+  {
+    id: "international-climate-policy-advisor",
+    title: "International Climate Policy Advisor",
+    description: "You help countries work together on solving climate change. You might help negotiate climate agreements, develop low-carbon economic plans, or create policies that protect forests and oceans. You understand both the science of climate change and how governments make decisions. Your work helps build international cooperation to protect our planet for future generations.",
+    clusterId: "internationalRelations",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$75,000 - $130,000",
+    skills: ["Understanding climate science", "Knowledge of international agreements", "Policy development", "Diplomatic negotiation", "Explaining complex issues clearly"],
+    roadmap: [
+      "Build foundation in environmental policy or international relations",
+      "Develop understanding of climate science and impacts",
+      "Learn about international climate frameworks and negotiations",
+      "Gain experience in climate policy development",
+      "Stay current with evolving climate politics and science"
+    ]
   }
 ];

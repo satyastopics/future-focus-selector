@@ -72,5 +72,60 @@ export const agricultureCareers: Career[] = [
       "Stay current with data analysis tools and techniques"
     ],
     aiRelated: true
+  },
+  {
+    id: "vertical-farming-specialist",
+    title: "Vertical Farming Specialist",
+    description: "You grow food in stacked layers inside buildings instead of open fields. You control the perfect light, water, and temperature for plants using special technology. You might grow vegetables in city buildings, allowing fresh food to be grown where lots of people live. Your work creates new ways to grow food that use less land and water.",
+    clusterId: "agriculture",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$65,000 - $95,000",
+    skills: ["Indoor growing techniques", "Controlling growing environments", "Hydroponics systems", "Plant health monitoring", "Resource efficiency planning"],
+    roadmap: [
+      "Build foundation in plant science or agriculture",
+      "Learn controlled environment agriculture techniques",
+      "Develop expertise in hydroponic or aeroponic systems",
+      "Gain experience with environmental control systems",
+      "Stay current with vertical farming innovations"
+    ]
+  },
+  {
+    id: "agricultural-biotechnologist",
+    title: "Agricultural Biotechnologist",
+    description: "You use science to improve plants and animals for farming. You might create crops that resist disease, grow with less water, or contain more vitamins. You work in labs with plant cells and DNA to develop better varieties. Your work helps increase food production and create crops that can survive in changing climates.",
+    clusterId: "agriculture",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$80,000 - $120,000",
+    skills: ["Understanding plant genetics", "Laboratory techniques", "Creating modified plants", "Testing new crop varieties", "Following biotechnology regulations"],
+    roadmap: [
+      "Build foundation in molecular biology or biotechnology",
+      "Learn genetic modification techniques",
+      "Develop plant breeding and selection skills",
+      "Gain experience in agricultural application of biotechnology",
+      "Stay current with biotechnology advances and regulations"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "sustainable-aquaculture-specialist",
+    title: "Sustainable Aquaculture Specialist",
+    description: "You help farm fish and other water animals in environmentally friendly ways. You design systems that raise fish with minimal pollution and resource use. You might create tanks that reuse water, develop better fish feed, or monitor water quality. Your work helps produce seafood without depleting wild fish populations or harming oceans.",
+    clusterId: "agriculture",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$70,000 - $100,000",
+    skills: ["Fish and shellfish biology", "Water quality management", "Sustainable feed development", "Disease prevention", "Recirculating aquaculture systems"],
+    roadmap: [
+      "Build foundation in marine biology or aquaculture",
+      "Learn sustainable aquaculture systems and practices",
+      "Develop expertise in water quality management",
+      "Gain hands-on experience at aquaculture facilities",
+      "Stay current with sustainable aquaculture innovations"
+    ]
   }
 ];

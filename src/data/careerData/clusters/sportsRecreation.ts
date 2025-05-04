@@ -90,5 +90,43 @@ export const sportsRecreationCareers: Career[] = [
       "Stay current with emerging fitness technology trends"
     ],
     aiRelated: true
+  },
+  {
+    id: "sports-biomechanist",
+    title: "Sports Biomechanist",
+    description: "You study how athletes move and use technology to help them move better. You might analyze a cricket player's bowling action, a swimmer's stroke, or a runner's form. You use special cameras and sensors to capture movements, then suggest small changes that can help prevent injuries or improve performance. Your scientific knowledge helps athletes perform at their best.",
+    clusterId: "sportsRecreation",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$65,000 - $95,000",
+    skills: ["Motion analysis", "Understanding body mechanics", "Using 3D motion capture", "Explaining complex movement simply", "Creating training exercises for improvement"],
+    roadmap: [
+      "Build foundation in biomechanics, kinesiology, or related field",
+      "Learn motion analysis technologies and methods",
+      "Develop expertise in specific sports movements",
+      "Gain experience working with athletes and coaches",
+      "Stay current with biomechanics research and technology"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "virtual-reality-fitness-instructor",
+    title: "Virtual Reality Fitness Instructor",
+    description: "You create and lead exercise programs in virtual reality. You design immersive workout environments where people can box with virtual opponents, climb mountains, or dance in fantastic settings while getting exercise. You make fitness fun by turning it into a game or adventure. Your creativity helps people stay motivated to exercise regularly through engaging experiences.",
+    clusterId: "sportsRecreation",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$60,000 - $90,000",
+    skills: ["Designing VR exercise programs", "Understanding effective workout routines", "Creating engaging virtual environments", "Ensuring exercises are safe and effective", "Making fitness feel like play"],
+    roadmap: [
+      "Build foundation in fitness instruction and exercise science",
+      "Learn virtual reality development tools and principles",
+      "Develop understanding of gamification in fitness",
+      "Gain experience creating engaging workout experiences",
+      "Stay current with VR technology and fitness trends"
+    ],
+    aiRelated: true
   }
 ];

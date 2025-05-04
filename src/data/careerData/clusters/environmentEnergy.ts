@@ -1,15 +1,16 @@
+
 import { Career } from '../../types';
 
 export const environmentEnergyCareers: Career[] = [
   {
     id: "renewable-energy-engineer",
     title: "Renewable Energy Engineer",
-    description: "Design, develop, and implement renewable energy systems like solar, wind, hydroelectric, or geothermal power.",
+    description: "You design and build systems that make clean energy from sun, wind, or water. You create solar panels, wind turbines, or hydropower dams that make electricity without pollution. You might test new materials or improve existing green energy systems. Your work helps fight climate change and creates energy that doesn't run out.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$75,000 - $120,000",
-    skills: ["Engineering principles", "Renewable technology", "Project management", "Problem-solving", "Technical design"],
+    skills: ["Understanding how energy works", "Designing clean energy systems", "Solving technical problems", "Using special engineering software", "Testing and improving designs"],
     roadmap: [
       "Earn degree in energy, electrical, or mechanical engineering",
       "Learn specialized renewable energy technologies",
@@ -21,12 +22,12 @@ export const environmentEnergyCareers: Career[] = [
   {
     id: "environmental-scientist",
     title: "Environmental Scientist",
-    description: "Study environmental problems and develop solutions to protect the environment and human health.",
+    description: "You study how humans affect nature and find ways to protect our planet. You might test water, soil, or air for pollution, track wildlife populations, or monitor climate changes. You use this information to advise governments and companies on how to reduce harm to the environment. Your work helps keep our planet healthy for future generations.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$65,000 - $100,000",
-    skills: ["Scientific methodology", "Data analysis", "Environmental sampling", "Research", "Communication"],
+    skills: ["Collecting and testing samples", "Analyzing environmental data", "Understanding ecosystems", "Writing research reports", "Finding solutions to pollution problems"],
     roadmap: [
       "Complete degree in environmental science or related field",
       "Develop laboratory and field research skills",
@@ -38,12 +39,12 @@ export const environmentEnergyCareers: Career[] = [
   {
     id: "sustainability-manager",
     title: "Sustainability Manager",
-    description: "Develop and implement sustainability initiatives for organizations to reduce environmental impact and improve efficiency.",
+    description: "You help organizations become more environmentally friendly. You find ways to reduce waste, save energy, use fewer resources, and pollute less. You might create recycling programs, install energy-saving equipment, or set green goals for a company. Your work helps businesses do better while also protecting the planet.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$70,000 - $115,000",
-    skills: ["Environmental management", "Data analysis", "Strategy development", "Communication", "Project management"],
+    skills: ["Planning green initiatives", "Measuring environmental impacts", "Working with different departments", "Knowing environmental rules", "Creating sustainability reports"],
     roadmap: [
       "Build foundation in environmental science or business sustainability",
       "Develop knowledge of sustainability frameworks and metrics",
@@ -55,13 +56,13 @@ export const environmentEnergyCareers: Career[] = [
   {
     id: "carbon-capture-specialist",
     title: "Carbon Capture Specialist",
-    description: "Develop and implement technologies to capture carbon dioxide emissions from industrial processes or directly from the atmosphere.",
+    description: "You work on technologies that catch carbon dioxide before it goes into the air or remove it after it's already there. You help reduce the greenhouse gases that cause climate change. You might work on special filters for factories, ways to store carbon underground, or machines that clean the air. Your work helps fight global warming.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$80,000 - $120,000",
-    skills: ["Chemical engineering", "Process design", "Environmental science", "Data analysis", "Problem-solving"],
+    skills: ["Understanding carbon chemistry", "Designing capture systems", "Testing new technologies", "Analyzing environmental impact", "Knowing climate science"],
     roadmap: [
       "Build strong foundation in engineering or environmental science",
       "Develop expertise in carbon capture technologies",
@@ -73,13 +74,13 @@ export const environmentEnergyCareers: Career[] = [
   {
     id: "grid-modernization-engineer",
     title: "Grid Modernization Engineer",
-    description: "Design and implement smart grid technologies to improve electricity distribution efficiency, reliability, and integration of renewable energy.",
+    description: "You make electricity networks smarter and more efficient. You work on systems that help electricity flow better from power plants to homes and businesses. You might add digital controls, fix problems that cause blackouts, or help connect renewable energy to the grid. Your work makes our power system more reliable, efficient, and ready for clean energy.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$85,000 - $130,000",
-    skills: ["Electrical engineering", "Energy systems", "Programming", "Data analysis", "Problem-solving"],
+    skills: ["Understanding electricity networks", "Using smart grid technology", "Solving power distribution problems", "Working with computer control systems", "Planning for renewable energy"],
     roadmap: [
       "Study electrical engineering or power systems",
       "Develop expertise in grid technologies and standards",
@@ -92,13 +93,13 @@ export const environmentEnergyCareers: Career[] = [
   {
     id: "energy-storage-engineer",
     title: "Energy Storage Engineer",
-    description: "Design, develop, and test battery and energy storage systems to improve efficiency, capacity, and sustainability of renewable energy.",
+    description: "You create better batteries and other ways to store energy. This is important because renewable energy sources like sun and wind don't always produce power when we need it. You might work on new battery materials, design large storage systems, or develop ways to use stored energy efficiently. Your work helps make renewable energy more practical and reliable.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$85,000 - $140,000",
-    skills: ["Electrochemistry", "Materials science", "System modeling", "Electrical engineering", "Energy efficiency"],
+    skills: ["Understanding battery chemistry", "Designing storage systems", "Testing energy efficiency", "Solving technical problems", "Working with renewable energy systems"],
     roadmap: [
       "Build foundation in electrical engineering or materials science",
       "Learn battery chemistry and storage technologies",
@@ -111,13 +112,13 @@ export const environmentEnergyCareers: Career[] = [
   {
     id: "climate-resilience-specialist",
     title: "Climate Resilience Specialist",
-    description: "Develop strategies to help communities and organizations adapt to climate change impacts and build resilience against extreme weather events.",
+    description: "You help communities prepare for climate change effects like floods, droughts, and storms. You might create emergency plans, design flood protection, or recommend changes to building codes. You look at how climate risks will affect people, buildings, and businesses. Your work helps towns and cities stay safe as our climate changes.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$75,000 - $130,000",
-    skills: ["Climate science", "Risk assessment", "Urban planning", "Stakeholder engagement", "Policy development"],
+    skills: ["Understanding climate science", "Assessing risks", "Planning for emergencies", "Working with community leaders", "Finding practical solutions"],
     roadmap: [
       "Build foundation in environmental science or policy",
       "Develop understanding of climate impacts and vulnerabilities",
@@ -129,12 +130,12 @@ export const environmentEnergyCareers: Career[] = [
   {
     id: "bioenergy-specialist",
     title: "Bioenergy Specialist",
-    description: "Develop and implement technologies to convert biomass into renewable energy, including biofuels, biogas, and biomass power generation.",
+    description: "You create fuel and energy from plants and organic waste. You might turn crop leftovers into fuel, make electricity from food waste, or create gas from animal manure. You work on ways to process these materials efficiently and cleanly. Your work helps reduce waste while creating renewable energy that doesn't rely on fossil fuels.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$75,000 - $125,000",
-    skills: ["Biochemical processes", "Thermochemical conversion", "Systems integration", "Biomass assessment", "Process optimization"],
+    skills: ["Understanding biomass conversion", "Designing bioenergy systems", "Testing fuel quality", "Solving processing problems", "Knowledge of different biomass sources"],
     roadmap: [
       "Build foundation in chemical engineering or related field",
       "Learn bioenergy conversion technologies",
@@ -146,12 +147,12 @@ export const environmentEnergyCareers: Career[] = [
   {
     id: "water-resource-manager",
     title: "Water Resource Manager",
-    description: "Plan and implement strategies for sustainable water use, conservation, and quality management to ensure water security in a changing climate.",
+    description: "You make sure communities have clean water while protecting rivers, lakes, and groundwater. You might plan water conservation efforts, design water treatment systems, or create rules for water usage. You balance the needs of people, farms, and industries while keeping water ecosystems healthy. Your work helps ensure everyone has access to clean water now and in the future.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     averageSalary: "$70,000 - $120,000",
-    skills: ["Hydrology", "Water quality assessment", "Resource planning", "Policy implementation", "Stakeholder management"],
+    skills: ["Understanding water systems", "Planning conservation efforts", "Testing water quality", "Working with communities", "Knowledge of water regulations"],
     roadmap: [
       "Build foundation in environmental science or water resources",
       "Learn water management principles and regulations",
@@ -163,13 +164,13 @@ export const environmentEnergyCareers: Career[] = [
   {
     id: "circular-economy-specialist",
     title: "Circular Economy Specialist",
-    description: "Design systems and strategies to eliminate waste and continually reuse resources, helping organizations transition from linear to circular business models.",
+    description: "You help change how products are made and used so nothing gets wasted. Instead of make-use-throw away, you create systems where materials keep being reused. You might redesign products to be easily repaired or recycled, create sharing programs, or find ways to turn waste from one process into resources for another. Your work reduces waste and saves natural resources.",
     clusterId: "environmentEnergy",
     isHighIncome: true,
     isFutureReady: true,
     emergingField: true,
     averageSalary: "$80,000 - $130,000",
-    skills: ["Systems thinking", "Life cycle assessment", "Sustainable design", "Supply chain analysis", "Waste management"],
+    skills: ["Understanding product lifecycles", "Designing waste-free systems", "Finding new uses for materials", "Working with many different businesses", "Creative problem-solving"],
     roadmap: [
       "Build foundation in environmental science or sustainable business",
       "Learn circular economy principles and frameworks",

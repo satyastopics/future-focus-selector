@@ -90,5 +90,41 @@ export const manufacturingCareers: Career[] = [
       "Gain hands-on experience with various 3D printing technologies",
       "Stay current with emerging additive manufacturing methods"
     ]
+  },
+  {
+    id: "smart-factory-technician",
+    title: "Smart Factory Technician",
+    description: "You install, maintain, and repair the digital systems that control modern factories. You work with sensors that monitor machines, computer networks that connect equipment, and control systems that automate production. You solve both mechanical and digital problems when things go wrong. Your work keeps advanced manufacturing technology running smoothly.",
+    clusterId: "manufacturing",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$60,000 - $90,000",
+    skills: ["Installing electronic sensors", "Troubleshooting control systems", "Network maintenance", "Reading technical diagrams", "Basic programming"],
+    roadmap: [
+      "Build foundation in electronics or automation technology",
+      "Learn industrial control systems and networks",
+      "Develop troubleshooting methodology",
+      "Gain hands-on experience with smart factory equipment",
+      "Stay current with evolving manufacturing technologies"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "quality-assurance-specialist",
+    title: "Quality Assurance Specialist",
+    description: "You make sure products are made correctly and work properly. You inspect items for defects, test products to see if they work as expected, and create systems to catch problems early. You might use special measuring tools or testing equipment. Your attention to detail helps companies deliver good products to customers and avoid expensive mistakes.",
+    clusterId: "manufacturing",
+    isHighIncome: false,
+    isFutureReady: true,
+    averageSalary: "$55,000 - $85,000",
+    skills: ["Inspecting products carefully", "Using measuring instruments", "Following quality standards", "Keeping detailed records", "Suggesting process improvements"],
+    roadmap: [
+      "Build foundation in quality control methods",
+      "Learn industry-specific standards and regulations",
+      "Develop expertise with quality testing equipment",
+      "Gain experience implementing quality management systems",
+      "Consider quality certifications like ASQ"
+    ]
   }
 ];

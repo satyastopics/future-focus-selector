@@ -124,5 +124,43 @@ export const lawPublicSafetyCareers: Career[] = [
       "Obtain security clearances as required"
     ],
     aiRelated: true
+  },
+  {
+    id: "disaster-response-drone-operator",
+    title: "Disaster Response Drone Operator",
+    description: "You fly special drones during emergencies to help save lives. You might search for missing people after an earthquake, check damaged buildings that are too dangerous to enter, or deliver medical supplies to hard-to-reach areas. You know how to fly drones in difficult conditions and get clear images or information that helps emergency teams. Your work combines technology with lifesaving missions.",
+    clusterId: "lawPublicSafety",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$60,000 - $90,000",
+    skills: ["Operating specialized drones", "Flying in difficult conditions", "Interpreting aerial imagery", "Working with emergency teams", "Quick problem-solving"],
+    roadmap: [
+      "Obtain drone pilot certification",
+      "Build experience with various drone types",
+      "Learn emergency response protocols",
+      "Gain experience in search and rescue operations",
+      "Stay current with drone technology advances"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "privacy-officer",
+    title: "Privacy Officer",
+    description: "You protect people's personal information in organizations that collect data. You create rules about what information can be collected, how it's stored safely, and who can see it. You make sure companies follow privacy laws and respond properly when data might be exposed. Your work helps protect personal details like medical records, financial information, and online activity from misuse.",
+    clusterId: "lawPublicSafety",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$85,000 - $140,000",
+    skills: ["Understanding privacy laws", "Creating data protection policies", "Teaching others about privacy rules", "Responding to data incidents", "Balancing privacy with business needs"],
+    roadmap: [
+      "Build foundation in law, compliance, or information security",
+      "Learn privacy regulations and frameworks",
+      "Develop expertise in data protection methodologies",
+      "Gain experience implementing privacy programs",
+      "Consider certifications like CIPP or CIPM"
+    ],
+    aiRelated: true
   }
 ];

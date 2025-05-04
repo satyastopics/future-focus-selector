@@ -73,5 +73,42 @@ export const constructionCareers: Career[] = [
       "Stay current with emerging construction tech innovations"
     ],
     aiRelated: true
+  },
+  {
+    id: "prefabrication-specialist",
+    title: "Prefabrication Specialist",
+    description: "You help build parts of buildings in factories instead of at construction sites. These pieces are then transported and assembled where the building will stand. You might work on wall sections, bathroom units, or entire rooms built in a factory setting. Your work makes construction faster, creates less waste, and often results in higher quality buildings.",
+    clusterId: "construction",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$70,000 - $110,000",
+    skills: ["Factory production methods", "Reading construction plans", "Quality control", "Logistics planning", "Assembly techniques"],
+    roadmap: [
+      "Build foundation in construction or manufacturing",
+      "Learn modular and prefabrication techniques",
+      "Develop expertise in specific prefabrication systems",
+      "Gain experience with production scheduling and logistics",
+      "Stay current with prefabrication innovations"
+    ]
+  },
+  {
+    id: "robotics-construction-technician",
+    title: "Robotics Construction Technician",
+    description: "You work with robots and automated machines that help build structures. You might operate brick-laying robots, 3D concrete printers, or automated surveying equipment. You make sure these machines work properly and fix them when they don't. Your technical skills bring the future of automation to construction sites, making building faster and safer.",
+    clusterId: "construction",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$65,000 - $95,000",
+    skills: ["Operating construction robots", "Basic programming", "Machine maintenance", "Understanding construction processes", "Problem-solving robotics issues"],
+    roadmap: [
+      "Build foundation in construction and robotics technology",
+      "Learn specific construction automation platforms",
+      "Develop troubleshooting and maintenance skills",
+      "Gain hands-on experience with construction robotics",
+      "Stay current with evolving construction automation"
+    ],
+    aiRelated: true
   }
 ];
