@@ -69,5 +69,60 @@ export const hospitalityCareers: Career[] = [
       "Build business acumen and financial management abilities",
       "Stay current with culinary trends and techniques"
     ]
+  },
+  {
+    id: "virtual-experience-designer",
+    title: "Virtual Experience Designer",
+    description: "You create digital tours and experiences of tourist destinations. You might make virtual reality tours of museums, interactive online experiences for famous sites, or augmented reality guides for cities. Your work lets people experience places without traveling or enhance their visits with digital information. You help tourism businesses reach more people through technology.",
+    clusterId: "hospitality",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$70,000 - $110,000",
+    skills: ["Creating 3D virtual environments", "Designing interactive experiences", "Digital storytelling", "Using VR/AR technology", "Understanding tourist interests"],
+    roadmap: [
+      "Develop foundation in digital design and tourism",
+      "Learn immersive technology platforms (VR/AR)",
+      "Develop digital storytelling and experience design skills",
+      "Create portfolio of virtual tourism experiences",
+      "Stay current with evolving immersive technologies"
+    ],
+    aiRelated: true
+  },
+  {
+    id: "hospitality-sustainability-manager",
+    title: "Hospitality Sustainability Manager",
+    description: "You help hotels, resorts, and restaurants become more environmentally friendly. You find ways to reduce water use, decrease energy consumption, eliminate plastic waste, and source local food. You create programs to engage guests in green initiatives and train staff on sustainable practices. Your work helps tourism businesses protect the natural beauty that attracts visitors.",
+    clusterId: "hospitality",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$65,000 - $105,000",
+    skills: ["Environmental impact assessment", "Sustainable operations planning", "Green certification knowledge", "Staff sustainability training", "Eco-friendly supplier sourcing"],
+    roadmap: [
+      "Build foundation in hospitality and environmental science",
+      "Learn sustainable tourism principles and practices",
+      "Develop knowledge of green certifications and standards",
+      "Gain experience implementing sustainability initiatives",
+      "Stay current with evolving sustainability best practices"
+    ]
+  },
+  {
+    id: "wellness-tourism-specialist",
+    title: "Wellness Tourism Specialist",
+    description: "You create travel experiences focused on health and wellbeing. You might design spa retreats, yoga vacations, meditation centers, or healthy cooking getaways. You understand what helps people relax, rejuvenate, and improve their health. Your knowledge of wellness practices and hospitality helps create vacations that leave people feeling better than when they arrived.",
+    clusterId: "hospitality",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$60,000 - $100,000",
+    skills: ["Wellness program development", "Understanding health practices", "Creating relaxing environments", "Personalized wellness planning", "Health retreat management"],
+    roadmap: [
+      "Build foundation in hospitality and wellness disciplines",
+      "Develop expertise in specific wellness practices",
+      "Learn about wellness tourism trends and customer needs",
+      "Gain experience in wellness hospitality settings",
+      "Consider wellness-related certifications or training"
+    ]
   }
-];
+]

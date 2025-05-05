@@ -91,5 +91,40 @@ export const financeCareers: Career[] = [
       "Gain experience with sustainable investing strategies",
       "Consider certifications like CFA ESG Certificate"
     ]
+  },
+  {
+    id: "personal-financial-advisor",
+    title: "Personal Financial Advisor",
+    description: "You help people make smart choices about their money. You create plans for saving, investing, and spending wisely. You might help families plan for college costs, save for retirement, or pay less in taxes. You learn about each person's goals and teach them how to reach those goals. Your advice helps people grow their money and prepare for the future.",
+    clusterId: "finance",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$65,000 - $115,000",
+    skills: ["Creating personalized money plans", "Explaining investment options clearly", "Understanding tax rules", "Building trust with clients", "Keeping up with changing financial laws"],
+    roadmap: [
+      "Complete degree in finance, economics, or business",
+      "Learn personal financial planning principles",
+      "Develop strong client communication skills",
+      "Consider certifications like CFP (Certified Financial Planner)",
+      "Build client base through networking and referrals"
+    ]
+  },
+  {
+    id: "insurance-actuary",
+    title: "Insurance Actuary",
+    description: "You use math to figure out how risky things are and how much insurance should cost. You look at data about accidents, disasters, and illnesses to predict how likely they are to happen. Insurance companies use your calculations to decide how much to charge for policies. Your mathematical skills help make sure insurance companies charge fair prices while staying in business.",
+    clusterId: "finance",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$85,000 - $150,000",
+    skills: ["Advanced math and statistics", "Analyzing risk patterns", "Making mathematical models", "Working with large amounts of data", "Explaining complicated calculations simply"],
+    roadmap: [
+      "Build strong foundation in mathematics and statistics",
+      "Pass actuarial exams through self-study",
+      "Complete degree in actuarial science, mathematics, or statistics",
+      "Gain experience through internships in insurance industry",
+      "Continue certification process with actuarial societies"
+    ],
+    aiRelated: true
   }
-];
+]

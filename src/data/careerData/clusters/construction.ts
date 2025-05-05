@@ -110,5 +110,40 @@ export const constructionCareers: Career[] = [
       "Stay current with evolving construction automation"
     ],
     aiRelated: true
+  },
+  {
+    id: "construction-safety-officer",
+    title: "Construction Safety Officer",
+    description: "You make sure construction sites are safe places to work. You check for dangers like unstable structures, fire hazards, or unsafe equipment. You train workers on safety procedures and make sure they wear proper protection. When accidents happen, you investigate to prevent them in the future. Your work saves lives by preventing injuries and teaching safe work practices.",
+    clusterId: "construction",
+    isHighIncome: true,
+    isFutureReady: true,
+    averageSalary: "$65,000 - $95,000",
+    skills: ["Spotting safety hazards", "Creating safety training programs", "Understanding safety regulations", "Investigating accidents", "Promoting safety culture"],
+    roadmap: [
+      "Build foundation in construction or occupational safety",
+      "Learn construction safety standards and regulations",
+      "Obtain safety certifications like OSHA or NEBOSH",
+      "Gain experience in safety management on construction sites",
+      "Develop expertise in specific high-risk construction activities"
+    ]
+  },
+  {
+    id: "infrastructure-resilience-specialist",
+    title: "Infrastructure Resilience Specialist",
+    description: "You help design and build structures that can withstand disasters like floods, earthquakes, or extreme weather. You analyze how buildings might fail during emergencies and recommend stronger designs. You might work on making hospitals that stay running during hurricanes or bridges that don't collapse in earthquakes. Your work helps communities bounce back faster after disasters.",
+    clusterId: "construction",
+    isHighIncome: true,
+    isFutureReady: true,
+    emergingField: true,
+    averageSalary: "$80,000 - $120,000",
+    skills: ["Disaster risk assessment", "Structural strengthening techniques", "Climate adaptation planning", "Building code expertise", "Emergency response integration"],
+    roadmap: [
+      "Build foundation in civil engineering or architecture",
+      "Develop expertise in structural resilience and hazard mitigation",
+      "Learn about climate science and extreme weather impacts",
+      "Gain experience in disaster recovery or infrastructure projects",
+      "Stay current with evolving resilience standards and research"
+    ]
   }
-];
+]
